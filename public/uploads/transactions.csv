@@ -1,0 +1,10 @@
+start_date,end_date,first_name,last_name,email,telnumber,address1,Address2,city,country,postcode,product_name,cost,"currency((usd,gbp))",transaction_date
+08/05/2018,17/05/2018,Amy,Mccormick,insurance@doyouinsurance.com,34964830995,c\Ronda Mijares n190 Bis,,Castellon,UK,12002,DYSIH_NL_PLATINUM_8-14,53.12,usd,01/05/2018
+08/07/2018,22/07/2018,Sören,Fedders,insurance@doyouinsurance.com,34964830995,c\Ronda Mijares n190 Bis,,Castellon,DE,12002,DYSIH_NL_PLATINUM_8-14,75.88,usd,01/05/2018
+07/06/2018,10/06/2018,Eric,De Winter,insurance@doyouinsurance.com,34964830995,c\Ronda Mijares n190 Bis,,Castellon,NL,12002,DYSIH_GB_PLATINUM_8-14,25.39,gbp,01/05/2018
+02/05/2018,11/05/2018,Roberto,Carron Martin,insurance@doyouinsurance.com,34964830995,c\Ronda Mijares n190 Bis,,Castellon,ES,12002,DYSIH_DE_PLATINUM_8-14,46.29,usd,01/05/2018
+01/05/2018,03/05/2018,Paz,Ovics,insurance@doyouinsurance.com,34964830995,c\Ronda Mijares n190 Bis,,Castellon,IT,12002,DYSIH_NL_PLATINUM_4-7,19.13,gbp,01/05/2018
+03/05/2018,02/06/2018,Andreas,Nagel,insurance@doyouinsurance.com,34964830995,c\Ronda Mijares n190 Bis,,Castellon,ES,12002,DYSIH_SP_PLATINUM_8-14,128.12,gbp,01/05/2018
+06/05/2018,17/05/2018,Catharina,Hoogkamer,insurance@doyouinsurance.com,34964830995,c\Ronda Mijares n190 Bis,,Castellon,NL,12002,DYSIH_IT_PLATINUM_1-3,59.73,usd,01/05/2018
+02/05/2018,14/05/2018,Luis,Moro,insurance@doyouinsurance.com,34964830995,c\Ronda Mijares n190 Bis,,Castellon,ES,12002,DYSIH_DE_PLATINUM_25-30,61.72,usd,01/05/2018
+13/05/2018,23/05/2018,Mate,Halasz,insurance@doyouinsurance.com,34964830995,c\Ronda Mijares n190 Bis,,Castellon,UK,12002,DYSIH_NL_PLATINUM_8-14,53.12,gbp,01/05/2018
