@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Redis;
 
 class HomeController extends Controller
 {
@@ -49,10 +50,13 @@ class HomeController extends Controller
         $allData = $this->ReadCsvFile($file);
 
         /*store data in cache*/
-        Cache::rememberForever('csvData', function () use($allData) {
+        /*Cache::rememberForever('csvData', function () use($allData) {
             return $allData;
         });
-        $csvData = Cache::get('csvData');
+        $csvData = Cache::get('csvData');*/
+        Redis::set('csvData', json_encode($allData));
+        $csvData = Redis::get('csvData');
+        $csvData = json_decode($csvData);
 
         return response()->json(['status' => true, 'message' => 'csv data retrieved from cache successfully.', 'data' => $csvData], 200) ;
     }
