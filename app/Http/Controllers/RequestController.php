@@ -29,11 +29,11 @@ class RequestController extends Controller
 
     public function makeRequest($request)
     {
-        $username         = Config::get('constants.travelport.pre_production.username');
-        $password         = Config::get('constants.travelport.pre_production.password');
-        $target_branch    = Config::get('constants.travelport.pre_production.target_branch');
-        $url              = Config::get('constants.travelport.pre_production.url');
-        $gds_code         = Config::get('constants.travelport.pre_production.gds_code');
+        $username         = 'Universal API/uAPI5164233131-8f975dd6';
+        $password         = 'j+2A7wT{F4';
+        $target_branch    = 'P7119574';
+        $url              = 'https://apac.universal-api.pp.travelport.com/B2BGateway/connect/uAPI/HotelService';
+        $gds_code         = '1G';
 
 //        self::$responseArray 	= [];
 
