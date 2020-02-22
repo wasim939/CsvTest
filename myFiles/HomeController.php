@@ -61,6 +61,30 @@ class HomeController extends RequestController
 </soapenv:Envelope>';
 
         $xmlResponse = $this->makeRequest($request);
-        return $xmlResponse;
+//        return $xmlResponse;
+
+
+        return $this->makeData($xmlResponse);
+    }
+
+    public function makeData($data) {
+
+        $finalArray = [];
+
+        $finalArray['ReferencePoint'] = $data['SOAP:Envelope']['SOAP:Body']['hotel:HotelSearchAvailabilityRsp']['hotel:ReferencePoint'];
+//        $finalArray['']
+
+        $HotelSearchResult = $data['SOAP:Envelope']['SOAP:Body']['hotel:HotelSearchAvailabilityRsp']['hotel:HotelSearchResult'];
+
+        foreach ($HotelSearchResult as $item) {
+
+            $finalArray['hoteInfo'][] = $item['hotel:HotelProperty']['@attributes'];
+
+
+            $finalArray['hoteInfo'][]['address'] = $item['hotel:HotelProperty']['hotel:PropertyAddress']['hotel:Address'];
+            $finalArray['hoteInfo'][]['distance'] = $item['hotel:HotelProperty']['common_v34_0:Distance']['@attributes']['Value'].'KM';
+        }
+        return $finalArray;
+
     }
 }
