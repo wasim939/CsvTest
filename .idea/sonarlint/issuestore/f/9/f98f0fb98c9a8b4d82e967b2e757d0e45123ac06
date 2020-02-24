@@ -1,0 +1,14 @@
+
+t	php:S2068!"X'password' detected in this variable name, review this potentially hardcoded credential.(€¬¼ã8Æ‹±²†.
+?php:S125*"Remove this commented out code.(µ‚´«ùÿÿÿÿ8Æ‹±²†.
+H	php:S1481""3Remove this unused "$target_branch" local variable.(ôêõÀ
+?php:S125:"Remove this commented out code.(Ô–¹Äùÿÿÿÿ8Æ‹±²†.
+:php:S125k"Remove this commented out code.(´ø‹þ8Æ‹±²†.
+?php:S125G"Remove this commented out code.(ìÓ¦ßüÿÿÿÿ8Æ‹±²†.
+?php:S125&"Remove this commented out code.(ô±Ù½þÿÿÿÿ8Æ‹±²†.
+[	php:S4830<":Activate SSL/TLS certificates chain of trust verification.(äÇîñûÿÿÿÿ8©Ö¿²†.
+H	php:S1481$".Remove this unused "$gds_code" local variable.(ß‘—¡þÿÿÿÿ
+:php:S125O"Remove this commented out code.(Œü¯á8Æ‹±²†.
+:php:S125d"Remove this commented out code.(Ö¸òã8Æ‹±²†.
+V	php:S4830=":Activate SSL/TLS certificates chain of trust verification.(ê—¯À8©Ö¿²†.
+?php:S125W"Remove this commented out code.(ä•…íýÿÿÿÿ8Æ‹±²†.

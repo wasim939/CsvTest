@@ -38,15 +38,53 @@ class HomeController extends RequestController
 
       //  echo phpinfo();exit;
 
+        $finalArray = [];
         $sXML = $this->makeRequest($request);
-        dump($sXML);
-        dd($this->XMLtoArray($sXML));
+        $myData = $this->XMLtoArray($sXML);
 
+        /*foreach ($myData['SOAP:Envelope']['SOAP:Body']['hotel:HotelSearchAvailabilityRsp']['hotel:HotelSearchResult'] as $data) {
 
-        echo $sXML;exit;
+            $additional_info = [
+                'address' =>    $data['hotel:HotelProperty']['hotel:PropertyAddress']['hotel:Address'],
+                'distance' => $data['hotel:HotelProperty']['common_v34_0:Distance']['@attributes']['Value'].' '.$data['hotel:HotelProperty']['common_v34_0:Distance']['@attributes']['Units']
+            ];
+            $hoteInfo = [
+                'hoteInfo' => $data['hotel:HotelProperty']['@attributes'],
+                'additionalInfo' => $additional_info
+            ];
+            $finalArray['data'][] = $hoteInfo;
+        }*/
+
+        /*foreach ($myData['SOAP:Envelope']['SOAP:Body']['hotel:HotelSearchAvailabilityRsp']['hotel:HotelSearchResult'] as $data) {
+
+            $hotelInfo['hoteInfo'] =$data['hotel:HotelProperty']['@attributes'];
+
+            $hotelInfo['additionalInfo'] = $additional_info = [
+                'address' =>    $data['hotel:HotelProperty']['hotel:PropertyAddress']['hotel:Address'],
+                'distance' => $data['hotel:HotelProperty']['common_v34_0:Distance']['@attributes']['Value'].' '.$data['hotel:HotelProperty']['common_v34_0:Distance']['@attributes']['Units']
+            ];;
+            $finalArray['data'][] = $hotelInfo;
+        }*/
+
+        foreach ($myData['SOAP:Envelope']['SOAP:Body']['hotel:HotelSearchAvailabilityRsp']['hotel:HotelSearchResult'] as $data) {
+
+            $hotelInfo['hoteInfo'] = $data['hotel:HotelProperty']['@attributes'];
+            $hotelInfo['addressInfo'] = ['address' => ['streetInfo' => $data['hotel:HotelProperty']['hotel:PropertyAddress']['hotel:Address']]];
+
+            $finalArray['data'][] = $hotelInfo;
+        }
+
+        return $finalArray;
 
 
     }
+
+    public function prepareData($data) {
+        $finalArray = [];
+        dd($data['SOAP:Envelope']);
+    }
+
+
     function XMLtoArray($xml) {
         $previous_value = libxml_use_internal_errors(true);
         $dom = new \DOMDocument('1.0', 'UTF-8');
@@ -96,6 +134,10 @@ class HomeController extends RequestController
         }
         return $result;
     }
+
+
+
+
     private function xml_to_array($contents, $get_attributes=1){
 
         if(!$contents) return array();
