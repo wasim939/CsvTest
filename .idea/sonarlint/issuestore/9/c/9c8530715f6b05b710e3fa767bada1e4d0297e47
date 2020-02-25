@@ -1,20 +1,24 @@
 
-4	php:S2010¡"Replace "or" with "||".(˜ôœÓ8¼È¿³†.
-R	php:S1481|"1Remove this unused "$opened_tags" local variable.(†¨•Àıÿÿÿÿ8¼È¿³†.
-p	php:S3776>"TRefactor this function to reduce its Cognitive Complexity from 23 to the 15 allowed.(òÖŒé8ÙÚ¾´†.
-9	php:S2010¿"Replace "or" with "||".(Ç­ğşÿÿÿÿ8¼È¿³†.
-I	php:S1481z"-Remove this unused "$parents" local variable.(ÌÖ¹ğ8¼È¿³†.
-:	php:S2010¿"Replace "and" with "&&".(Ç­ğşÿÿÿÿ8¼È¿³†.
-Pphp:S121e"0Add curly braces around the nested statement(s).(·‰ûÿÿÿÿ8¼È¿³†.
-Qphp:S121”"0Add curly braces around the nested statement(s).(½¶øéùÿÿÿÿ8¼È¿³†.
-Qphp:S121"0Add curly braces around the nested statement(s).(¼§¬ ıÿÿÿÿ8¼È¿³†.
+V	php:S3801"4Refactor this function to use "return" consistently.(ÉİâÄûÿÿÿÿ8¼È¿³†.
+=	php:S1116+"Remove this empty statement.(âÄøåøÿÿÿÿ8ÈØì·‡.
+:	php:S2010é"Replace "and" with "&&".(Ç­ğşÿÿÿÿ8¼È¿³†.
+:php:S125-"Remove this commented out code.(ü¥‘³8£÷ÿ­‡.
+Qphp:S121 "0Add curly braces around the nested statement(s).(¦óÊÇşÿÿÿÿ8¼È¿³†.
+:	php:S2010é"Replace "and" with "&&".(Ç­ğşÿÿÿÿ8¼È¿³†.
+4	php:S2010Ë"Replace "or" with "||".(˜ôœÓ8¼È¿³†.
+q	php:S1142"OReduce the number of returns of this function 4, down to the maximum allowed 3.(ÉİâÄûÿÿÿÿ8¼È¿³†.
+S	php:S1144"1Remove this unused private "xml_to_array" method.(ÉİâÄûÿÿÿÿ8ŸşÁ´†.
+J	php:S1481¤"-Remove this unused "$parents" local variable.(ÌÖ¹ğ8¼È¿³†.
+S	php:S1481¦"1Remove this unused "$opened_tags" local variable.(†¨•Àıÿÿÿÿ8¼È¿³†.
 :php:S125'"Remove this commented out code.(Ùı—¡8¤»›´†.
-:	php:S2010¿"Replace "and" with "&&".(Ç­ğşÿÿÿÿ8¼È¿³†.
-R	php:S1144c"1Remove this unused private "xml_to_array" method.(ÉİâÄûÿÿÿÿ8ŸşÁ´†.
-u	php:S3776c"TRefactor this function to reduce its Cognitive Complexity from 44 to the 15 allowed.(ÉİâÄûÿÿÿÿ8¼È¿³†.
-U	php:S3801c"4Refactor this function to use "return" consistently.(ÉİâÄûÿÿÿÿ8¼È¿³†.
-;php:S125ı"Remove this commented out code.(ĞÛØ®8Ø«£òè-
-p	php:S1142c"OReduce the number of returns of this function 4, down to the maximum allowed 3.(ÉİâÄûÿÿÿÿ8¼È¿³†.
-E	php:S1481~")Remove this unused "$arr" local variable.(ôÎí8¼È¿³†.
-Pphp:S121v"0Add curly braces around the nested statement(s).(¦óÊÇşÿÿÿÿ8¼È¿³†.
-:	php:S2010¿"Replace "and" with "&&".(Ç­ğşÿÿÿÿ8¼È¿³†.
+Q	php:S1481S"0Remove this unused "$finalArray" local variable.(ŞëÚ‚øÿÿÿÿ8é° «‡.
+:	php:S2010é"Replace "and" with "&&".(Ç­ğşÿÿÿÿ8¼È¿³†.
+9	php:S2010é"Replace "or" with "||".(Ç­ğşÿÿÿÿ8¼È¿³†.
+Qphp:S121¾"0Add curly braces around the nested statement(s).(½¶øéùÿÿÿÿ8¼È¿³†.
+:php:S125:"Remove this commented out code.(ü¥‘³8ÒÃ€®‡.
+Qphp:S121"0Add curly braces around the nested statement(s).(·‰ûÿÿÿÿ8¼È¿³†.
+v	php:S3776"TRefactor this function to reduce its Cognitive Complexity from 44 to the 15 allowed.(ÉİâÄûÿÿÿÿ8¼È¿³†.
+p	php:S3776d"TRefactor this function to reduce its Cognitive Complexity from 23 to the 15 allowed.(òÖŒé8ÙÚ¾´†.
+;php:S125§"Remove this commented out code.(ĞÛØ®8Ø«£òè-
+Qphp:S121¸"0Add curly braces around the nested statement(s).(¼§¬ ıÿÿÿÿ8¼È¿³†.
+F	php:S1481¨")Remove this unused "$arr" local variable.(ôÎí8¼È¿³†.

@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Redis;
 use Config;
 use Sunra\PhpSimple\HtmlDomParser;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class HomeController extends RequestController
 {
@@ -40,7 +42,7 @@ class HomeController extends RequestController
 
         $finalArray = [];
         $sXML = $this->makeRequest($request);
-        $myData = $this->XMLtoArray($sXML);
+        $myData = $this->XMLtoArray($sXML);;
 
         /*foreach ($myData['SOAP:Envelope']['SOAP:Body']['hotel:HotelSearchAvailabilityRsp']['hotel:HotelSearchResult'] as $data) {
 
@@ -301,5 +303,46 @@ class HomeController extends RequestController
         $csvData = json_decode($csvData);
 
         return response()->json(['status' => true, 'message' => 'csv data retrieved from cache successfully.', 'data' => $csvData], 200) ;
+    }
+
+    public function myXml(Request $request) {
+
+        $validator = Validator::make($request->all(), [
+            'from'          => 'required',
+            'to'            => 'required',
+            'dep_date'      => 'required|date',
+            'return_date'   => 'required|date|after_or_equal:dep_date',
+            'no_of_adults'  => 'required|numeric|min:1|between:1,9',
+            'no_of_children'=> 'numeric|between:1,9|min:1',
+            'no_of_infants' => 'numeric|between:1,9|lt:no_of_adults',
+            'rooms'         => 'required|between:1,9|numeric|min:1',
+            'cribs'         => 'numeric|between:1,9|min:1',
+            'beds'          => 'numeric|between:1,9|min:1',
+        ]);
+
+        if ($validator->fails()) {
+            $response = $validator->messages()->first();
+            return response()->json(['status' => false, 'message' => $response]);
+        }
+
+        //Getting XML ready for API request
+        ob_start();
+        require public_path().'\xml_requests\low_fare_search.php';
+        $requestXML = ob_get_clean();
+        //End
+
+        $finalArray = [];
+        $sXML = $this->makeRequest($requestXML);
+        $myData = $this->XMLtoArray($sXML);;
+
+        foreach ($myData['SOAP:Envelope']['SOAP:Body']['hotel:HotelSearchAvailabilityRsp']['hotel:HotelSearchResult'] as $data) {
+
+            $hotelInfo['hoteInfo'] = $data['hotel:HotelProperty']['@attributes'];
+            $hotelInfo['addressInfo'] = ['address' => ['streetInfo' => $data['hotel:HotelProperty']['hotel:PropertyAddress']['hotel:Address']]];
+
+            $finalArray[] = $hotelInfo;
+        }
+
+        return [ 'status' => true,'data' => $finalArray];
     }
 }
