@@ -167,4 +167,36 @@ class RequestController extends Controller
         }
         return $result;
     }
+
+    protected function hotelSearchApi($myData) {
+
+        $finalArray = [];
+        foreach ($myData['SOAP:Envelope']['SOAP:Body']['hotel:HotelSearchAvailabilityRsp']['hotel:HotelSearchResult'] as $data) {
+
+            $hotelInfo['hotelRefId']    = md5(time() . uniqid() . rand(99, 99999));
+            $hotelInfo['hotelInfo']     = $data['hotel:HotelProperty']['@attributes'];
+            $hotelInfo['addressInfo']   = [
+                'address' => [
+                    'streetInfo'    => $data['hotel:HotelProperty']['hotel:PropertyAddress']['hotel:Address'],
+                    'distance'      => $data['hotel:HotelProperty']['common_v34_0:Distance']['@attributes']['Value'].' '.$data['hotel:HotelProperty']['common_v34_0:Distance']['@attributes']['Units']
+                ]
+            ];
+            $hotelInfo['hotelRating'] = $data['hotel:HotelProperty']['hotel:HotelRating']['hotel:Rating'];
+
+            //            hote amenities
+            /*..............*/
+            /*$amenityArray = [];
+            foreach ($data['hotel:HotelProperty']['hotel:Amenities']['hotel:Amenity'] as $amenity) {
+                $amenityArray[] = $amenity['@attributes']['Code'];
+            }
+            $hotelInfo['hotelAmenities'] = $amenityArray;*/
+            /*..............*/
+
+            $hotelInfo['hotelRateInfo'] = $data['hotel:RateInfo']['@attributes']??'';
+            $hotelInfo['vendorLocationInfo'] = $data['common_v34_0:VendorLocation']['@attributes'];
+            $finalArray[] = $hotelInfo;
+        }
+        file_put_contents(public_path() . '/cache/hotel/' . self::$cacheFile . '_parsed.dat', json_encode($finalArray));
+        return $finalArray;
+    }
 }

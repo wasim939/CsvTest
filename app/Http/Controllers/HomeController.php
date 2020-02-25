@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Redis;
 use Config;
+use mysql_xdevapi\Exception;
 use Sunra\PhpSimple\HtmlDomParser;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
@@ -51,16 +52,16 @@ class HomeController extends RequestController
                 'address' =>    $data['hotel:HotelProperty']['hotel:PropertyAddress']['hotel:Address'],
                 'distance' => $data['hotel:HotelProperty']['common_v34_0:Distance']['@attributes']['Value'].' '.$data['hotel:HotelProperty']['common_v34_0:Distance']['@attributes']['Units']
             ];
-            $hoteInfo = [
-                'hoteInfo' => $data['hotel:HotelProperty']['@attributes'],
+            $hotelInfo = [
+                'hotelInfo' => $data['hotel:HotelProperty']['@attributes'],
                 'additionalInfo' => $additional_info
             ];
-            $finalArray['data'][] = $hoteInfo;
+            $finalArray['data'][] = $hotelInfo;
         }*/
 
         /*foreach ($myData['SOAP:Envelope']['SOAP:Body']['hotel:HotelSearchAvailabilityRsp']['hotel:HotelSearchResult'] as $data) {
 
-            $hotelInfo['hoteInfo'] =$data['hotel:HotelProperty']['@attributes'];
+            $hotelInfo['hotelInfo'] =$data['hotel:HotelProperty']['@attributes'];
 
             $hotelInfo['additionalInfo'] = $additional_info = [
                 'address' =>    $data['hotel:HotelProperty']['hotel:PropertyAddress']['hotel:Address'],
@@ -71,7 +72,7 @@ class HomeController extends RequestController
 
         foreach ($myData['SOAP:Envelope']['SOAP:Body']['hotel:HotelSearchAvailabilityRsp']['hotel:HotelSearchResult'] as $data) {
 
-            $hotelInfo['hoteInfo'] = $data['hotel:HotelProperty']['@attributes'];
+            $hotelInfo['hotelInfo'] = $data['hotel:HotelProperty']['@attributes'];
             $hotelInfo['addressInfo'] = ['address' => ['streetInfo' => $data['hotel:HotelProperty']['hotel:PropertyAddress']['hotel:Address']]];
 
             $finalArray['data'][] = $hotelInfo;
@@ -273,23 +274,22 @@ class HomeController extends RequestController
         $requestXML = ob_get_clean();
         //End
 
-//        get xml response
-        $sXML = $this->makeRequest($requestXML);
+        try
+        {
+//            get xml response
+            $sXML = $this->makeRequest($requestXML);
 
-//        parse xml to array
-        $myData = $this->XMLtoArray($sXML);
+//            parse xml to array
+            $myData = $this->XMLtoArray($sXML);
 
-//        prepare data for api
-        $finalArray = [];
-        foreach ($myData['SOAP:Envelope']['SOAP:Body']['hotel:HotelSearchAvailabilityRsp']['hotel:HotelSearchResult'] as $data) {
+//            prepare data for hotelSearchApi
+            $apiData = $this->hotelSearchApi($myData);
 
-            $hotelInfo['hoteInfo'] = $data['hotel:HotelProperty']['@attributes'];
-            $hotelInfo['addressInfo'] = ['address' => ['streetInfo' => $data['hotel:HotelProperty']['hotel:PropertyAddress']['hotel:Address']]];
-
-            $finalArray[] = $hotelInfo;
+            return [ 'status' => true,'data' => $apiData];
         }
-
-        return [ 'status' => true,'data' => $finalArray];
+        catch (\Exception $e)
+        {
+            return [ 'status' => false,'message' => $e->errorMessage()];
+        }
     }
-
 }
