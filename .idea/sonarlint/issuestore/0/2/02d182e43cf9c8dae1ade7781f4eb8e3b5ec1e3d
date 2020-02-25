@@ -1,0 +1,44 @@
+
+C	php:S1125Ã"(Remove the literal "true" boolean value.(Òòùòùÿÿÿÿ
+D	php:S1125Ã")Remove the literal "false" boolean value.(Òòùòùÿÿÿÿ
+Jphp:S121‡"0Add curly braces around the nested statement(s).(À¯©ãùÿÿÿÿ
+-	php:S2010¥"Replace "and" with "&&".(Œå¼O
+3php:S125k"Remove this commented out code.(´ø‹ş
+3	php:S2010¨"Replace "and" with "&&".(ëÊ¨œúÿÿÿÿ
+j	php:S3776‡"TRefactor this function to reduce its Cognitive Complexity from 23 to the 15 allowed.(¤‘™Ì
+Ephp:S121ô"0Add curly braces around the nested statement(s).(üİ•¢
+Jphp:S121ı"0Add curly braces around the nested statement(s).(ÎÔé§ûÿÿÿÿ
+H	php:S1481""3Remove this unused "$target_branch" local variable.(ó¥î‰
+Dphp:S121¥"0Add curly braces around the nested statement(s).(Œå¼O
+B	php:S1172Ç",Remove the unused function parameter "$key".(Şíö”
+j	php:S3776Õ"TRefactor this function to reduce its Cognitive Complexity from 81 to the 15 allowed.(£†ù‡
+C	php:S1481æ"-Remove this unused "$parents" local variable.(ÌÖ¹ğ
+8php:S125G"Remove this commented out code.(ìÓ¦ßüÿÿÿÿ
+2	php:S2010…"Replace "or" with "||".(Â£„—ûÿÿÿÿ
+4php:S125ˆ"Remove this commented out code.(ôÈúœ
+Jphp:S121×"0Add curly braces around the nested statement(s).(·‰ûÿÿÿÿ
+9php:S125Ù"Remove this commented out code.(„•¦Öúÿÿÿÿ
+8php:S125W"Remove this commented out code.(ä•…íıÿÿÿÿ
+e	php:S1142Õ"OReduce the number of returns of this function 4, down to the maximum allowed 3.(£†ù‡
+3	php:S2010«"Replace "and" with "&&".(ù™¢Âÿÿÿÿÿ
+Ephp:S121ş"0Add curly braces around the nested statement(s).(Õ“àç
+C	php:S1481$".Remove this unused "$gds_code" local variable.(˜Â’
+O	php:S4830=":Activate SSL/TLS certificates chain of trust verification.(ê—¯À
+b	php:S1192‡"GDefine a constant instead of duplicating this literal "_attr" 10 times.(À¯©ãùÿÿÿÿ
+.	php:S2010¶"Replace "and" with "&&".(Öó¬í
+9php:S125‚"Remove this commented out code.(´ ’äşÿÿÿÿ
+8php:S125:"Remove this commented out code.(Ô–¹Äùÿÿÿÿ
+J	php:S3801Õ"4Refactor this function to use "return" consistently.(£†ù‡
+.	php:S2010ø"Replace "and" with "&&".(µıÁ½
+3	php:S2010«"Replace "and" with "&&".(ù™¢Âÿÿÿÿÿ
+L	php:S1481ç"1Remove this unused "$opened_tags" local variable.(†¨•Àıÿÿÿÿ
+8php:S125*"Remove this commented out code.(µ‚´«ùÿÿÿÿ
+8php:S125&"Remove this commented out code.(ô±Ù½şÿÿÿÿ
+8php:S125m"Remove this commented out code.(øİ’¨şÿÿÿÿ
+3php:S125d"Remove this commented out code.(Ö¸òã
+2php:S125t"Remove this commented out code.(È„`
+Ephp:S121ã"0Add curly braces around the nested statement(s).(—ÎŸ·
+3php:S125O"Remove this commented out code.(Œü¯á
+Jphp:S121õ"0Add curly braces around the nested statement(s).(†¶Ô•ùÿÿÿÿ
+?	php:S1481è")Remove this unused "$arr" local variable.(ôÎí
+T	php:S4830<":Activate SSL/TLS certificates chain of trust verification.(äÇîñûÿÿÿÿ

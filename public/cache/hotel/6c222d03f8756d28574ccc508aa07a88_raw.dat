@@ -1,0 +1,1341 @@
+<?xml version="1.0"?>
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP:Body>
+    <hotel:HotelSearchAvailabilityRsp xmlns:hotel="http://www.travelport.com/schema/hotel_v34_0" xmlns:common_v34_0="http://www.travelport.com/schema/common_v34_0" TransactionId="7BD036590A07643CB04E791FDD7EB681" ResponseTime="11425">
+      <common_v34_0:NextResultReference ProviderCode="1G">GvCe60ac0/ca8J7rRpzT93jf58HAfkMouPnDvrR9vlMrT5VynkzdqHfBXEzYpLaUXxqL2rqoPLwwyb4rdw49ajM/s+2YZOXMDnCDubYq+QhxMlQ4lodk9A==</common_v34_0:NextResultReference>
+      <hotel:ReferencePoint>KINGSFORD SMITH</hotel:ReferencePoint>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="RT" VendorLocationID="01511" Key="MgHg5B8Q2BKA0JYSAAAAAA=="/>
+        <hotel:HotelProperty HotelChain="RT" HotelCode="01511" HotelLocation="SYD" Name="NOVOTEL SYDNEY CENTRAL" VendorLocationKey="MgHg5B8Q2BKA0JYSAAAAAA==" HotelTransportation="Other" ReserveRequirement="Guarantee" ParticipationLevel="Best Available Rate and Inside Shopper participant">
+          <hotel:PropertyAddress>
+            <hotel:Address>169 179 THOMAS STREE</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="5" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="COLE"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="MIBA"/>
+            <hotel:Amenity Code="MOIR"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="OUPL"/>
+            <hotel:Amenity Code="PTRS"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="WTBR"/>
+            <hotel:Amenity Code="A220"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="LM" VendorLocationID="29166" Key="MgHg5B8Q2BKA1JYSAAAAAA=="/>
+        <hotel:HotelProperty HotelChain="LM" HotelCode="29166" HotelLocation="SYD" Name="COOGEE SANDS HOTEL AND APARTMENTS" VendorLocationKey="MgHg5B8Q2BKA1JYSAAAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant">
+          <hotel:PropertyAddress>
+            <hotel:Address>161-167 DOLPHIN ST</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="6" Direction="NE"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="BALC"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="COBU"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="MIOV"/>
+            <hotel:Amenity Code="KTCN"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="LUGE"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="MIBA"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="FPRK"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="RFGR"/>
+            <hotel:Amenity Code="ROSE"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="SFBD"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="GD" VendorLocationID="37278" Key="MgHg5B8Q2BKA2JYSAAAAAA=="/>
+        <hotel:HotelProperty HotelChain="GD" HotelCode="37278" HotelLocation="SYD" Name="QUEST CRONULLA BEACH" VendorLocationKey="MgHg5B8Q2BKA2JYSAAAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant">
+          <hotel:PropertyAddress>
+            <hotel:Address>1 THE KINGSWAY</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="8" Direction="S"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="BALC"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="CORO"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="GOLF"/>
+            <hotel:Amenity Code="MIOV"/>
+            <hotel:Amenity Code="KTCN"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="FPRK"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="INPL"/>
+            <hotel:Amenity Code="OUPL"/>
+            <hotel:Amenity Code="RFGR"/>
+            <hotel:Amenity Code="ROSE"/>
+            <hotel:Amenity Code="SAUN"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="PRBT"/>
+            <hotel:Amenity Code="FXSV"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="MP" VendorLocationID="95582" Key="MgHg5B8Q2BKA3JYSAAAAAA=="/>
+        <hotel:HotelProperty HotelChain="MP" HotelCode="95582" HotelLocation="SYD" Name="MANTRA 2 BOND STREET" VendorLocationKey="MgHg5B8Q2BKA3JYSAAAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Other" ParticipationLevel="Inside Shopper participant">
+          <hotel:PropertyAddress>
+            <hotel:Address>CNR GEORGE ST AND BO</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="AIDE"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="CARE"/>
+            <hotel:Amenity Code="COSH"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="COBU"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="DINR"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="LUGE"/>
+            <hotel:Amenity Code="LNCH"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="OUPL"/>
+            <hotel:Amenity Code="PTRS"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="ROSE"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="SCCV"/>
+            <hotel:Amenity Code="SPAA"/>
+            <hotel:Amenity Code="TRDK"/>
+            <hotel:Amenity Code="FXSV"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="RG" VendorLocationID="82875" Key="MgHg5B8Q2BKA4JYSAAAAAA=="/>
+        <hotel:HotelProperty HotelChain="RG" HotelCode="82875" HotelLocation="SYD" Name="RYDGES SYDNEY CENTRAL" VendorLocationKey="MgHg5B8Q2BKA4JYSAAAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Lowest Public Rate">
+          <hotel:PropertyAddress>
+            <hotel:Address>28 ALBION STREET</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="5" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="BALC"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="COSH"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="COBU"/>
+            <hotel:Amenity Code="CORO"/>
+            <hotel:Amenity Code="COBR"/>
+            <hotel:Amenity Code="DINR"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="ENTR"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="GARO"/>
+            <hotel:Amenity Code="GOLF"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="LUGE"/>
+            <hotel:Amenity Code="LNCH"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="MIBA"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="INPL"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="ROSE"/>
+            <hotel:Amenity Code="SAUN"/>
+            <hotel:Amenity Code="SCCV"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="SPAA"/>
+            <hotel:Amenity Code="TRDK"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="PRBT"/>
+            <hotel:Amenity Code="JGTK"/>
+            <hotel:Amenity Code="SFBD"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="LM" VendorLocationID="87585" Key="MgHg5B8Q2BKA5JYSAAAAAA=="/>
+        <hotel:HotelProperty HotelChain="LM" HotelCode="87585" HotelLocation="SYD" Name="HYDE PARK INN" VendorLocationKey="MgHg5B8Q2BKA5JYSAAAAAA==" ReserveRequirement="Other" ParticipationLevel="Inside Shopper participant">
+          <hotel:PropertyAddress>
+            <hotel:Address>271 ELIZABETH ST</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="CHCA"/>
+            <hotel:Amenity Code="BALC"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="CASI"/>
+            <hotel:Amenity Code="COBU"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="MIOV"/>
+            <hotel:Amenity Code="KTCN"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="MOIR"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="FPRK"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="PTRS"/>
+            <hotel:Amenity Code="ROSE"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="TRDK"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="PRBT"/>
+            <hotel:Amenity Code="SFBD"/>
+            <hotel:Amenity Code="BATB"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="GD" VendorLocationID="B8028" Key="MgHg5B8Q2BKA6JYSAAAAAA=="/>
+        <hotel:HotelProperty HotelChain="GD" HotelCode="B8028" HotelLocation="SYD" Name="QUEST CHATSWOOD" VendorLocationKey="MgHg5B8Q2BKA6JYSAAAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant">
+          <hotel:PropertyAddress>
+            <hotel:Address>38 ALBERT AVENUE</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="10" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="CASI"/>
+            <hotel:Amenity Code="COBR"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="MIOV"/>
+            <hotel:Amenity Code="KTCN"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="RFGR"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="FXSV"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="GD" VendorLocationID="B8213" Key="MgHg5B8Q2BKA7JYSAAAAAA=="/>
+        <hotel:HotelProperty HotelChain="GD" HotelCode="B8213" HotelLocation="SYD" Name="QUEST ST LEONARDS" VendorLocationKey="MgHg5B8Q2BKA7JYSAAAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant">
+          <hotel:PropertyAddress>
+            <hotel:Address>ST LEONARDS  NSW</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="9" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="CHCA"/>
+            <hotel:Amenity Code="BALC"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="GOLF"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="MIOV"/>
+            <hotel:Amenity Code="KTCN"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="RFGR"/>
+            <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="PRBT"/>
+            <hotel:Amenity Code="FXSV"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="FG" VendorLocationID="31154" Key="MgHg5B8Q2BKA8JYSAAAAAA=="/>
+        <hotel:HotelProperty HotelChain="FG" HotelCode="31154" HotelLocation="SYD" Name="ESTABLISHMENT HOTEL" VendorLocationKey="MgHg5B8Q2BKA8JYSAAAAAA==" HotelTransportation="Other" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant">
+          <hotel:PropertyAddress>
+            <hotel:Address>5 BRIDGE LANE</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="7" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="COSH"/>
+            <hotel:Amenity Code="COBU"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="DINR"/>
+            <hotel:Amenity Code="GARO"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="LUGE"/>
+            <hotel:Amenity Code="LNCH"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="MIBA"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="FPRK"/>
+            <hotel:Amenity Code="PTRS"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="ROSE"/>
+            <hotel:Amenity Code="TRDK"/>
+            <hotel:Amenity Code="FXSV"/>
+            <hotel:Amenity Code="PHCO"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="LM" VendorLocationID="09843" Key="MgHg5B8Q2BKA9JYSAAAAAA=="/>
+        <hotel:HotelProperty HotelChain="LM" HotelCode="09843" HotelLocation="SYD" Name="NORTH SYDNEY HARBOURVIEW HOTEL" VendorLocationKey="MgHg5B8Q2BKA9JYSAAAAAA==" HotelTransportation="Limo" ReserveRequirement="Other" ParticipationLevel="Inside Shopper participant">
+          <hotel:PropertyAddress>
+            <hotel:Address>17 BLUE ST</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="8" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="CHCA"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="COSH"/>
+            <hotel:Amenity Code="COBU"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="CORO"/>
+            <hotel:Amenity Code="COBR"/>
+            <hotel:Amenity Code="DINR"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="GOLF"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="LUGE"/>
+            <hotel:Amenity Code="LNCH"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="MIBA"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="PTRS"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="ROSE"/>
+            <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="SCCV"/>
+            <hotel:Amenity Code="TRDK"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="PRBT"/>
+            <hotel:Amenity Code="FXSV"/>
+            <hotel:Amenity Code="SFBD"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="CP" VendorLocationID="03506" Key="MgHg5B8Q2BKA+JYSAAAAAA=="/>
+        <hotel:HotelProperty HotelChain="CP" HotelCode="03506" HotelLocation="SYD" Name="CROWNE PLAZA COOGEE BEACH" VendorLocationKey="MgHg5B8Q2BKA+JYSAAAAAA==" HotelTransportation="Other" ReserveRequirement="Guarantee" ParticipationLevel="Lowest Public Rate">
+          <hotel:PropertyAddress>
+            <hotel:Address>242 ARDEN STREET</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="5" Direction="E"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="BALC"/>
+            <hotel:Amenity Code="CHPR"/>
+            <hotel:Amenity Code="COSH"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="DINR"/>
+            <hotel:Amenity Code="GOLF"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="LNCH"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="MIBA"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="INPL"/>
+            <hotel:Amenity Code="OUPL"/>
+            <hotel:Amenity Code="PTRS"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="ROSE"/>
+            <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="SCCV"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="PRBT"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="IQ" VendorLocationID="64570" Key="MgHg5B8Q2BKA/JYSAAAAAA=="/>
+        <hotel:HotelProperty HotelChain="IQ" HotelCode="64570" HotelLocation="SYD" Name="HOTEL URBAN ST LEONARDS" VendorLocationKey="MgHg5B8Q2BKA/JYSAAAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant">
+          <hotel:PropertyAddress>
+            <hotel:Address>ST LEONARDS AU</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="9" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="BALC"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="CARE"/>
+            <hotel:Amenity Code="COSH"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="CORO"/>
+            <hotel:Amenity Code="COBR"/>
+            <hotel:Amenity Code="DINR"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="ENTR"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="FRTR"/>
+            <hotel:Amenity Code="GOLF"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="LUGE"/>
+            <hotel:Amenity Code="LNCH"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="MIBA"/>
+            <hotel:Amenity Code="MOIR"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="RFGR"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="ROSE"/>
+            <hotel:Amenity Code="WERO"/>
+            <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="SCCV"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="SPAA"/>
+            <hotel:Amenity Code="PRBT"/>
+            <hotel:Amenity Code="WTBR"/>
+            <hotel:Amenity Code="A220"/>
+            <hotel:Amenity Code="D220"/>
+            <hotel:Amenity Code="FXSV"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="GD" VendorLocationID="95170" Key="MgHg5B8Q2BKAAKYSAAAAAA=="/>
+        <hotel:HotelProperty HotelChain="GD" HotelCode="95170" HotelLocation="SYD" Name="APX WORLD SQUARE" VendorLocationKey="MgHg5B8Q2BKAAKYSAAAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant">
+          <hotel:PropertyAddress>
+            <hotel:Address>2 CUNNINGHAM ST</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="BALC"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="COBU"/>
+            <hotel:Amenity Code="COBR"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="MIOV"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="MIBA"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="RFGR"/>
+            <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="PRBT"/>
+            <hotel:Amenity Code="FXSV"/>
+            <hotel:Amenity Code="SFBD"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="RT" VendorLocationID="04971" Key="MgHg5B8Q2BKABKYSAAAAAA=="/>
+        <hotel:HotelProperty HotelChain="RT" HotelCode="04971" HotelLocation="SYD" Name="NOVOTEL SYDNEY INT AIRPORT" VendorLocationKey="MgHg5B8Q2BKABKYSAAAAAA==" ReserveRequirement="Other" ParticipationLevel="Best Available Rate and Inside Shopper participant">
+          <hotel:PropertyAddress>
+            <hotel:Address>WOLLI CREEK AU</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="2" Direction="NW"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="FRTR"/>
+            <hotel:Amenity Code="PHSV"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="RT" VendorLocationID="99318" Key="MgHg5B8Q2BKACKYSAAAAAA=="/>
+        <hotel:HotelProperty HotelChain="RT" HotelCode="99318" HotelLocation="SYD" Name="IBIS SYDNEY KING STREET WHARF" VendorLocationKey="MgHg5B8Q2BKACKYSAAAAAA==" HotelTransportation="Other" ReserveRequirement="Other" ParticipationLevel="Best Available Rate and Inside Shopper participant">
+          <hotel:PropertyAddress>
+            <hotel:Address>22 SHELLEY STREET</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="WTBR"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="MP" VendorLocationID="27819" Key="MgHg5B8Q2BKADKYSAAAAAA=="/>
+        <hotel:HotelProperty HotelChain="MP" HotelCode="27819" HotelLocation="SYD" Name="BREAKFREE ON GEORGE" VendorLocationKey="MgHg5B8Q2BKADKYSAAAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant">
+          <hotel:PropertyAddress>
+            <hotel:Address>653 GEORGE STREET</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="5" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="BALC"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="COBU"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="CORO"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="SPAA"/>
+            <hotel:Amenity Code="TRDK"/>
+            <hotel:Amenity Code="FXSV"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="RT" VendorLocationID="33958" Key="MgHg5B8Q2BKAEKYSAAAAAA=="/>
+        <hotel:HotelProperty HotelChain="RT" HotelCode="33958" HotelLocation="SYD" Name="IBIS SYDNEY AIRPORT" VendorLocationKey="MgHg5B8Q2BKAEKYSAAAAAA==" HotelTransportation="Other" ReserveRequirement="Other" ParticipationLevel="Best Available Rate and Inside Shopper participant">
+          <hotel:PropertyAddress>
+            <hotel:Address>205 ORIORDAN STREET</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="1" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="CHPR"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="EFFI"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="WERO"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="TRDK"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="WTBR"/>
+            <hotel:Amenity Code="A220"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="HI" VendorLocationID="31059" Key="MgHg5B8Q2BKAFKYSAAAAAA=="/>
+        <hotel:HotelProperty HotelChain="HI" HotelCode="31059" HotelLocation="SYD" Name="HOLIDAY INN OLD SYDNEY" VendorLocationKey="MgHg5B8Q2BKAFKYSAAAAAA==" HotelTransportation="Public" ReserveRequirement="Guarantee" ParticipationLevel="Lowest Public Rate">
+          <hotel:PropertyAddress>
+            <hotel:Address>55 GEORGE STREET</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="7" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="COSH"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="CORO"/>
+            <hotel:Amenity Code="DINR"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="GOLF"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="LUGE"/>
+            <hotel:Amenity Code="LNCH"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="MIBA"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="OUPL"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="ROSE"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="RT" VendorLocationID="05987" Key="MgHg5B8Q2BKAGKYSAAAAAA=="/>
+        <hotel:HotelProperty HotelChain="RT" HotelCode="05987" HotelLocation="SYD" Name="IBIS SYDNEY WORLD SQUARE" VendorLocationKey="MgHg5B8Q2BKAGKYSAAAAAA==" HotelTransportation="Other" ReserveRequirement="Other" ParticipationLevel="Best Available Rate and Inside Shopper participant">
+          <hotel:PropertyAddress>
+            <hotel:Address>382 -384 PITT STREET</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="CHCA"/>
+            <hotel:Amenity Code="CHPR"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="CORO"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="GISH"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="LNCH"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="MIBA"/>
+            <hotel:Amenity Code="MOIR"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="TRDK"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="WTBR"/>
+            <hotel:Amenity Code="A220"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="RT" VendorLocationID="96417" Key="MgHg5B8Q2BKAHKYSAAAAAA=="/>
+        <hotel:HotelProperty HotelChain="RT" HotelCode="96417" HotelLocation="SYD" Name="QUAY WEST SUITES SYDNEY" VendorLocationKey="MgHg5B8Q2BKAHKYSAAAAAA==" HotelTransportation="Other" ReserveRequirement="Guarantee" ParticipationLevel="Best Available Rate and Inside Shopper participant">
+          <hotel:PropertyAddress>
+            <hotel:Address>98 GLOUCESTER STREET</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="7" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="CHPR"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="COLE"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="MIOV"/>
+            <hotel:Amenity Code="KTCN"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="LNCH"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="MOIR"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="INPL"/>
+            <hotel:Amenity Code="PTRS"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="WERO"/>
+            <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="SAUN"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="WTBR"/>
+            <hotel:Amenity Code="A220"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="GD" VendorLocationID="81618" Key="MgHg5B8Q2BKAIKYSAAAAAA=="/>
+        <hotel:HotelProperty HotelChain="GD" HotelCode="81618" HotelLocation="SYD" Name="QUEST POTTS POINT" VendorLocationKey="MgHg5B8Q2BKAIKYSAAAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant">
+          <hotel:PropertyAddress>
+            <hotel:Address>15 SPRINGFIELD AVE</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="7" Direction="NE"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="BALC"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="MIOV"/>
+            <hotel:Amenity Code="KTCN"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="RFGR"/>
+            <hotel:Amenity Code="ROSE"/>
+            <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="TRDK"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="PRBT"/>
+            <hotel:Amenity Code="FXSV"/>
+            <hotel:Amenity Code="SFBD"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="RT" VendorLocationID="23653" Key="MgHg5B8Q2BKAJKYSAAAAAA=="/>
+        <hotel:HotelProperty HotelChain="RT" HotelCode="23653" HotelLocation="SYD" Name="NOVOTEL SYDNEY DARLING HARBOUR" VendorLocationKey="MgHg5B8Q2BKAJKYSAAAAAA==" HotelTransportation="Other" ReserveRequirement="Other" ParticipationLevel="Best Available Rate and Inside Shopper participant">
+          <hotel:PropertyAddress>
+            <hotel:Address>100 MURRAY STREET</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="CHCA"/>
+            <hotel:Amenity Code="CHPR"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="CARE"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="COLE"/>
+            <hotel:Amenity Code="CORO"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="GARO"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="MIBA"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="OUPL"/>
+            <hotel:Amenity Code="PTRS"/>
+            <hotel:Amenity Code="RFGR"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="TNCT"/>
+            <hotel:Amenity Code="TRDK"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="WTBR"/>
+            <hotel:Amenity Code="A220"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="RT" VendorLocationID="95094" Key="MgHg5B8Q2BKAKKYSAAAAAA=="/>
+        <hotel:HotelProperty HotelChain="RT" HotelCode="95094" HotelLocation="SYD" Name="MERCURE SYDNEY" VendorLocationKey="MgHg5B8Q2BKAKKYSAAAAAA==" HotelTransportation="Other" ReserveRequirement="Other" ParticipationLevel="Best Available Rate and Inside Shopper participant">
+          <hotel:PropertyAddress>
+            <hotel:Address>818-820 GEORGE STREE</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="5" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="CARE"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="COLE"/>
+            <hotel:Amenity Code="CORO"/>
+            <hotel:Amenity Code="EFFI"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="GISH"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="LNCH"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="MTGL"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="INPL"/>
+            <hotel:Amenity Code="PTRS"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="WERO"/>
+            <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="SAUN"/>
+            <hotel:Amenity Code="TRDK"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="WTBR"/>
+            <hotel:Amenity Code="A220"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="SB" VendorLocationID="45075" Key="MgHg5B8Q2BKALKYSAAAAAA=="/>
+        <hotel:HotelProperty HotelChain="SB" HotelCode="45075" HotelLocation="SYD" Name="SOFITEL SYDNEY WENTWORTH" VendorLocationKey="MgHg5B8Q2BKALKYSAAAAAA==" HotelTransportation="Limo" ReserveRequirement="Other" ParticipationLevel="Lowest Public Rate">
+          <hotel:PropertyAddress>
+            <hotel:Address>61-101 PHILLIP STREE</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="7" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="CHCA"/>
+            <hotel:Amenity Code="CHPR"/>
+            <hotel:Amenity Code="HASA"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="COLE"/>
+            <hotel:Amenity Code="CORO"/>
+            <hotel:Amenity Code="EFFI"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="GISH"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="LNCH"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="MIBA"/>
+            <hotel:Amenity Code="MOIR"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="PTRS"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="WERO"/>
+            <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="SCCV"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="WTBR"/>
+            <hotel:Amenity Code="A220"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="LM" VendorLocationID="76258" Key="MgHg5B8Q2BKAMKYSAAAAAA=="/>
+        <hotel:HotelProperty HotelChain="LM" HotelCode="76258" HotelLocation="SYD" Name="MACLEAY SERVICED APARTMENTS" VendorLocationKey="MgHg5B8Q2BKAMKYSAAAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant">
+          <hotel:PropertyAddress>
+            <hotel:Address>28 MACLEAY ST</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="7" Direction="NE"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="BALC"/>
+            <hotel:Amenity Code="HASA"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="CARE"/>
+            <hotel:Amenity Code="CASI"/>
+            <hotel:Amenity Code="COBU"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="GOLF"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="MIOV"/>
+            <hotel:Amenity Code="KTCN"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="LUGE"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="OUPL"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="ROSE"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="SPAA"/>
+            <hotel:Amenity Code="TNCT"/>
+            <hotel:Amenity Code="TRDK"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="VDCR"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="LM" VendorLocationID="87867" Key="MgHg5B8Q2BKANKYSAAAAAA=="/>
+        <hotel:HotelProperty HotelChain="LM" HotelCode="87867" HotelLocation="SYD" Name="ROYAL PACIFIC HOTEL" VendorLocationKey="MgHg5B8Q2BKANKYSAAAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant">
+          <hotel:PropertyAddress>
+            <hotel:Address>472 PACIFIC HIGHWAY</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="9" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="CHPR"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="COSH"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="COBU"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="CORO"/>
+            <hotel:Amenity Code="COBR"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="MIOV"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="LUGE"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="FPRK"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="OUPL"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="ROSE"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="LE" VendorLocationID="30594" Key="MgHg5B8Q2BKAOKYSAAAAAA=="/>
+        <hotel:HotelProperty HotelChain="LE" HotelCode="30594" HotelLocation="SYD" Name="MEDUSA" VendorLocationKey="MgHg5B8Q2BKAOKYSAAAAAA==" HotelTransportation="Limo" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant">
+          <hotel:PropertyAddress>
+            <hotel:Address>267 DARLINGHURST ROA</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="6" Direction="NE"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="COBU"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="COBR"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="SPAL"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="ROSE"/>
+            <hotel:Amenity Code="SPAA"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="PU" VendorLocationID="14603" Key="MgHg5B8Q2BKAPKYSAAAAAA=="/>
+        <hotel:HotelProperty HotelChain="PU" HotelCode="14603" HotelLocation="SYD" Name="PULLMAN SYDNEY HYDE PARK" VendorLocationKey="MgHg5B8Q2BKAPKYSAAAAAA==" HotelTransportation="Other" ReserveRequirement="Other" ParticipationLevel="Lowest Public Rate">
+          <hotel:PropertyAddress>
+            <hotel:Address>36 COLLEGE STREET</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="CARE"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="COLE"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="LNCH"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="MIBA"/>
+            <hotel:Amenity Code="MTGL"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="OUPL"/>
+            <hotel:Amenity Code="PTRS"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="SAUN"/>
+            <hotel:Amenity Code="SCCV"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="WTBR"/>
+            <hotel:Amenity Code="A220"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="MP" VendorLocationID="17862" Key="MgHg5B8Q2BKAQKYSAAAAAA=="/>
+        <hotel:HotelProperty HotelChain="MP" HotelCode="17862" HotelLocation="SYD" Name="MANTRA ON KENT" VendorLocationKey="MgHg5B8Q2BKAQKYSAAAAAA==" ReserveRequirement="Other" ParticipationLevel="Inside Shopper participant">
+          <hotel:PropertyAddress>
+            <hotel:Address>433 KENT ST</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="COSH"/>
+            <hotel:Amenity Code="CORO"/>
+            <hotel:Amenity Code="COBR"/>
+            <hotel:Amenity Code="DINR"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="MIOV"/>
+            <hotel:Amenity Code="KTCN"/>
+            <hotel:Amenity Code="LUGE"/>
+            <hotel:Amenity Code="LNCH"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="MOIR"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="PRBT"/>
+            <hotel:Amenity Code="FXSV"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="BT" VendorLocationID="C0261" Key="MgHg5B8Q2BKARKYSAAAAAA=="/>
+        <hotel:HotelProperty HotelChain="BT" HotelCode="C0261" HotelLocation="SYD" Name="PRIMUS HOTEL SYDNEY" VendorLocationKey="MgHg5B8Q2BKARKYSAAAAAA==" HotelTransportation="Public" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant">
+          <hotel:PropertyAddress>
+            <hotel:Address>339 PITT ST</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="COBU"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="CORO"/>
+            <hotel:Amenity Code="DINR"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="LNCH"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="MIBA"/>
+            <hotel:Amenity Code="MOIR"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="OUPL"/>
+            <hotel:Amenity Code="PTRS"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="ROSE"/>
+            <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="FXSV"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="WV" VendorLocationID="91400" Key="MgHg5B8Q2BKASKYSAAAAAA=="/>
+        <hotel:HotelProperty HotelChain="WV" HotelCode="91400" HotelLocation="SYD" Name="CAMBRIDGE HOTEL SYDNEY" VendorLocationKey="MgHg5B8Q2BKASKYSAAAAAA==" HotelTransportation="Other" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="NotAvailable">
+          <hotel:PropertyAddress>
+            <hotel:Address>212 RILEY STREET SUR</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="6" Direction="NE"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="BALC"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="COBU"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="CORO"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="LUGE"/>
+            <hotel:Amenity Code="LNCH"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="MIBA"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="INPL"/>
+            <hotel:Amenity Code="PTRS"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="ROSE"/>
+            <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="FXSV"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0601 NOT AVAILABLE FOR DATES REQUESTED</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="WV" VendorLocationID="53934" Key="MgHg5B8Q2BKATKYSAAAAAA=="/>
+        <hotel:HotelProperty HotelChain="WV" HotelCode="53934" HotelLocation="SYD" Name="PARK REGIS CITY CENTRE" VendorLocationKey="MgHg5B8Q2BKATKYSAAAAAA==" ReserveRequirement="Other" ParticipationLevel="Inside Shopper participant" Availability="NotAvailable">
+          <hotel:PropertyAddress>
+            <hotel:Address>27 PARK STREET</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="AIDE"/>
+            <hotel:Amenity Code="CHCA"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="COBR"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="OUPL"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="SCCV"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="TRDK"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="PRBT"/>
+            <hotel:Amenity Code="FXSV"/>
+            <hotel:Amenity Code="SFBD"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0601 NOT AVAILABLE FOR DATES REQUESTED</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+    </hotel:HotelSearchAvailabilityRsp>
+  </SOAP:Body>
+</SOAP:Envelope>
