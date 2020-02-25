@@ -42,7 +42,8 @@ class HomeController extends RequestController
 
         $finalArray = [];
         $sXML = $this->makeRequest($request);
-        $myData = $this->XMLtoArray($sXML);;
+        $myData = $this->XMLtoArray($sXML);
+        return $myData;
 
         /*foreach ($myData['SOAP:Envelope']['SOAP:Body']['hotel:HotelSearchAvailabilityRsp']['hotel:HotelSearchResult'] as $data) {
 
@@ -81,66 +82,7 @@ class HomeController extends RequestController
 
     }
 
-    public function prepareData($data) {
-        $finalArray = [];
-        dd($data['SOAP:Envelope']);
-    }
-
-
-    function XMLtoArray($xml) {
-        $previous_value = libxml_use_internal_errors(true);
-        $dom = new \DOMDocument('1.0', 'UTF-8');
-        $dom->preserveWhiteSpace = false;
-        $dom->loadXml($xml);
-        libxml_use_internal_errors($previous_value);
-        if (libxml_get_errors()) {
-            return [];
-        }
-        return $this->DOMtoArray($dom);
-    }
-
-    function DOMtoArray($root) {
-        $result = array();
-
-        if ($root->hasAttributes()) {
-            $attrs = $root->attributes;
-            foreach ($attrs as $attr) {
-                $result['@attributes'][$attr->name] = $attr->value;
-            }
-        }
-
-        if ($root->hasChildNodes()) {
-            $children = $root->childNodes;
-            if ($children->length == 1) {
-                $child = $children->item(0);
-                if (in_array($child->nodeType,[XML_TEXT_NODE,XML_CDATA_SECTION_NODE])) {
-                    $result['_value'] = $child->nodeValue;
-                    return count($result) == 1
-                        ? $result['_value']
-                        : $result;
-                }
-
-            }
-            $groups = array();
-            foreach ($children as $child) {
-                if (!isset($result[$child->nodeName])) {
-                    $result[$child->nodeName] = $this->DOMtoArray($child);
-                } else {
-                    if (!isset($groups[$child->nodeName])) {
-                        $result[$child->nodeName] = array($result[$child->nodeName]);
-                        $groups[$child->nodeName] = 1;
-                    }
-                    $result[$child->nodeName][] = $this->DOMtoArray($child);
-                }
-            }
-        }
-        return $result;
-    }
-
-
-
-
-    private function xml_to_array($contents, $get_attributes=1){
+    /*private function xml_to_array($contents, $get_attributes=1){
 
         if(!$contents) return array();
 
@@ -247,7 +189,7 @@ class HomeController extends RequestController
             }
         }
         return($xml_array);
-    } // end XML to array function
+    } // end XML to array function*/
 
 
     /**
@@ -331,10 +273,14 @@ class HomeController extends RequestController
         $requestXML = ob_get_clean();
         //End
 
-        $finalArray = [];
+//        get xml response
         $sXML = $this->makeRequest($requestXML);
-        $myData = $this->XMLtoArray($sXML);;
 
+//        parse xml to array
+        $myData = $this->XMLtoArray($sXML);
+
+//        prepare data for api
+        $finalArray = [];
         foreach ($myData['SOAP:Envelope']['SOAP:Body']['hotel:HotelSearchAvailabilityRsp']['hotel:HotelSearchResult'] as $data) {
 
             $hotelInfo['hoteInfo'] = $data['hotel:HotelProperty']['@attributes'];
@@ -345,4 +291,5 @@ class HomeController extends RequestController
 
         return [ 'status' => true,'data' => $finalArray];
     }
+
 }

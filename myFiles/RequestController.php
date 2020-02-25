@@ -27,7 +27,7 @@ class RequestController extends Controller
 
     }
 
-    public function makeRequest($request)
+    public function makeRequest_s($request)
     {
         $username         = Config::get('constants.travelport.pre_production.username');
         $password         = Config::get('constants.travelport.pre_production.password');
@@ -120,7 +120,7 @@ class RequestController extends Controller
 
     }
 
-    public function XMLtoArray($xml) {
+    public function XMLtoArray_s($xml) {
         $previous_value = libxml_use_internal_errors(true);
         $dom = new \DOMDocument('1.0', 'UTF-8');
         $dom->preserveWhiteSpace = false;
