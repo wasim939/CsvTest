@@ -323,14 +323,19 @@ class HomeController extends RequestController
             {
                 return ['status' => false, 'msg' => 'Something went wrong.'];
             }
+            $reference_response = collect($reference_response);
+            $filtered = $reference_response->filter(function ($value) use ($hotelRefId) {
+                return $value['hotelRefId'] == $hotelRefId;
+            });
+            $hotelInfo = $filtered->first();
 
-            foreach($reference_response as $hotel)
+            /*foreach($reference_response as $hotel)
             {
                 if($hotel['hotelRefId'] == $hotelRefId)
                 {
                     $hotelInfo = $hotel;
                 }
-            }
+            }*/
 //            dd($hotelInfo);
 
             //Getting XML ready for API request
