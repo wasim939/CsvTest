@@ -29,11 +29,11 @@ class RequestController extends Controller
 
     public function makeRequest($request)
     {
-        $username         = 'Universal API/uAPI5164233131-8f975dd6';
-        $password         = 'j+2A7wT{F4';
-        $target_branch    = 'P7119574';
-        $url              = 'https://apac.universal-api.pp.travelport.com/B2BGateway/connect/uAPI/HotelService';
-        $gds_code         = '1G';
+        $username         = Config::get('constants.travelport.pre_production.username');
+        $password         = Config::get('constants.travelport.pre_production.password');
+        $target_branch    = Config::get('constants.travelport.pre_production.target_branch');
+        $url              = Config::get('constants.travelport.pre_production.url');
+        $gds_code         = Config::get('constants.travelport.pre_production.gds_code');
 
 //        self::$responseArray 	= [];
 
@@ -117,7 +117,7 @@ class RequestController extends Controller
         return $dom->saveXML();
     }
 
-    protected function XMLtoArray($xml) {
+    /*protected function XMLtoArray($xml) {
 
         $previous_value = libxml_use_internal_errors(true);
         $dom = new \DOMDocument('1.0', 'UTF-8');
@@ -128,9 +128,9 @@ class RequestController extends Controller
             return [];
         }
         return $this->DOMtoArray($dom);
-    }
+    }*/
 
-    protected function DOMtoArray($root) {
+    /*protected function DOMtoArray($root) {
         $result = array();
 
         if ($root->hasAttributes()) {
@@ -166,17 +166,13 @@ class RequestController extends Controller
             }
         }
         return $result;
-    }
-
-    public static function getCacheFilename()
-    {
-        return self::$cacheFile;
-    }
+    }*/
 
     protected function hotelSearchApi($myData) {
 
         $finalArray = [];
-        foreach ($myData['SOAP:Envelope']['SOAP:Body']['hotel:HotelSearchAvailabilityRsp']['hotel:HotelSearchResult'] as $data) {
+//        foreach ($myData['SOAP:Envelope']['SOAP:Body']['hotel:HotelSearchAvailabilityRsp']['hotel:HotelSearchResult'] as $data) {
+        foreach ($myData['SOAP:Body']['hotel:HotelSearchAvailabilityRsp']['hotel:HotelSearchResult'] as $data) {
 
             $hotelInfo['hotelRefId']    = md5(time() . uniqid() . rand(99, 99999));
             $hotelInfo['hotelInfo']     = $data['hotel:HotelProperty']['@attributes'];
@@ -205,11 +201,11 @@ class RequestController extends Controller
         return $finalArray;
     }
 
-    protected function hotelMediaApi($myData) {
+    protected function hotelMediaApi_s($myData) {
 
         $finalArray = [];
         $i = 0;
-        foreach ($myData['SOAP:Envelope']['SOAP:Body']['hotel:HotelMediaLinksRsp']['hotel:HotelPropertyWithMediaItems']['common_v34_0:MediaItem'] as $data) {
+        foreach ($myData['SOAP:Body']['hotel:HotelMediaLinksRsp']['hotel:HotelPropertyWithMediaItems']['common_v34_0:MediaItem'] as $data) {
 
             if($i <=4){
                 $hotelMedia['hotelMediaInfo']     = $data['@attributes'];

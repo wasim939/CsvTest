@@ -292,4 +292,80 @@ class HomeController extends RequestController
             return [ 'status' => false,'message' => $e->errorMessage()];
         }
     }
+
+    public function hotelMedia(Request $request) {
+
+        $validator = Validator::make($request->all(), [
+            'refId'         => 'required',
+            'hotelRefId'    => 'required',
+        ]);
+
+        if ($validator->fails()) {
+            $response = $validator->messages()->first();
+            return response()->json(['status' => false, 'message' => $response]);
+        }
+
+        $refId = $request->refId;
+        $hotelRefId = $request->hotelRefId;
+
+        if(!file_exists(public_path() . '/cache/hotel/reference_data/' . $refId . '_raw.dat') || !file_exists(public_path() . '/cache/hotel/reference_data/' . $refId . '_parsed.dat'))
+        {
+            $response['status']	= 'error';
+            $response['msg']	= 'Invalid Reference ID.';
+            return $response;
+        }
+
+        /*Stored JSON Parsing*/
+        try
+        {
+            $reference_response = json_decode(file_get_contents(public_path() . '/cache/hotel/reference_data/' . $refId . '_parsed.dat'), true);
+            if(json_last_error() != JSON_ERROR_NONE)
+            {
+                return ['status' => false, 'msg' => 'Something went wrong.'];
+            }
+
+            foreach($reference_response as $hotel)
+            {
+                if($hotel['hotelRefId'] == $hotelRefId)
+                {
+                    $hotelInfo = $hotel;
+                }
+            }
+//            dd($hotelInfo);
+
+            //Getting XML ready for API request
+            ob_start();
+            require public_path().'\xml_requests\hotel_media_req.php';
+            $requestXML = ob_get_clean();
+            //End
+
+            //            get xml response
+
+            /*if(!copy(getcwd() . '/cache/air/' . AirPrice::getCacheFilename() . '_raw.dat', getcwd() . '/cache/air/reference_data/' . $refId . '_raw_price.dat') || !copy(getcwd() . '/cache/air/' . AirPrice::getCacheFilename() . '_parsed.dat', getcwd() . '/cache/air/reference_data/' . $refId . '_parsed_price.dat'))
+            {
+                throw new AirException("Something Went Wrong. Please Try Again");
+            }*/
+
+            $sXML = $this->makeRequest($requestXML);
+
+//            parse xml to array
+            $myData = $this->XMLtoArray($sXML);
+
+//            prepare data for hotelSearchApi
+            $apiData = $this->hotelMediaApi($myData);
+
+            return [ 'status' => true,'data' => $apiData];
+
+        }
+        catch (\Exception $e)
+        {
+            $response['status'] = "error";
+            $response['msg'] 	= $e->errorMessage();
+           return $response;
+        }
+        /*End Parsing*/
+
+
+    }
+
 }

@@ -19,3 +19,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('csv-data', 'HomeController@cacheCsvData');
 Route::post('my-xml', 'HomeController@myXml');
+Route::post('media', 'HomeController@hotelMedia');

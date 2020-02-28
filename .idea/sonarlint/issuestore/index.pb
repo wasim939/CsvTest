@@ -38,3 +38,5 @@ W
 'public/xml_requests/low_fare_search.php,0\f\0f3903dd759b1f7e0428d4b611d4a76445777b22
 M
 myFiles/RequestController.php,0\2\02d182e43cf9c8dae1ade7781f4eb8e3b5ec1e3d
+k
+;public/cache/hotel/1b66b3d94fd4039107a0d008d707821f_raw.dat,b\4\b4a063db27d76870a240f9f193084a6dee4768d8
