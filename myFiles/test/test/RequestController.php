@@ -27,7 +27,7 @@ class RequestController extends Controller
 
     }
 
-    public function makeRequest($request)
+    public function makeRequest_s($request)
     {
         $username         = Config::get('constants.travelport.pre_production.username');
         $password         = Config::get('constants.travelport.pre_production.password');

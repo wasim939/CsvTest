@@ -220,4 +220,26 @@ class RequestController extends Controller
         file_put_contents(public_path() . '/cache/hotel/reference_data/' . self::$cacheFile . '_parsed.dat', json_encode($finalArray));
         return $finalArray;
     }
+
+    protected function hotelRateInfoApi($myData) {
+
+
+        $finalArray = [];
+        foreach ($myData['SOAP:Envelope']['SOAP:Body']['hotel:HotelDetailsRsp']['hotel:RequestedHotelDetails']['hotel:HotelRateDetail'] as $data) {
+            $additional_info = [
+                'ratePlanInfo'          => $data['@attributes'],
+                'hotelRateByDateInfo'   => $data['hotel:HotelRateByDate']['@attributes'],
+                'cancellationInfo'      => $data['hotel:CancelInfo']['@attributes']??'',
+                'hotelGuaranteeInfo'    => $data['hotel:GuaranteeInfo']['@attributes']
+
+            ];
+            $hotelInfo = [
+                'hotelRoomRateInfo'     => $additional_info
+            ];
+            $finalArray[] = $hotelInfo;
+        }
+        return $finalArray;
+
+
+    }
 }

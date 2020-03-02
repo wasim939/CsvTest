@@ -1,10 +1,17 @@
 
-i	php:S1192ø"GDefine a constant instead of duplicating this literal "status" 4 times.(—Şı…ÿÿÿÿÿ8·ïŒİ‡.
-€	php:S1488."_Immediately return this expression instead of assigning it to the temporary variable "$myData".(Â¼¥”ùÿÿÿÿ8ÁùÉ‚ˆ.
-:php:S125>"Remove this commented out code.(ü¥‘³8åÓªˆ.
-w	php:S1192ƒ"ZDefine a constant instead of duplicating this literal "numeric|between:1,9|min:1" 3 times.(“§¶8·ïŒİ‡.
-:php:S1251"Remove this commented out code.(ü¥‘³8åÓªˆ.
-j	php:S1192ø"HDefine a constant instead of duplicating this literal "message" 3 times.(—Şı…ÿÿÿÿÿ8ì²îİ‡.
-:php:S125V"Remove this commented out code.(É»ìÃ8·ïŒİ‡.
-;php:S125ğ"Remove this commented out code.(ĞÛØ®8·ïŒİ‡.
-:php:S125*"Remove this commented out code.(Ùı—¡8¤»›´†.
+k	php:S1142¦"OReduce the number of returns of this function 5, down to the maximum allowed 3.(«·]8ŸÛàĞˆ.
+w	php:S1192"ZDefine a constant instead of duplicating this literal "numeric|between:1,9|min:1" 3 times.(“§¶8·ïŒİ‡.
+@php:S125Ë"Remove this commented out code.(ÒÌâ–øÿÿÿÿ8Æ½ÆÕˆ.
+:php:S125<"Remove this commented out code.(ü¥‘³8åÓªˆ.
+Q	php:S1481È"/Remove this unused "$hotelInfo" local variable.(¼òøğÿÿÿÿÿ8ö¤ÇÕˆ.
+f	php:S1192ü"IDefine a constant instead of duplicating this literal "required" 4 times.(ŠŸÀÑ8Ö˜ŒĞˆ.
+:php:S125T"Remove this commented out code.(É»ìÃ8·ïŒİ‡.
+@php:S125Ñ"Remove this commented out code.(¶«Ì¸üÿÿÿÿ8–ÈèÑˆ.
+€	php:S1488,"_Immediately return this expression instead of assigning it to the temporary variable "$myData".(Â¼¥”ùÿÿÿÿ8ÁùÉ‚ˆ.
+i	php:S1192ö"GDefine a constant instead of duplicating this literal "status" 9 times.(—Şı…ÿÿÿÿÿ8·ïŒİ‡.
+@php:S125Ü"Remove this commented out code.(ÒÌâ–øÿÿÿÿ8³ğ–Óˆ.
+j	php:S1192ö"HDefine a constant instead of duplicating this literal "message" 4 times.(—Şı…ÿÿÿÿÿ8ì²îİ‡.
+:php:S125("Remove this commented out code.(Ùı—¡8¤»›´†.
+;php:S125î"Remove this commented out code.(ĞÛØ®8·ïŒİ‡.
+:php:S125/"Remove this commented out code.(ü¥‘³8åÓªˆ.
+z	php:S1192µ"]Define a constant instead of duplicating this literal "/cache/hotel/reference_data/" 3 times.(°¶Ğ¬8Ö˜ŒĞˆ.

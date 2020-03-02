@@ -18,25 +18,42 @@ class HomeController extends RequestController
 
     public function xmlTest()
     {
+        /*$request = '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+<soapenv:Header/>
+<soapenv:Body>
+<hot:HotelDetailsReq xmlns:com="http://www.travelport.com/schema/common_v34_0" xmlns:hot="http://www.travelport.com/schema/hotel_v34_0" ReturnMediaLinks="true" TargetBranch="P7119574">
+<com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+<hot:HotelProperty HotelChain="HI" HotelCode="43163" Name="HOLIDAY INN SYDNEY AIRPORT"/>
+<hot:HotelDetailsModifiers NumberOfAdults="1" RateRuleDetail="Complete">
+<com:PermittedProviders>
+<com:Provider Code="1G"/>
+</com:PermittedProviders>
+<hot:HotelStay>
+<hot:CheckinDate>2020-12-10</hot:CheckinDate>
+<hot:CheckoutDate>2020-12-20</hot:CheckoutDate>
+</hot:HotelStay>
+</hot:HotelDetailsModifiers>
+</hot:HotelDetailsReq>
+</soapenv:Body>
+</soapenv:Envelope>';*/
+
         $request = '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
-  <soapenv:Header />
-  <soapenv:Body>
-    <hot:HotelSearchAvailabilityReq xmlns:hot="http://www.travelport.com/schema/hotel_v34_0" TargetBranch="P7119574">
-      <com:BillingPointOfSaleInfo xmlns:com="http://www.travelport.com/schema/common_v34_0" OriginApplication="UAPI" />
-      <hot:HotelSearchLocation>
-        <hot:HotelLocation Location="SYD" />
-      </hot:HotelSearchLocation>
-      <hot:HotelSearchModifiers MaxWait="50000" NumberOfAdults="1">
-        <com:PermittedProviders xmlns:com="http://www.travelport.com/schema/common_v34_0">
-          <com:Provider Code="1G" />
-        </com:PermittedProviders>
-      </hot:HotelSearchModifiers>
-      <hot:HotelStay>
-        <hot:CheckinDate>2020-12-10</hot:CheckinDate>
-        <hot:CheckoutDate>2020-12-20</hot:CheckoutDate>
-      </hot:HotelStay>
-    </hot:HotelSearchAvailabilityReq>
-  </soapenv:Body>
+<soapenv:Header/>
+<soapenv:Body>
+<hot:HotelDetailsReq xmlns:com="http://www.travelport.com/schema/common_v34_0" xmlns:hot="http://www.travelport.com/schema/hotel_v34_0" ReturnMediaLinks="true" TargetBranch="P7119574">
+<com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+<hot:HotelProperty HotelChain="HI" HotelCode="43163" Name="HOLIDAY INN SYDNEY AIRPORT"/>
+<hot:HotelDetailsModifiers NumberOfAdults="1" RateRuleDetail="Complete">
+<com:PermittedProviders>
+<com:Provider Code="1G"/>
+</com:PermittedProviders>
+<hot:HotelStay>
+<hot:CheckinDate>2020-12-10</hot:CheckinDate>
+<hot:CheckoutDate>2020-12-20</hot:CheckoutDate>
+</hot:HotelStay>
+</hot:HotelDetailsModifiers>
+</hot:HotelDetailsReq>
+</soapenv:Body>
 </soapenv:Envelope>';
 
       //  echo phpinfo();exit;
@@ -44,20 +61,26 @@ class HomeController extends RequestController
         $finalArray = [];
         $sXML = $this->makeRequest($request);
         $myData = $this->XMLtoArray($sXML);
-        return $myData;
 
-        /*foreach ($myData['SOAP:Envelope']['SOAP:Body']['hotel:HotelSearchAvailabilityRsp']['hotel:HotelSearchResult'] as $data) {
+        /*return $myData['SOAP:Envelope']['SOAP:Body']['hotel:HotelDetailsRsp']['hotel:RequestedHotelDetails']['hotel:HotelRateDetail'];
+
+        return $myData;*/
+
+        foreach ($myData['SOAP:Envelope']['SOAP:Body']['hotel:HotelDetailsRsp']['hotel:RequestedHotelDetails']['hotel:HotelRateDetail'] as $data) {
 
             $additional_info = [
-                'address' =>    $data['hotel:HotelProperty']['hotel:PropertyAddress']['hotel:Address'],
-                'distance' => $data['hotel:HotelProperty']['common_v34_0:Distance']['@attributes']['Value'].' '.$data['hotel:HotelProperty']['common_v34_0:Distance']['@attributes']['Units']
+                'ratePlanInfo'          => $data['@attributes'],
+                'hotelRateByDateInfo'   => $data['hotel:HotelRateByDate']['@attributes'],
+                'cancellationInfo'      => $data['hotel:CancelInfo']['@attributes'],
+                'hotelGuaranteeInfo'    => $data['hotel:GuaranteeInfo']['@attributes']
+
             ];
             $hotelInfo = [
-                'hotelInfo' => $data['hotel:HotelProperty']['@attributes'],
-                'additionalInfo' => $additional_info
+                'hotelRoomRateInfo'     => $additional_info
             ];
             $finalArray['data'][] = $hotelInfo;
-        }*/
+        }
+        return $finalArray;
 
         /*foreach ($myData['SOAP:Envelope']['SOAP:Body']['hotel:HotelSearchAvailabilityRsp']['hotel:HotelSearchResult'] as $data) {
 
@@ -367,6 +390,78 @@ class HomeController extends RequestController
             $response['status'] = "error";
             $response['msg'] 	= $e->errorMessage();
            return $response;
+        }
+        /*End Parsing*/
+
+
+    }
+
+    public function hotelRateInfo(Request $request) {
+
+        $validator = Validator::make($request->all(), [
+            'refId'         => 'required',
+            'hotelRefId'    => 'required',
+        ]);
+
+        if ($validator->fails()) {
+            $response = $validator->messages()->first();
+            return response()->json(['status' => false, 'message' => $response]);
+        }
+
+        $refId = $request->refId;
+        $hotelRefId = $request->hotelRefId;
+
+        if(!file_exists(public_path() . '/cache/hotel/reference_data/' . $refId . '_raw.dat') || !file_exists(public_path() . '/cache/hotel/reference_data/' . $refId . '_parsed.dat'))
+        {
+            $response['status']	= 'error';
+            $response['msg']	= 'Invalid Reference ID.';
+            return $response;
+        }
+
+        /*Stored JSON Parsing*/
+        try
+        {
+            $reference_response = json_decode(file_get_contents(public_path() . '/cache/hotel/reference_data/' . $refId . '_parsed.dat'), true);
+            if(json_last_error() != JSON_ERROR_NONE)
+            {
+                return ['status' => false, 'msg' => 'Something went wrong.'];
+            }
+            $reference_response = collect($reference_response);
+            $filtered = $reference_response->filter(function ($value) use ($hotelRefId) {
+                return $value['hotelRefId'] == $hotelRefId;
+            });
+            $hotelInfo = $filtered->first();
+
+            //Getting XML ready for API request
+            ob_start();
+            require public_path().'\xml_requests\hotel_rate_req.php';
+            $requestXML = ob_get_clean();
+            //End
+//            dd($requestXML);
+
+            //            get xml response
+
+            /*if(!copy(getcwd() . '/cache/air/' . AirPrice::getCacheFilename() . '_raw.dat', getcwd() . '/cache/air/reference_data/' . $refId . '_raw_price.dat') || !copy(getcwd() . '/cache/air/' . AirPrice::getCacheFilename() . '_parsed.dat', getcwd() . '/cache/air/reference_data/' . $refId . '_parsed_price.dat'))
+            {
+                throw new AirException("Something Went Wrong. Please Try Again");
+            }*/
+
+            $sXML = $this->makeRequest($requestXML);
+
+//            parse xml to array
+            $myData = $this->XMLtoArray($sXML);
+
+//            prepare data for hotelSearchApi
+            $apiData = $this->hotelRateInfoApi($myData);
+
+            return [ 'status' => true,'data' => $apiData];
+
+        }
+        catch (\Exception $e)
+        {
+            $response['status'] = "error";
+            $response['msg'] 	= $e->errorMessage();
+            return $response;
         }
         /*End Parsing*/
 
