@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
   <SOAP:Body>
-    <hotel:HotelDetailsRsp xmlns:hotel="http://www.travelport.com/schema/hotel_v34_0" xmlns:common_v34_0="http://www.travelport.com/schema/common_v34_0" TransactionId="99FCD8C20A07643CAB0E0A7CD6EF4796" ResponseTime="114">
+    <hotel:HotelDetailsRsp xmlns:hotel="http://www.travelport.com/schema/hotel_v34_0" xmlns:common_v34_0="http://www.travelport.com/schema/common_v34_0" TransactionId="9F5CAE3C0A0764772606212BB426CA1F" ResponseTime="1391">
       <hotel:RequestedHotelDetails>
         <hotel:HotelProperty HotelChain="XV" HotelCode="81750" HotelLocation="FSD" Name="SPRINGHILL STES SIOUX MARRIOTT" ParticipationLevel="Lowest Public Rate">
           <hotel:PropertyAddress>

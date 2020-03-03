@@ -48,3 +48,7 @@ Mpublic/cache/hotel/reference_data/1b66b3d94fd4039107a0d008d707821f_parsed.dat,
 Mpublic/cache/hotel/reference_data/1fef213ee6e07141b84257638b2760fb_parsed.dat,8\b\8b694aaef04cb82de4f1356e55adcb6e4d57219a
 W
 'myFiles/test/test/RequestController.php,9\9\99ce1c97eb378d8aa00edf44aff19019a3684d2b
+I
+app/New Text Document.txt,3\2\32bcfda5700578ad8f6aac72c142c3ebff502f02
+V
+&public/xml_requests/hotel_rate_req.php,7\1\71466d2e13d88283534c5d01cb0f5710b66e4400

@@ -94,6 +94,11 @@
       <path value="$PROJECT_DIR$/vendor/tightenco/collect" />
       <path value="$PROJECT_DIR$/vendor/sunra/php-simple-html-dom-parser" />
       <path value="$PROJECT_DIR$/vendor/mtownsend/xml-to-array" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />

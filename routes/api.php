@@ -21,3 +21,4 @@ Route::get('csv-data', 'HomeController@cacheCsvData');
 Route::post('my-xml', 'HomeController@myXml');
 Route::post('media', 'HomeController@hotelMedia');
 Route::post('rate', 'HomeController@hotelRateInfo');
+Route::get('guzzle', 'HomeController@testGuzzle');

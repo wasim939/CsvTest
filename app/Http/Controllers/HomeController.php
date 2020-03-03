@@ -1,6 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
+use GuzzleHttp\Client;
+use GuzzleHttp\Exception\GuzzleException;
+use GuzzleHttp\Exception\RequestException;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Redis;
 use Config;
@@ -15,6 +18,76 @@ class HomeController extends RequestController
     protected static $rawResponse;
     protected static $responseArray = [];
     protected static $cacheFile;
+
+    function __construct() {
+        $this->client = new Client();
+    }
+
+    public function testGuzzle(){
+
+        $username         = 'Universal API/uAPI5164233131-8f975dd6';
+        $password         = 'j+2A7wT{F4';
+        $url              = 'https://apac.universal-api.pp.travelport.com/B2BGateway/connect/uAPI/HotelService';
+        $request = '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header />
+	<soapenv:Body>
+		<hot:HotelDetailsReq xmlns:com="http://www.travelport.com/schema/common_v34_0"
+			xmlns:hot="http://www.travelport.com/schema/hotel_v34_0" ReturnMediaLinks="true" TargetBranch="P7119574">
+			<com:BillingPointOfSaleInfo OriginApplication="UAPI" />
+			<hot:HotelProperty HotelChain="XV" HotelCode="81750" Name="SPRINGHILL STES SIOUX MARRIOTT" />
+			<hot:HotelDetailsModifiers NumberOfAdults="1" RateRuleDetail="Complete">
+				<com:PermittedProviders>
+					<com:Provider Code="1G" />
+				</com:PermittedProviders>
+				<hot:HotelStay>
+					<hot:CheckinDate>2020-12-10</hot:CheckinDate>
+					<hot:CheckoutDate>2020-12-20</hot:CheckoutDate>
+				</hot:HotelStay>
+			</hot:HotelDetailsModifiers>
+		</hot:HotelDetailsReq>
+	</soapenv:Body>
+</soapenv:Envelope>';
+
+//        self::$responseArray 	= [];
+
+        $auth 		= base64_encode($username . ':' . $password);
+
+        $header = [
+            "Content-Type" => "text/xml;charset=UTF-8",
+            "Accept" => "gzip,deflate",
+            "Cache-Control" => "gzip,deflate",
+            "Pragma" => "no-cache",
+            "SOAPAction" => "\"\"",
+            "Authorization" => "Basic $auth",
+            "Content-length" => strlen($request),
+        ];
+
+        try {
+            /*$res = (new Client())->request('POST', $url, [
+                'headers' => $header,
+                'body' => $request
+            ]);*/
+
+            $res = $this->client->post($url, [
+                'headers' => $header,
+                'body' => $request
+            ]);
+
+            //            parse xml to array
+            $myData = $this->XMLtoArray($res->getBody());
+
+//            prepare data for hotelSearchApi
+            $apiData = $this->hotelRateInfoApi($myData);
+
+            return [ 'status' => true,'data' => $apiData];
+
+        } catch (GuzzleException $e) {
+            return [self::STATUS => false, 'message' => 'Server error' . $e->getMessage()];
+        }//..... end of try-catch( )......//
+
+
+    }
+
 
     public function xmlTest()
     {
@@ -447,6 +520,7 @@ class HomeController extends RequestController
             }*/
 
             $sXML = $this->makeRequest($requestXML);
+//            $sXML = $this->makeRequestGuzzle($requestXML);
 
 //            parse xml to array
             $myData = $this->XMLtoArray($sXML);
