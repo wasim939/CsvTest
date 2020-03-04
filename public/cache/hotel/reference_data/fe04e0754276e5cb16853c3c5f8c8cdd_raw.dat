@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP:Body>
+    <hotel:HotelRulesRsp xmlns:hotel="http://www.travelport.com/schema/hotel_v34_0" TraceId="trace" TransactionId="A427A0DF0A07643B6BD5AB65111899D0" ResponseTime="74">
+      <hotel:HotelRateDetail RatePlanType="N1QGOV">
+        <hotel:RoomRateDescription Name="Total Includes ">
+          <hotel:Text>Taxes not included</hotel:Text>
+        </hotel:RoomRateDescription>
+        <hotel:RoomRateDescription Name="Min length Stay">
+          <hotel:Text>1</hotel:Text>
+        </hotel:RoomRateDescription>
+        <hotel:RoomRateDescription Name="Max length Stay">
+          <hotel:Text>99</hotel:Text>
+        </hotel:RoomRateDescription>
+        <hotel:RoomRateDescription Name="Guarantee">
+          <hotel:Text>Guarantee Required for Late Arrival</hotel:Text>
+        </hotel:RoomRateDescription>
+        <hotel:RoomRateDescription Name="Deposit Guarantee FOP">
+          <hotel:Text>Credit Card</hotel:Text>
+          <hotel:Text>Certified Check </hotel:Text>
+        </hotel:RoomRateDescription>
+        <hotel:RoomRateDescription Name="Commission">
+          <hotel:Text>COMMISSION AMT - 00.00%</hotel:Text>
+        </hotel:RoomRateDescription>
+        <hotel:RoomRateDescription Name="Include in Rate">
+          <hotel:Text>Meal not Included</hotel:Text>
+        </hotel:RoomRateDescription>
+        <hotel:RoomRateDescription Name="Extra Options">
+          <hotel:Text>EXTRA ADULT -55.00 AUD</hotel:Text>
+          <hotel:Text>EXTRA CHILD -0.00 AUD</hotel:Text>
+          <hotel:Text>ROLLAWAY ADULT -45.00 AUD</hotel:Text>
+          <hotel:Text>ROLLAWAY CHILD -45.00 AUD</hotel:Text>
+          <hotel:Text>CRIB -0.00 AUD</hotel:Text>
+        </hotel:RoomRateDescription>
+        <hotel:RoomRateDescription Name="Deposit Guarantee Credit Cards">
+          <hotel:Text>AX</hotel:Text>
+          <hotel:Text>CA</hotel:Text>
+          <hotel:Text>DC</hotel:Text>
+          <hotel:Text>IB</hotel:Text>
+          <hotel:Text>JC</hotel:Text>
+          <hotel:Text>VI</hotel:Text>
+        </hotel:RoomRateDescription>
+        <hotel:RoomRateDescription Name="Hotel Deposit Address">
+          <hotel:Text>****************************************************, HOLIDAY INN AND HOLIDAY INN EXPRESS, C O R P O R A T E   H E A D Q U A R T E R S, I N F O R M A T I O N, ****************************************************</hotel:Text>
+        </hotel:RoomRateDescription>
+        <hotel:HotelRateByDate EffectiveDate="2020-12-10" ExpireDate="2020-12-20" Base="AUD212.00"/>
+        <hotel:GuaranteeInfo>
+          <hotel:GuaranteePaymentType Type="AgencyIATA/ARC" Description="AgencyIATA"/>
+          <hotel:GuaranteePaymentType Type="CreditCard" Description="CreditCard"/>
+          <hotel:GuaranteePaymentType Type="Other" Description="CertifiedCheck"/>
+          <hotel:GuaranteePaymentType Type="Other" Description="ChainsCorporateAddress"/>
+        </hotel:GuaranteeInfo>
+      </hotel:HotelRateDetail>
+      <hotel:HotelRuleItem Name="Room Count">
+        <hotel:Text>248</hotel:Text>
+      </hotel:HotelRuleItem>
+      <hotel:HotelRuleItem Name="Number of Suites">
+        <hotel:Text>2</hotel:Text>
+      </hotel:HotelRuleItem>
+      <hotel:HotelRuleItem Name="Number of Floors">
+        <hotel:Text>10</hotel:Text>
+      </hotel:HotelRuleItem>
+      <hotel:HotelRuleItem Name="Conference Room Capacity">
+        <hotel:Text>0</hotel:Text>
+      </hotel:HotelRuleItem>
+      <hotel:HotelRuleItem Name="Year Built">
+        <hotel:Text>1991</hotel:Text>
+      </hotel:HotelRuleItem>
+      <hotel:HotelRuleItem Name="Year Remodeled">
+        <hotel:Text>2012</hotel:Text>
+      </hotel:HotelRuleItem>
+      <hotel:HotelRuleItem Name="CheckIn">
+        <hotel:Text>1400</hotel:Text>
+      </hotel:HotelRuleItem>
+      <hotel:HotelRuleItem Name="CheckOut">
+        <hotel:Text>1100</hotel:Text>
+      </hotel:HotelRuleItem>
+      <hotel:HotelRuleItem Name="FOP Accepted credit cards">
+        <hotel:Text>AX</hotel:Text>
+        <hotel:Text>CA</hotel:Text>
+        <hotel:Text>DC</hotel:Text>
+        <hotel:Text>IB</hotel:Text>
+        <hotel:Text>JC</hotel:Text>
+        <hotel:Text>VI</hotel:Text>
+      </hotel:HotelRuleItem>
+      <hotel:HotelRuleItem Name="Accepted FOP">
+        <hotel:Text>Credit Card</hotel:Text>
+        <hotel:Text>Cash</hotel:Text>
+        <hotel:Text>Money Order</hotel:Text>
+        <hotel:Text>Travelers Check</hotel:Text>
+      </hotel:HotelRuleItem>
+      <hotel:HotelRuleItem Name="Cancellation">
+        <hotel:Text>CANCEL BY 0000 HRS LOCAL HOTEL TIME TO AVOID</hotel:Text>
+        <hotel:Text>A CANCELLATION PENALTY</hotel:Text>
+        <hotel:Text>CANCELLATION POLICY TEXT</hotel:Text>
+        <hotel:Text>CANCEL POLICIES AND EARLY DEPARTURE FEES VARY BY HOTEL.  SINCE</hotel:Text>
+        <hotel:Text>A HOTEL CAN SET A CANCELLATION POLICY OF UP TO 30 DAYS IN</hotel:Text>
+        <hotel:Text>ADVANCE PLEASE REVIEW POLICY PRIOR TO BOOKING TO AVOID</hotel:Text>
+        <hotel:Text>POSSIBLE CHARGE.</hotel:Text>
+      </hotel:HotelRuleItem>
+      <hotel:HotelRuleItem Name="Tax Information">
+        <hotel:Text>TAX INCLUDED</hotel:Text>
+        <hotel:Text>VAT 10PCT</hotel:Text>
+      </hotel:HotelRuleItem>
+      <hotel:HotelType SourceLink="false"/>
+    </hotel:HotelRulesRsp>
+  </SOAP:Body>
+</SOAP:Envelope>
