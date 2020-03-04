@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
   <SOAP:Body>
-    <hotel:HotelRulesRsp xmlns:hotel="http://www.travelport.com/schema/hotel_v34_0" xmlns:common_v34_0="http://www.travelport.com/schema/common_v34_0" TraceId="trace" TransactionId="A3F36AB50A07647735FB939E5A815FC2" ResponseTime="11053">
+    <hotel:HotelRulesRsp xmlns:hotel="http://www.travelport.com/schema/hotel_v34_0" xmlns:common_v34_0="http://www.travelport.com/schema/common_v34_0" TraceId="trace" TransactionId="A44A388A0A07643B6BD5AB654CCD6AB5" ResponseTime="13027">
       <common_v34_0:ResponseMessage Code="5000" Type="Warning">0176 BOOKING CODE IS NOT STORED ON ROOMMASTER</common_v34_0:ResponseMessage>
     </hotel:HotelRulesRsp>
   </SOAP:Body>

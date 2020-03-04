@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
   <SOAP:Body>
-    <hotel:HotelRulesRsp xmlns:hotel="http://www.travelport.com/schema/hotel_v34_0" TraceId="trace" TransactionId="A427A0DF0A07643B6BD5AB65111899D0" ResponseTime="74">
+    <hotel:HotelRulesRsp xmlns:hotel="http://www.travelport.com/schema/hotel_v34_0" TraceId="trace" TransactionId="A44B04F70A0764783CAE109833FCB65A" ResponseTime="195">
       <hotel:HotelRateDetail RatePlanType="N1QGOV">
         <hotel:RoomRateDescription Name="Total Includes ">
           <hotel:Text>Taxes not included</hotel:Text>

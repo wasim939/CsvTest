@@ -247,35 +247,39 @@ class RequestController extends Controller
     protected function hotelRuleInfoApi($myData) {
 
         $response = $myData['SOAP:Envelope']['SOAP:Body']['hotel:HotelRulesRsp'];
-//        return $response;
 
         $finalArray = [];
 
-        foreach($response['hotel:HotelRuleItem'] as $data) {
+//        dd($response['hotel:HotelRuleItem']);
+        if(isset($response['common_v34_0:ResponseMessage'])) {
+            $finalArray['message']  = $response['common_v34_0:ResponseMessage']['_value'];
+        } else {
+            foreach($response['hotel:HotelRuleItem'] as $data) {
 
-            $additional_info = [
-                Str::slug($data['@attributes']['Name'], '-')          => $data['hotel:Text'],
-            ];
-            $finalArray['rule_info'][] = $additional_info;
+                $additional_info = [
+                    Str::slug($data['@attributes']['Name'], '-')          => $data['hotel:Text'],
+                ];
+                $finalArray['rule_info'][] = $additional_info;
+            }
+
+            foreach($response['hotel:HotelRateDetail']['hotel:RoomRateDescription'] as $data) {
+
+                $additional_info = [
+                    Str::slug($data['@attributes']['Name'], '-')          => $data['hotel:Text'],
+                ];
+                $finalArray['room_rate_description'][] = $additional_info;
+            }
+
+            foreach($response['hotel:HotelRateDetail']['hotel:GuaranteeInfo']['hotel:GuaranteePaymentType'] as $data) {
+
+                $additional_info = [
+                    $data['@attributes']['Type']         => $data['@attributes']['Description'],
+                ];
+                $finalArray['guarantee_payment_info'][] = $additional_info;
+            }
+
+            $finalArray['rate_by_date'] = $response['hotel:HotelRateDetail']['hotel:HotelRateByDate']['@attributes'];
         }
-
-        foreach($response['hotel:HotelRateDetail']['hotel:RoomRateDescription'] as $data) {
-
-            $additional_info = [
-                Str::slug($data['@attributes']['Name'], '-')          => $data['hotel:Text'],
-            ];
-            $finalArray['room_rate_description'][] = $additional_info;
-        }
-
-        foreach($response['hotel:HotelRateDetail']['hotel:GuaranteeInfo']['hotel:GuaranteePaymentType'] as $data) {
-
-            $additional_info = [
-                $data['@attributes']['Type']         => $data['@attributes']['Description'],
-            ];
-            $finalArray['guarantee_payment_info'][] = $additional_info;
-        }
-
-        $finalArray['rate_by_date'] = $response['hotel:HotelRateDetail']['hotel:HotelRateByDate']['@attributes'];
         return $finalArray;
     }
 }
