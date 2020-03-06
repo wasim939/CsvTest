@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\API\V1;
 
 use Exception;
 use Illuminate\Http\Request;
@@ -8,10 +8,10 @@ use Illuminate\Http\Request;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Client;
 use Illuminate\Support\Str;
-
+use App\Http\Controllers\Controller;
 use Config;
 
-class RequestController extends Controller
+class MyRequestController extends Controller
 {
     protected static $rawResponse;
     protected static $responseArray = [];
@@ -252,6 +252,45 @@ class RequestController extends Controller
     }
 
     protected function hotelRuleInfoApi($myData) {
+
+        $response = $myData['SOAP:Envelope']['SOAP:Body']['hotel:HotelRulesRsp'];
+
+        $finalArray = [];
+
+//        dd($response['hotel:HotelRuleItem']);
+        if(isset($response['common_v34_0:ResponseMessage'])) {
+            $finalArray['message']  = $response['common_v34_0:ResponseMessage']['_value'];
+        } else {
+            foreach($response['hotel:HotelRuleItem'] as $data) {
+
+                $additional_info = [
+                    Str::slug($data['@attributes']['Name'], '-')          => $data['hotel:Text'],
+                ];
+                $finalArray['rule_info'][] = $additional_info;
+            }
+
+            foreach($response['hotel:HotelRateDetail']['hotel:RoomRateDescription'] as $data) {
+
+                $additional_info = [
+                    Str::slug($data['@attributes']['Name'], '-')          => $data['hotel:Text'],
+                ];
+                $finalArray['room_rate_description'][] = $additional_info;
+            }
+
+            foreach($response['hotel:HotelRateDetail']['hotel:GuaranteeInfo']['hotel:GuaranteePaymentType'] as $data) {
+
+                $additional_info = [
+                    $data['@attributes']['Type']         => $data['@attributes']['Description'],
+                ];
+                $finalArray['guarantee_payment_info'][] = $additional_info;
+            }
+
+            $finalArray['rate_by_date'] = $response['hotel:HotelRateDetail']['hotel:HotelRateByDate']['@attributes'];
+        }
+        return $finalArray;
+    }
+
+    protected function hotelDescInfoApi($myData) {
 
         $response = $myData['SOAP:Envelope']['SOAP:Body']['hotel:HotelRulesRsp'];
 

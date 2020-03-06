@@ -3,11 +3,11 @@
     <soapenv:Body>
         <hot:HotelRulesReq AuthorizedBy="user" TargetBranch="P7119574" TraceId="trace">
             <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
-            <hot:HotelRulesLookup Base="" RatePlanType="N1QGOV">
-                <hot:HotelProperty HotelChain="HI" HotelCode="43163" Name="HOLIDAY INN SYDNEY AIRPORT"/>
+            <hot:HotelRulesLookup Base="" RatePlanType="<?=$request->rate_plan_type?>">
+                <hot:HotelProperty HotelChain="<?=$hotelInfo['hotelInfo']['HotelChain']?>" HotelCode="<?=$hotelInfo['hotelInfo']['HotelCode']?>" Name="<?=$hotelInfo['hotelInfo']['Name']?>"/>
                 <hot:HotelStay>
-                    <hot:CheckinDate>2020-12-10</hot:CheckinDate>
-                    <hot:CheckoutDate>2020-12-20</hot:CheckoutDate>
+                    <hot:CheckinDate><?=$request->checkinDate?></hot:CheckinDate>
+                    <hot:CheckoutDate><?=$request->checkoutDate?></hot:CheckoutDate>
                 </hot:HotelStay>
             </hot:HotelRulesLookup>
         </hot:HotelRulesReq>

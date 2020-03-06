@@ -1,19 +1,22 @@
 
-p	php:S1192³"NDefine a constant instead of duplicating this literal "SOAP:Envelope" 3 times.(ô˜‘ëşÿÿÿÿ8ÃŒù‰.
-?php:S125W"Remove this commented out code.(ä•…íıÿÿÿÿ8Æ‹±²†.
-V	php:S4830=":Activate SSL/TLS certificates chain of trust verification.(ê—¯À8©Ö¿²†.
-:php:S125O"Remove this commented out code.(Œü¯á8Æ‹±²†.
-~	php:S1192*"]Define a constant instead of duplicating this literal "/cache/hotel/reference_data/" 4 times.(Ø¤Îùÿÿÿÿÿ8”«…Ğˆ.
-v	php:S1192¶"TDefine a constant instead of duplicating this literal "hotel:HotelProperty" 5 times.(î…Ô¦ûÿÿÿÿ8ÃŒù‰.
-?php:S125G"Remove this commented out code.(ìÓ¦ßüÿÿÿÿ8Æ‹±²†.
-v	php:S3776…"TRefactor this function to reduce its Cognitive Complexity from 23 to the 15 allowed.(î—ï¡ÿÿÿÿÿ8ÃŒù‰.
-?php:S125:"Remove this commented out code.(Ô–¹Äùÿÿÿÿ8Æ‹±²†.
-l	php:S1192³"JDefine a constant instead of duplicating this literal "SOAP:Body" 3 times.(ô˜‘ëşÿÿÿÿ8ÃŒù‰.
-?php:S125&"Remove this commented out code.(ô±Ù½şÿÿÿÿ8Æ‹±²†.
-:php:S125d"Remove this commented out code.(Ö¸òã8Æ‹±²†.
-;php:S125Á"Remove this commented out code.(ôˆù€8ÃŒù‰.
-[	php:S4830<":Activate SSL/TLS certificates chain of trust verification.(äÇîñûÿÿÿÿ8©Ö¿²†.
-H	php:S1481$".Remove this unused "$gds_code" local variable.(ß‘—¡şÿÿÿÿ
-H	php:S1481""3Remove this unused "$target_branch" local variable.(ôêõÀ
-t	php:S2068!"X'password' detected in this variable name, review this potentially hardcoded credential.(€¬¼ã8Æ‹±²†.
-o	php:S1192‹"MDefine a constant instead of duplicating this literal "@attributes" 11 times.(‹ÅíŸùÿÿÿÿ8ÃŒù‰.
+?php:S125Z"Remove this commented out code.(ä•…íıÿÿÿÿ8Æ‹±²†.
+H	php:S1481%".Remove this unused "$gds_code" local variable.(ß‘—¡şÿÿÿÿ
+;php:S125Ç"Remove this commented out code.(ôˆù€8ÃŒù‰.
+?php:S125J"Remove this commented out code.(ìÓ¦ßüÿÿÿÿ8Æ‹±²†.
+s	php:S1192ì"VDefine a constant instead of duplicating this literal "hotel:HotelRateDetail" 4 times.(¨‘‡Ä8ø°à¡Š.
+:php:S125g"Remove this commented out code.(Ö¸òã8Æ‹±²†.
+v	php:S1192¼"TDefine a constant instead of duplicating this literal "hotel:HotelProperty" 5 times.(î…Ô¦ûÿÿÿÿ8ÃŒù‰.
+?php:S125="Remove this commented out code.(Ô–¹Äùÿÿÿÿ8Æ‹±²†.
+l	php:S1192¹"JDefine a constant instead of duplicating this literal "SOAP:Body" 4 times.(ô˜‘ëşÿÿÿÿ8ÃŒù‰.
+~	php:S1192,"]Define a constant instead of duplicating this literal "/cache/hotel/reference_data/" 4 times.(Ø¤Îùÿÿÿÿÿ8Ô»ÀÒŠ.
+i	php:S1192š"GDefine a constant instead of duplicating this literal "_value" 3 times.(æ¢Âüÿÿÿÿ8éŞİ¡Š.
+?php:S125'"Remove this commented out code.(ô±Ù½şÿÿÿÿ8Æ‹±²†.
+t	php:S2068""X'password' detected in this variable name, review this potentially hardcoded credential.(€¬¼ã8Æ‹±²†.
+v	php:S3776‹"TRefactor this function to reduce its Cognitive Complexity from 23 to the 15 allowed.(î—ï¡ÿÿÿÿÿ8ÃŒù‰.
+o	php:S1192‘"MDefine a constant instead of duplicating this literal "@attributes" 16 times.(‹ÅíŸùÿÿÿÿ8ÃŒù‰.
+:php:S125R"Remove this commented out code.(Œü¯á8Æ‹±²†.
+V	php:S4830@":Activate SSL/TLS certificates chain of trust verification.(ê—¯À8©Ö¿²†.
+p	php:S1192¹"NDefine a constant instead of duplicating this literal "SOAP:Envelope" 4 times.(ô˜‘ëşÿÿÿÿ8ÃŒù‰.
+@php:S125„"Remove this commented out code.(Â´Ğ–ÿÿÿÿÿ8 €Å¡Š.
+[	php:S4830?":Activate SSL/TLS certificates chain of trust verification.(äÇîñûÿÿÿÿ8©Ö¿²†.
+H	php:S1481#"3Remove this unused "$target_branch" local variable.(ôêõÀ

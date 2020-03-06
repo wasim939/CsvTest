@@ -1,9 +1,0 @@
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://www.travelport.com/schema/common_v33_0" xmlns:util="http://www.travelport.com/schema/util_v33_0">
-<soapenv:Header/>
-<soapenv:Body>
-<util:ReferenceDataRetrieveReq AuthorizedBy="user" RetrieveProviderReservationDetails="true" TargetBranch="P7119574" TraceId="trace" TypeCode="ReferencePointSearch">
-<com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
-<util:ReferenceDataSearchModifiers MaxResults="150" ProviderCode="1G" StartFromResult="36500"/>
-</util:ReferenceDataRetrieveReq>
-</soapenv:Body>
-</soapenv:Envelope>

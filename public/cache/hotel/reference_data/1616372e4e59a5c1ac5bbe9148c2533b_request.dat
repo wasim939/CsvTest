@@ -1,8 +1,11 @@
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://www.travelport.com/schema/common_v34_0" xmlns:univ="http://www.travelport.com/schema/universal_v34_0">
-<soapenv:Header/>
+<soapenv:Header>
+<univ:SupportedVersions/>
+</soapenv:Header>
 <soapenv:Body>
-<univ:UniversalRecordCancelReq AuthorizedBy="user" TargetBranch="TRGT_BRCH" TraceId="trace" UniversalRecordLocatorCode="DXG5XV" Version="0">
+<univ:UniversalRecordRetrieveReq AuthorizedBy="user" TargetBranch="P7119574" TraceId="trace">
 <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
-</univ:UniversalRecordCancelReq>
+<univ:UniversalRecordLocatorCode>DXG5XV</univ:UniversalRecordLocatorCode>
+</univ:UniversalRecordRetrieveReq>
 </soapenv:Body>
 </soapenv:Envelope>
