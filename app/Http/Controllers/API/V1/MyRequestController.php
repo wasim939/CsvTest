@@ -113,6 +113,47 @@ class MyRequestController extends Controller
         return self::$rawResponse;
     }
 
+    public function makeServerRequest($request, $param = false)
+    {
+        $username         = 'Universal API/uAPI5164233131-8f975dd6';
+        $password         = 'j+2A7wT{F4';
+        $url              = 'https://apac.universal-api.pp.travelport.com/B2BGateway/connect/uAPI/HotelService';
+
+        self::$cacheFile 		= md5($request);
+
+        if(!$param){
+            file_put_contents(public_path() . '/cache/hotel/reference_data/' . self::$cacheFile . '_request.dat', $request);
+        }
+
+        $auth 		= base64_encode($username . ':' . $password);
+        $header = [
+            "Content-Type" => "text/xml;charset=UTF-8",
+            "Accept" => "gzip,deflate",
+            "Cache-Control" => "gzip,deflate",
+            "Pragma" => "no-cache",
+            "SOAPAction" => "\"\"",
+            "Authorization" => "Basic $auth",
+            "Content-length" => strlen($request),
+        ];
+
+        try {
+            $res = (new Client())->request('POST', $url, [
+                'headers' => $header,
+                'body' => $request
+            ]);
+
+            self::$rawResponse = $res->getBody()->getContents();
+
+            if(!$param){
+                file_put_contents(public_path() . '/cache/hotel/reference_data/' . self::$cacheFile . '_raw.dat', self::prettyPrint(self::$rawResponse));
+            }
+
+            return ['status' => true, 'message' => 'Data Found', 'data' => self::$rawResponse];
+        } catch (GuzzleException $e) {
+            return ['status' => false, 'message' => 'Server error' . $e->getMessage()];
+        }//..... end of try-catch( )......//
+    }
+
     protected static function prettyPrint($xml)
     {
         $dom 						= new \DOMDocument();
@@ -125,15 +166,19 @@ class MyRequestController extends Controller
 
     protected function XMLtoArray($xml) {
 
-        $previous_value = libxml_use_internal_errors(true);
-        $dom = new \DOMDocument('1.0', 'UTF-8');
-        $dom->preserveWhiteSpace = false;
-        $dom->loadXml($xml);
-        libxml_use_internal_errors($previous_value);
-        if (libxml_get_errors()) {
-            return [];
+        try{
+            $previous_value = libxml_use_internal_errors(true);
+            $dom = new \DOMDocument('1.0', 'UTF-8');
+            $dom->preserveWhiteSpace = false;
+            $dom->loadXml($xml);
+            libxml_use_internal_errors($previous_value);
+            if (libxml_get_errors()) {
+                return [];
+            }
+            return ['status' => true, 'message' => 'Data Found', 'data' => $this->DOMtoArray($dom)];
+        } catch (\Exception $e) {
+            return ['status' => false, 'message' => 'Server error' . $e->getMessage()];
         }
-        return $this->DOMtoArray($dom);
     }
 
     protected function DOMtoArray($root) {
@@ -180,78 +225,119 @@ class MyRequestController extends Controller
     }
 
     protected function hotelSearchApi($myData) {
+        try{
+            $finalArray = [];
+            foreach ($myData['SOAP:Body']['hotel:HotelSearchAvailabilityRsp']['hotel:HotelSearchResult'] as $data) {
 
-        $finalArray = [];
-        foreach ($myData['SOAP:Envelope']['SOAP:Body']['hotel:HotelSearchAvailabilityRsp']['hotel:HotelSearchResult'] as $data) {
+                $hotelInfo['hotelRefId']    = md5(time() . uniqid() . rand(99, 99999));
+                $hotelInfo['hotelInfo']     = $data['hotel:HotelProperty']['@attributes'];
+                $hotelInfo['addressInfo']   = [
+                    'address' => [
+                        'streetInfo'    => $data['hotel:HotelProperty']['hotel:PropertyAddress']['hotel:Address'],
+                        'distance'      => $data['hotel:HotelProperty']['common_v34_0:Distance']['@attributes']['Value'].' '.$data['hotel:HotelProperty']['common_v34_0:Distance']['@attributes']['Units']
+                    ]
+                ];
+                $hotelInfo['hotelRating'] = $data['hotel:HotelProperty']['hotel:HotelRating']['hotel:Rating'];
 
-            $hotelInfo['hotelRefId']    = md5(time() . uniqid() . rand(99, 99999));
-            $hotelInfo['hotelInfo']     = $data['hotel:HotelProperty']['@attributes'];
-            $hotelInfo['addressInfo']   = [
-                'address' => [
-                    'streetInfo'    => $data['hotel:HotelProperty']['hotel:PropertyAddress']['hotel:Address'],
-                    'distance'      => $data['hotel:HotelProperty']['common_v34_0:Distance']['@attributes']['Value'].' '.$data['hotel:HotelProperty']['common_v34_0:Distance']['@attributes']['Units']
-                ]
-            ];
-            $hotelInfo['hotelRating'] = $data['hotel:HotelProperty']['hotel:HotelRating']['hotel:Rating'];
+                //            hote amenities
+                /*..............*/
+                /*$amenityArray = [];
+                foreach ($data['hotel:HotelProperty']['hotel:Amenities']['hotel:Amenity'] as $amenity) {
+                    $amenityArray[] = $amenity['@attributes']['Code'];
+                }
+                $hotelInfo['hotelAmenities'] = $amenityArray;*/
+                /*..............*/
 
-            //            hote amenities
-            /*..............*/
-            /*$amenityArray = [];
-            foreach ($data['hotel:HotelProperty']['hotel:Amenities']['hotel:Amenity'] as $amenity) {
-                $amenityArray[] = $amenity['@attributes']['Code'];
+                $hotelInfo['hotelRateInfo'] = $data['hotel:RateInfo']['@attributes']??'';
+                $hotelInfo['vendorLocationInfo'] = $data['common_v34_0:VendorLocation']['@attributes'];
+                $finalArray[] = $hotelInfo;
             }
-            $hotelInfo['hotelAmenities'] = $amenityArray;*/
-            /*..............*/
-
-            $hotelInfo['hotelRateInfo'] = $data['hotel:RateInfo']['@attributes']??'';
-            $hotelInfo['vendorLocationInfo'] = $data['common_v34_0:VendorLocation']['@attributes'];
-            $finalArray[] = $hotelInfo;
+            file_put_contents(public_path() . '/cache/hotel/reference_data/' . self::$cacheFile . '_parsed.dat', json_encode($finalArray));
+            return [ 'status' => true,'message' => 'Data Found', 'data' => $finalArray];
+        } catch (\Exception $e) {
+            return [ 'status' => false,'message' => $e->errorMessage()];
         }
-        file_put_contents(public_path() . '/cache/hotel/reference_data/' . self::$cacheFile . '_parsed.dat', json_encode($finalArray));
-        return $finalArray;
     }
 
     protected function hotelMediaApi($myData, $param = false) {
 
         $finalArray = [];
-        $i = 0;
-        foreach ($myData['SOAP:Envelope']['SOAP:Body']['hotel:HotelMediaLinksRsp']['hotel:HotelPropertyWithMediaItems']['common_v34_0:MediaItem'] as $data) {
+        try{
+            $i = 0;
+            foreach ($myData['SOAP:Body']['hotel:HotelMediaLinksRsp']['hotel:HotelPropertyWithMediaItems']['common_v34_0:MediaItem'] as $data) {
 
-            if($i <=4){
-                $hotelMedia['hotelMediaInfo']     = $data['@attributes'];
-                $finalArray[] = $hotelMedia;
-                $i++;
+                if($i <=4){
+                    $hotelMedia['hotelMediaInfo']     = $data['@attributes'];
+                    $finalArray[] = $hotelMedia;
+                    $i++;
+                }
             }
+//            file_put_contents(public_path() . '/cache/hotel/reference_data/' . self::$cacheFile . '_parsed.dat', json_encode($finalArray));
+            return [ 'status' => true,'message' => 'Data Found', 'data' => $finalArray];
+        } catch (\Exception $e) {
+            return [ 'status' => false,'message' => $e->errorMessage()];
         }
-        if(!$param){
-            file_put_contents(public_path() . '/cache/hotel/reference_data/' . self::$cacheFile . '_parsed.dat', json_encode($finalArray));
-        }
-        return $finalArray;
     }
 
     protected function hotelRateInfoApi($myData) {
-
-
         $finalArray = [];
-        foreach ($myData['SOAP:Envelope']['SOAP:Body']['hotel:HotelDetailsRsp']['hotel:RequestedHotelDetails']['hotel:HotelRateDetail'] as $data) {
-            $additional_info = [
-                'ratePlanInfo'          => $data['@attributes'],
-                'hotelRateByDateInfo'   => $data['hotel:HotelRateByDate']['@attributes'],
-                'cancellationInfo'      => $data['hotel:CancelInfo']['@attributes']??'',
-                'hotelGuaranteeInfo'    => $data['hotel:GuaranteeInfo']['@attributes']
+        try{
+            foreach ($myData['SOAP:Body']['hotel:HotelDetailsRsp']['hotel:RequestedHotelDetails']['hotel:HotelRateDetail'] as $data) {
+                $additional_info = [
+                    'ratePlanInfo'          => $data['@attributes'],
+                    'hotelRateByDateInfo'   => $data['hotel:HotelRateByDate']['@attributes'],
+                    'cancellationInfo'      => $data['hotel:CancelInfo']['@attributes']??'',
+                    'hotelGuaranteeInfo'    => $data['hotel:GuaranteeInfo']['@attributes']
 
-            ];
-            $hotelInfo = [
-                'hotelRoomRateInfo'     => $additional_info
-            ];
-            $finalArray[] = $hotelInfo;
+                ];
+                $hotelInfo = [
+                    'hotelRoomRateInfo'     => $additional_info
+                ];
+                $finalArray[] = $hotelInfo;
+            }
+            return [ 'status' => true,'message' => 'Data Found', 'data' => $finalArray];
+        } catch (\Exception $e) {
+            return [ 'status' => false,'message' => $e->errorMessage()];
         }
-        return $finalArray;
-
-
     }
 
     protected function hotelRuleInfoApi($myData) {
+
+        $finalArray = [];
+        $response = $myData['SOAP:Body']['hotel:HotelRulesRsp'];
+        try{
+            foreach($response['hotel:HotelRuleItem'] as $data) {
+
+                $additional_info = [
+                    Str::slug($data['@attributes']['Name'], '-')          => $data['hotel:Text'],
+                ];
+                $finalArray['rule_info'][] = $additional_info;
+            }
+
+            foreach($response['hotel:HotelRateDetail']['hotel:RoomRateDescription'] as $data) {
+
+                $additional_info = [
+                    Str::slug($data['@attributes']['Name'], '-')          => $data['hotel:Text'],
+                ];
+                $finalArray['room_rate_description'][] = $additional_info;
+            }
+
+            foreach($response['hotel:HotelRateDetail']['hotel:GuaranteeInfo']['hotel:GuaranteePaymentType'] as $data) {
+
+                $additional_info = [
+                    $data['@attributes']['Type']         => $data['@attributes']['Description'],
+                ];
+                $finalArray['guarantee_payment_info'][] = $additional_info;
+            }
+
+            $finalArray['rate_by_date'] = $response['hotel:HotelRateDetail']['hotel:HotelRateByDate']['@attributes'];
+            return [ 'status' => true,'message' => 'Data Found', 'data' => $finalArray];
+        } catch (\Exception $e) {
+            return [ 'status' => false,'message' => 'Something went wrong.'];
+        }
+    }
+
+    protected function hotelDescInfoApi($myData) {
 
         $response = $myData['SOAP:Envelope']['SOAP:Body']['hotel:HotelRulesRsp'];
 
@@ -290,9 +376,9 @@ class MyRequestController extends Controller
         return $finalArray;
     }
 
-    protected function hotelDescInfoApi($myData) {
+    protected function hotelBookingInfoApi($myData) {
 
-        $response = $myData['SOAP:Envelope']['SOAP:Body']['hotel:HotelRulesRsp'];
+        $response = $myData['SOAP:Body']['hotel:HotelRulesRsp'];
 
         $finalArray = [];
 

@@ -1,41 +1,35 @@
 
-z	php:S1192–"]Define a constant instead of duplicating this literal "/cache/hotel/reference_data/" 9 times.(°¶Ğ¬8ß‚öù‰.
-d	php:S1192R"HDefine a constant instead of duplicating this literal "status" 20 times.(íÜˆ·8ß‚öù‰.
-;php:S125Ï"Remove this commented out code.(ĞÛØ®8ß‚öù‰.
-f	php:S1192İ"IDefine a constant instead of duplicating this literal "required" 8 times.(ŠŸÀÑ8ß‚öù‰.
-Q	php:S1481ù"/Remove this unused "$hotelInfo" local variable.(¼òøğÿÿÿÿÿ8ß‚öù‰.
-f	php:S1192–"IDefine a constant instead of duplicating this literal "_raw.dat" 3 times.(°¶Ğ¬8°˜ŸŠ.
-i	php:S1192–"LDefine a constant instead of duplicating this literal "_parsed.dat" 6 times.(°¶Ğ¬8ß‚öù‰.
-?php:S1253"Remove this commented out code.(ô±Ù½şÿÿÿÿ8ŒÖ³ù‰.
-	php:S1488Ö"_Immediately return this expression instead of assigning it to the temporary variable "$myData".(Â¼¥”ùÿÿÿÿ8–ãøªŠ.
-h	php:S1192‹"KDefine a constant instead of duplicating this literal "hotelRefId" 6 times.(Î«›í8ß‚öù‰.
-w	php:S1192â"ZDefine a constant instead of duplicating this literal "numeric|between:1,9|min:1" 3 times.(“§¶8ß‚öù‰.
-l	php:S1142 "OReduce the number of returns of this function 6, down to the maximum allowed 3.(ŠûÑ8°˜ŸŠ.
+f	php:S1192¶"IDefine a constant instead of duplicating this literal "_raw.dat" 3 times.(°¶Ğ¬8°˜ŸŠ.
+x	php:S1192Ã"VDefine a constant instead of duplicating this literal "Something went wrong." 3 times.(‹Û£àûÿÿÿÿ8°˜ŸŠ.
 ?php:S125E"Remove this commented out code.(½°™øÿÿÿÿ8½–û‰.
-@php:S125½"Remove this commented out code.(ÒÌâ–øÿÿÿÿ8ß‚öù‰.
-;php:S125Š"Remove this commented out code.(º„•‹8…½Ğú‰.
-l	php:S1142×"OReduce the number of returns of this function 5, down to the maximum allowed 3.(‚ò†Ú8ß‚öù‰.
-x	php:S1192£"VDefine a constant instead of duplicating this literal "Something went wrong." 3 times.(‹Û£àûÿÿÿÿ8°˜ŸŠ.
-h	php:S1192˜"FDefine a constant instead of duplicating this literal "error" 6 times.(Ô®Ãúÿÿÿÿ8ß‚öù‰.
-h	php:S1192Š"FDefine a constant instead of duplicating this literal "refId" 3 times.(˜êùØıÿÿÿÿ8°˜ŸŠ.
-@php:S125²"Remove this commented out code.(¶«Ì¸üÿÿÿÿ8ß‚öù‰.
-;php:S125"Remove this commented out code.(ü¥‘³8ß‚öù‰.
-@php:S125¬"Remove this commented out code.(ÒÌâ–øÿÿÿÿ8ß‚öù‰.
-@php:S125…"Remove this commented out code.(ÒÌâ–øÿÿÿÿ8ß‚öù‰.
-;php:S125É"Remove this commented out code.(¼¯‰ƒ8‡¿ÿ¡Š.
-k	php:S1142‡"OReduce the number of returns of this function 5, down to the maximum allowed 3.(«·]8ß‚öù‰.
-:php:S125o"Remove this commented out code.(äÅ¦ø8ß‚öù‰.
-i	php:S1192"LDefine a constant instead of duplicating this literal "@attributes" 5 times.(¾Ôå¼8ß‚öù‰.
-Q	php:S1481©"/Remove this unused "$hotelInfo" local variable.(¼òøğÿÿÿÿÿ8³”¬ÒŠ.
-;php:S125€"Remove this commented out code.(¼¯‰ƒ8˜Øòú‰.
-	php:S1488…"_Immediately return this expression instead of assigning it to the temporary variable "$myData".(Â¼¥”ùÿÿÿÿ8¨†±Š.
-Q	php:S1481Â"/Remove this unused "$hotelInfo" local variable.(¼òøğÿÿÿÿÿ8¬œÊŸŠ.
-;php:S125‰"Remove this commented out code.(³ÍŠÇ8ß‚öù‰.
+h	php:S1192ª"FDefine a constant instead of duplicating this literal "refId" 3 times.(˜êùØıÿÿÿÿ8°˜ŸŠ.
+;php:S125 "Remove this commented out code.(¼¯‰ƒ8˜Øòú‰.
+@php:S125Ò"Remove this commented out code.(¶«Ì¸üÿÿÿÿ8ß‚öù‰.
+;php:S125ª"Remove this commented out code.(º„•‹8…½Ğú‰.
+Q	php:S1481s"0Remove this unused "$finalArray" local variable.(ŞëÚ‚øÿÿÿÿ8íôïûŠ.
+:php:S125q"Remove this commented out code.(Ùı—¡8ß‚öù‰.
+s	php:S1192¹"VDefine a constant instead of duplicating this literal "Invalid Reference ID." 3 times.(ñ®±8°˜ŸŠ.
 t	php:S2068"X'password' detected in this variable name, review this potentially hardcoded credential.(€¬¼ã8ŒÖ³ù‰.
-;php:S125"Remove this commented out code.(Ùı—¡8ß‚öù‰.
-s	php:S1192™"VDefine a constant instead of duplicating this literal "Invalid Reference ID." 3 times.(ñ®±8°˜ŸŠ.
-i	php:S1192U"HDefine a constant instead of duplicating this literal "message" 7 times.(×¥¬Óúÿÿÿÿ8ß‚öù‰.
-@php:S125Î"Remove this commented out code.(ÒÌâ–øÿÿÿÿ8°˜ŸŠ.
-;php:S125µ"Remove this commented out code.(É»ìÃ8ß‚öù‰.
-;php:S125Ó"Remove this commented out code.(º„•‹8°˜ŸŠ.
-:	php:S1763Û"Remove this unreachable code.(Ş¬•Ÿ8–ãøªŠ.
+d	php:S1192R"HDefine a constant instead of duplicating this literal "status" 19 times.(íÜˆ·8ß‚öù‰.
+l	php:S1142À"OReduce the number of returns of this function 6, down to the maximum allowed 3.(ŠûÑ8°˜ŸŠ.
+:	php:S1763û"Remove this unreachable code.(Ş¬•Ÿ8–ãøªŠ.
+l	php:S1142÷"OReduce the number of returns of this function 5, down to the maximum allowed 3.(‚ò†Ú8ß‚öù‰.
+z	php:S1192¶"]Define a constant instead of duplicating this literal "/cache/hotel/reference_data/" 9 times.(°¶Ğ¬8ß‚öù‰.
+i	php:S1192U"HDefine a constant instead of duplicating this literal "message" 6 times.(×¥¬Óúÿÿÿÿ8ß‚öù‰.
+@php:S125Ì"Remove this commented out code.(ÒÌâ–øÿÿÿÿ8ß‚öù‰.
+h	php:S1192¸"FDefine a constant instead of duplicating this literal "error" 6 times.(Ô®Ãúÿÿÿÿ8ß‚öù‰.
+?php:S1253"Remove this commented out code.(ô±Ù½şÿÿÿÿ8ŒÖ³ù‰.
+;php:S125é"Remove this commented out code.(¼¯‰ƒ8‡¿ÿ¡Š.
+Q	php:S1481™"/Remove this unused "$hotelInfo" local variable.(¼òøğÿÿÿÿÿ8ß‚öù‰.
+h	php:S1192«"KDefine a constant instead of duplicating this literal "hotelRefId" 6 times.(Î«›í8ß‚öù‰.
+@php:S125¥"Remove this commented out code.(ÒÌâ–øÿÿÿÿ8ß‚öù‰.
+e	php:S1192}"IDefine a constant instead of duplicating this literal "required" 8 times.(ŠŸÀÑ8ß‚öù‰.
+w	php:S1192‚"ZDefine a constant instead of duplicating this literal "numeric|between:1,9|min:1" 3 times.(“§¶8ß‚öù‰.
+k	php:S1142§"OReduce the number of returns of this function 5, down to the maximum allowed 3.(«·]8ß‚öù‰.
+@php:S125î"Remove this commented out code.(ÒÌâ–øÿÿÿÿ8°˜ŸŠ.
+Q	php:S1481É"/Remove this unused "$hotelInfo" local variable.(¼òøğÿÿÿÿÿ8³”¬ÒŠ.
+@php:S125İ"Remove this commented out code.(ÒÌâ–øÿÿÿÿ8ß‚öù‰.
+;php:S125ó"Remove this commented out code.(º„•‹8°˜ŸŠ.
+Q	php:S1481â"/Remove this unused "$hotelInfo" local variable.(¼òøğÿÿÿÿÿ8¬œÊŸŠ.
+	php:S1488ö"_Immediately return this expression instead of assigning it to the temporary variable "$myData".(Â¼¥”ùÿÿÿÿ8–ãøªŠ.
+i	php:S1192¶"LDefine a constant instead of duplicating this literal "_parsed.dat" 6 times.(°¶Ğ¬8ß‚öù‰.

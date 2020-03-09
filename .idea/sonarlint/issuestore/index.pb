@@ -54,3 +54,13 @@ V
 &public/xml_requests/hotel_rule_req.php,7\d\7d6dbaf2548343241986cbed4fbb3df55cba6a05
 T
 $myFiles/test/test/HomeController.php,d\7\d7d321ff7ac8cfad75f1581f0388b93be2480820
+_
+/app/Http/Controllers/API/V1/CheckController.php,7\c\7c90d5e4f633d4da9ff61e0e641eaee728364c88
+]
+-public/xml_requests/hotel_description_req.php,3\a\3ac84c8be4bdaccd2b16b74ee982a90bbe9f4cb6
+c
+3app/Http/Controllers/API/V1/MyRequestController.php,f\f\ff39bb07166399bd6dde8c924c3490a51cbd2b37
+Y
+)public/xml_requests/hotel_booking_req.php,4\9\4997849838b0b91c5c809e2223c22995938269d2
+a
+1app/Http/Controllers/API/V1/MyHotelController.php,b\0\b09a9d6a31ff0b69dcfa5f1ff724dc29775fd426

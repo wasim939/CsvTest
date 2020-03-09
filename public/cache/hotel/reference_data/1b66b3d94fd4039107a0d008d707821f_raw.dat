@@ -1,230 +1,12 @@
 <?xml version="1.0"?>
 <SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
   <SOAP:Body>
-    <hotel:HotelSearchAvailabilityRsp xmlns:hotel="http://www.travelport.com/schema/hotel_v34_0" xmlns:common_v34_0="http://www.travelport.com/schema/common_v34_0" TransactionId="AF40DBB60A0764783CAE1098606097D7" ResponseTime="10948">
-      <common_v34_0:NextResultReference ProviderCode="1G">GvCe60ac0/ca8J7rRpzT975Xpi4/OQpguPnDvrR9vlNZaZ2DFHwu8QcpY4c9SeZKz+fPRhy0mN75JmHUF6LZYoqJ7sdilMVsDnCDubYq+Qixl7W894S3HA==</common_v34_0:NextResultReference>
+    <hotel:HotelSearchAvailabilityRsp xmlns:hotel="http://www.travelport.com/schema/hotel_v34_0" xmlns:common_v34_0="http://www.travelport.com/schema/common_v34_0" TransactionId="BE20B9C40A07643B74EC5DC36493E1B1" ResponseTime="11187">
+      <common_v34_0:NextResultReference ProviderCode="1G">GvCe60ac0/ca8J7rRpzT98Ibr1TFXbaFuPnDvrR9vlP64jkzsHJOXQcpY4c9SeZKz+fPRhy0mN4YljGjzY0cwE4kXADt/mzkDnCDubYq+Qixl7W894S3HA==</common_v34_0:NextResultReference>
       <hotel:ReferencePoint State="SD">REGIONAL JOE FOSS FIELD</hotel:ReferencePoint>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="XV" VendorLocationID="81750" Key="+X25hC4R2BKAhWxRCAAAAA=="/>
-        <hotel:HotelProperty HotelChain="XV" HotelCode="81750" HotelLocation="FSD" Name="SPRINGHILL STES SIOUX MARRIOTT" VendorLocationKey="+X25hC4R2BKAhWxRCAAAAA==" HotelTransportation="Limo" ReserveRequirement="Guarantee" ParticipationLevel="Lowest Public Rate" Availability="Available">
-          <hotel:PropertyAddress>
-            <hotel:Address>4304 W EMPIRE PLACE</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="6" Direction="SW"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>3</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="HSPI"/>
-            <hotel:Amenity Code="BRFT"/>
-            <hotel:Amenity Code="CSFR"/>
-            <hotel:Amenity Code="COBU"/>
-            <hotel:Amenity Code="CORO"/>
-            <hotel:Amenity Code="ELEV"/>
-            <hotel:Amenity Code="FAPL"/>
-            <hotel:Amenity Code="FRTR"/>
-            <hotel:Amenity Code="HAFA"/>
-            <hotel:Amenity Code="HECL"/>
-            <hotel:Amenity Code="MIOV"/>
-            <hotel:Amenity Code="LAVA"/>
-            <hotel:Amenity Code="MEPL"/>
-            <hotel:Amenity Code="MEFA"/>
-            <hotel:Amenity Code="NSMR"/>
-            <hotel:Amenity Code="FPRK"/>
-            <hotel:Amenity Code="PHSV"/>
-            <hotel:Amenity Code="POOL"/>
-            <hotel:Amenity Code="INPL"/>
-            <hotel:Amenity Code="RFGR"/>
-            <hotel:Amenity Code="SADE"/>
-            <hotel:Amenity Code="SHWR"/>
-            <hotel:Amenity Code="TELV"/>
-            <hotel:Amenity Code="CBTV"/>
-            <hotel:Amenity Code="PRBT"/>
-            <hotel:Amenity Code="FXSV"/>
-            <hotel:Amenity Code="SFBD"/>
-            <hotel:Amenity Code="BATB"/>
-            <hotel:Amenity Code="FSTY"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="USD149.00" MaximumAmount="USD229.00"/>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="FN" VendorLocationID="44191" Key="+X25hC4R2BKAiWxRCAAAAA=="/>
-        <hotel:HotelProperty HotelChain="FN" HotelCode="44191" HotelLocation="FSD" Name="FAIRFIELD INN N STES MARRIOTT" VendorLocationKey="+X25hC4R2BKAiWxRCAAAAA==" HotelTransportation="Other" ReserveRequirement="Other" ParticipationLevel="Lowest Public Rate" Availability="Available">
-          <hotel:PropertyAddress>
-            <hotel:Address>4501 W EMPIRE PL</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="7" Direction="SW"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>3</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="HSPI"/>
-            <hotel:Amenity Code="BRFT"/>
-            <hotel:Amenity Code="CSFR"/>
-            <hotel:Amenity Code="COBU"/>
-            <hotel:Amenity Code="COBR"/>
-            <hotel:Amenity Code="ELEV"/>
-            <hotel:Amenity Code="FAPL"/>
-            <hotel:Amenity Code="HAFA"/>
-            <hotel:Amenity Code="HECL"/>
-            <hotel:Amenity Code="MIOV"/>
-            <hotel:Amenity Code="LAVA"/>
-            <hotel:Amenity Code="MEFA"/>
-            <hotel:Amenity Code="NSMR"/>
-            <hotel:Amenity Code="PARK"/>
-            <hotel:Amenity Code="FPRK"/>
-            <hotel:Amenity Code="POOL"/>
-            <hotel:Amenity Code="INPL"/>
-            <hotel:Amenity Code="RFGR"/>
-            <hotel:Amenity Code="SADE"/>
-            <hotel:Amenity Code="SPAA"/>
-            <hotel:Amenity Code="TELV"/>
-            <hotel:Amenity Code="CBTV"/>
-            <hotel:Amenity Code="PRBT"/>
-            <hotel:Amenity Code="SFBD"/>
-            <hotel:Amenity Code="BATB"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="USD129.00" MaximumAmount="USD159.00"/>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="TO" VendorLocationID="B6518" Key="+X25hC4R2BKAjWxRCAAAAA=="/>
-        <hotel:HotelProperty HotelChain="TO" HotelCode="B6518" HotelLocation="FSD" Name="TOWNEPLACE STES SOUTH MARRIOTT" VendorLocationKey="+X25hC4R2BKAjWxRCAAAAA==" HotelTransportation="Other" ReserveRequirement="Other" ParticipationLevel="Lowest Public Rate" Availability="Available">
-          <hotel:PropertyAddress>
-            <hotel:Address>6400 S CONNIE AVE</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="8" Direction="S"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>0</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="HSPI"/>
-            <hotel:Amenity Code="CSFR"/>
-            <hotel:Amenity Code="COBU"/>
-            <hotel:Amenity Code="ELEV"/>
-            <hotel:Amenity Code="FAPL"/>
-            <hotel:Amenity Code="HAFA"/>
-            <hotel:Amenity Code="HECL"/>
-            <hotel:Amenity Code="MIOV"/>
-            <hotel:Amenity Code="KTCN"/>
-            <hotel:Amenity Code="LAVA"/>
-            <hotel:Amenity Code="MEPL"/>
-            <hotel:Amenity Code="NSMR"/>
-            <hotel:Amenity Code="FPRK"/>
-            <hotel:Amenity Code="SPAL"/>
-            <hotel:Amenity Code="POOL"/>
-            <hotel:Amenity Code="INPL"/>
-            <hotel:Amenity Code="RFGR"/>
-            <hotel:Amenity Code="SADE"/>
-            <hotel:Amenity Code="SHWR"/>
-            <hotel:Amenity Code="TELV"/>
-            <hotel:Amenity Code="CBTV"/>
-            <hotel:Amenity Code="PRBT"/>
-            <hotel:Amenity Code="FXSV"/>
-            <hotel:Amenity Code="SFBD"/>
-            <hotel:Amenity Code="BATB"/>
-            <hotel:Amenity Code="FSTY"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="USD99.00" MaximumAmount="USD139.00"/>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="HT" VendorLocationID="A8951" Key="+X25hC4R2BKAkWxRCAAAAA=="/>
-        <hotel:HotelProperty HotelChain="HT" HotelCode="A8951" HotelLocation="FSD" Name="HOME2 SUITES SIOUX FALLS-SANFORD" VendorLocationKey="+X25hC4R2BKAkWxRCAAAAA==" ReserveRequirement="Other" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="Available">
-          <hotel:PropertyAddress>
-            <hotel:Address>1120 S GRANGE AVENUE</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="3" Direction="S"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>3</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="HSPI"/>
-            <hotel:Amenity Code="BRFT"/>
-            <hotel:Amenity Code="CSFR"/>
-            <hotel:Amenity Code="COBU"/>
-            <hotel:Amenity Code="COBR"/>
-            <hotel:Amenity Code="ELEV"/>
-            <hotel:Amenity Code="GOLF"/>
-            <hotel:Amenity Code="HAFA"/>
-            <hotel:Amenity Code="HECL"/>
-            <hotel:Amenity Code="MIOV"/>
-            <hotel:Amenity Code="KTCN"/>
-            <hotel:Amenity Code="MEPL"/>
-            <hotel:Amenity Code="MOIR"/>
-            <hotel:Amenity Code="NSMR"/>
-            <hotel:Amenity Code="PARK"/>
-            <hotel:Amenity Code="FPRK"/>
-            <hotel:Amenity Code="SPAL"/>
-            <hotel:Amenity Code="PHSV"/>
-            <hotel:Amenity Code="POOL"/>
-            <hotel:Amenity Code="INPL"/>
-            <hotel:Amenity Code="RFGR"/>
-            <hotel:Amenity Code="SADE"/>
-            <hotel:Amenity Code="TELV"/>
-            <hotel:Amenity Code="CBTV"/>
-            <hotel:Amenity Code="PRBT"/>
-            <hotel:Amenity Code="SFBD"/>
-            <hotel:Amenity Code="PHCO"/>
-            <hotel:Amenity Code="BATB"/>
-            <hotel:Amenity Code="FSTY"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="USD135.11" MaximumAmount="USD139.00"/>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="TO" VendorLocationID="87819" Key="+X25hC4R2BKAlWxRCAAAAA=="/>
-        <hotel:HotelProperty HotelChain="TO" HotelCode="87819" HotelLocation="FSD" Name="TOWNEPLACE STES SIOUX MARRIOTT" VendorLocationKey="+X25hC4R2BKAlWxRCAAAAA==" HotelTransportation="Other" ReserveRequirement="Guarantee" ParticipationLevel="Lowest Public Rate" Availability="Available">
-          <hotel:PropertyAddress>
-            <hotel:Address>4545 WEST HOMESFIELD</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="5" Direction="SW"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>2</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="HSPI"/>
-            <hotel:Amenity Code="CSFR"/>
-            <hotel:Amenity Code="COBU"/>
-            <hotel:Amenity Code="EFFI"/>
-            <hotel:Amenity Code="ELEV"/>
-            <hotel:Amenity Code="FAPL"/>
-            <hotel:Amenity Code="FRTR"/>
-            <hotel:Amenity Code="HAFA"/>
-            <hotel:Amenity Code="HECL"/>
-            <hotel:Amenity Code="MIOV"/>
-            <hotel:Amenity Code="KTCN"/>
-            <hotel:Amenity Code="LAVA"/>
-            <hotel:Amenity Code="MEPL"/>
-            <hotel:Amenity Code="NSMR"/>
-            <hotel:Amenity Code="FPRK"/>
-            <hotel:Amenity Code="SPAL"/>
-            <hotel:Amenity Code="PHSV"/>
-            <hotel:Amenity Code="POOL"/>
-            <hotel:Amenity Code="INPL"/>
-            <hotel:Amenity Code="RFGR"/>
-            <hotel:Amenity Code="SADE"/>
-            <hotel:Amenity Code="SHWR"/>
-            <hotel:Amenity Code="TELV"/>
-            <hotel:Amenity Code="CBTV"/>
-            <hotel:Amenity Code="PRBT"/>
-            <hotel:Amenity Code="FXSV"/>
-            <hotel:Amenity Code="SFBD"/>
-            <hotel:Amenity Code="BATB"/>
-            <hotel:Amenity Code="FSTY"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="USD119.00" MaximumAmount="USD135.00"/>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="CY" VendorLocationID="81749" Key="+X25hC4R2BKAmWxRCAAAAA=="/>
-        <hotel:HotelProperty HotelChain="CY" HotelCode="81749" HotelLocation="FSD" Name="COURTYARD SIOUX FALLS MARTIOTT" VendorLocationKey="+X25hC4R2BKAmWxRCAAAAA==" HotelTransportation="Limo" ReserveRequirement="Guarantee" ParticipationLevel="Lowest Public Rate" Availability="Available">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="CY" VendorLocationID="81749" Key="ysAiwC7Q2BKAXPMSBAAAAA=="/>
+        <hotel:HotelProperty HotelChain="CY" HotelCode="81749" HotelLocation="FSD" Name="COURTYARD SIOUX FALLS MARTIOTT" VendorLocationKey="ysAiwC7Q2BKAXPMSBAAAAA==" HotelTransportation="Limo" ReserveRequirement="Guarantee" ParticipationLevel="Lowest Public Rate" Availability="Available">
           <hotel:PropertyAddress>
             <hotel:Address>SIOUX FALLS SD</hotel:Address>
           </hotel:PropertyAddress>
@@ -269,8 +51,182 @@
         <hotel:RateInfo MinimumAmount="USD149.00" MaximumAmount="USD239.00"/>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="YZ" VendorLocationID="30258" Key="+X25hC4R2BKAnWxRCAAAAA=="/>
-        <hotel:HotelProperty HotelChain="YZ" HotelCode="30258" HotelLocation="FSD" Name="STAYBRIDGE SUITES SIOUX FALLS" VendorLocationKey="+X25hC4R2BKAnWxRCAAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Other" ParticipationLevel="Lowest Public Rate" Availability="Available">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="FN" VendorLocationID="23666" Key="ysAiwC7Q2BKAYPMSBAAAAA=="/>
+        <hotel:HotelProperty HotelChain="FN" HotelCode="23666" HotelLocation="FSD" Name="FAIRFIELD INN N STES MARRIOTT" VendorLocationKey="ysAiwC7Q2BKAYPMSBAAAAA==" HotelTransportation="Other" ReserveRequirement="Other" ParticipationLevel="Lowest Public Rate" Availability="Available">
+          <hotel:PropertyAddress>
+            <hotel:Address>4035 BOBHALLA DR</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="2" Direction="W"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>3</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="COBU"/>
+            <hotel:Amenity Code="COBR"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="MIOV"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="FPRK"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="INPL"/>
+            <hotel:Amenity Code="RFGR"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="SPAA"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="PRBT"/>
+            <hotel:Amenity Code="SFBD"/>
+            <hotel:Amenity Code="BATB"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:RateInfo MinimumAmount="USD139.00" MaximumAmount="USD209.00"/>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="HT" VendorLocationID="A8951" Key="ysAiwC7Q2BKAZPMSBAAAAA=="/>
+        <hotel:HotelProperty HotelChain="HT" HotelCode="A8951" HotelLocation="FSD" Name="HOME2 SUITES SIOUX FALLS-SANFORD" VendorLocationKey="ysAiwC7Q2BKAZPMSBAAAAA==" ReserveRequirement="Other" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="Available">
+          <hotel:PropertyAddress>
+            <hotel:Address>1120 S GRANGE AVENUE</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="3" Direction="S"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>3</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="COBU"/>
+            <hotel:Amenity Code="COBR"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="GOLF"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="MIOV"/>
+            <hotel:Amenity Code="KTCN"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="MOIR"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="FPRK"/>
+            <hotel:Amenity Code="SPAL"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="INPL"/>
+            <hotel:Amenity Code="RFGR"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="PRBT"/>
+            <hotel:Amenity Code="SFBD"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:RateInfo MinimumAmount="USD135.11" MaximumAmount="USD139.00"/>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="TO" VendorLocationID="87819" Key="ysAiwC7Q2BKAaPMSBAAAAA=="/>
+        <hotel:HotelProperty HotelChain="TO" HotelCode="87819" HotelLocation="FSD" Name="TOWNEPLACE STES SIOUX MARRIOTT" VendorLocationKey="ysAiwC7Q2BKAaPMSBAAAAA==" HotelTransportation="Other" ReserveRequirement="Guarantee" ParticipationLevel="Lowest Public Rate" Availability="Available">
+          <hotel:PropertyAddress>
+            <hotel:Address>4545 WEST HOMESFIELD</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="5" Direction="SW"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>2</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="COBU"/>
+            <hotel:Amenity Code="EFFI"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="FRTR"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="MIOV"/>
+            <hotel:Amenity Code="KTCN"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="FPRK"/>
+            <hotel:Amenity Code="SPAL"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="INPL"/>
+            <hotel:Amenity Code="RFGR"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="PRBT"/>
+            <hotel:Amenity Code="FXSV"/>
+            <hotel:Amenity Code="SFBD"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:RateInfo MinimumAmount="USD119.00" MaximumAmount="USD135.00"/>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="YO" VendorLocationID="43866" Key="ysAiwC7Q2BKAbPMSBAAAAA=="/>
+        <hotel:HotelProperty HotelChain="YO" HotelCode="43866" HotelLocation="FSD" Name="CANDLEWOOD SUITES SIOUX FALLS" VendorLocationKey="ysAiwC7Q2BKAbPMSBAAAAA==" ReserveRequirement="Other" ParticipationLevel="Lowest Public Rate" Availability="Available">
+          <hotel:PropertyAddress>
+            <hotel:Address>SIOUX FALLS  SD</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="6" Direction="SW"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>3</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="CHPR"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="COSH"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="COBU"/>
+            <hotel:Amenity Code="GOLF"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="MIOV"/>
+            <hotel:Amenity Code="KTCN"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="FPRK"/>
+            <hotel:Amenity Code="SPAL"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="RFGR"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="PRBT"/>
+            <hotel:Amenity Code="SFBD"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:RateInfo MinimumAmount="USD74.99" MinAmountRateChanged="false" MaximumAmount="USD144.99" MaxAmountRateChanged="false"/>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="YZ" VendorLocationID="30258" Key="ysAiwC7Q2BKAcPMSBAAAAA=="/>
+        <hotel:HotelProperty HotelChain="YZ" HotelCode="30258" HotelLocation="FSD" Name="STAYBRIDGE SUITES SIOUX FALLS" VendorLocationKey="ysAiwC7Q2BKAcPMSBAAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Other" ParticipationLevel="Lowest Public Rate" Availability="Available">
           <hotel:PropertyAddress>
             <hotel:Address>SIOUX FALLS  SD</hotel:Address>
           </hotel:PropertyAddress>
@@ -315,92 +271,8 @@
         <hotel:RateInfo MinimumAmount="USD148.99" MinAmountRateChanged="false" MaximumAmount="USD209.99" MaxAmountRateChanged="false"/>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="FN" VendorLocationID="23666" Key="+X25hC4R2BKAoWxRCAAAAA=="/>
-        <hotel:HotelProperty HotelChain="FN" HotelCode="23666" HotelLocation="FSD" Name="FAIRFIELD INN N STES MARRIOTT" VendorLocationKey="+X25hC4R2BKAoWxRCAAAAA==" HotelTransportation="Other" ReserveRequirement="Other" ParticipationLevel="Lowest Public Rate" Availability="Available">
-          <hotel:PropertyAddress>
-            <hotel:Address>4035 BOBHALLA DR</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="2" Direction="W"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>3</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="HSPI"/>
-            <hotel:Amenity Code="BRFT"/>
-            <hotel:Amenity Code="CSFR"/>
-            <hotel:Amenity Code="COBU"/>
-            <hotel:Amenity Code="COBR"/>
-            <hotel:Amenity Code="ELEV"/>
-            <hotel:Amenity Code="FAPL"/>
-            <hotel:Amenity Code="HAFA"/>
-            <hotel:Amenity Code="HECL"/>
-            <hotel:Amenity Code="MIOV"/>
-            <hotel:Amenity Code="LAVA"/>
-            <hotel:Amenity Code="MEFA"/>
-            <hotel:Amenity Code="NSMR"/>
-            <hotel:Amenity Code="PARK"/>
-            <hotel:Amenity Code="FPRK"/>
-            <hotel:Amenity Code="POOL"/>
-            <hotel:Amenity Code="INPL"/>
-            <hotel:Amenity Code="RFGR"/>
-            <hotel:Amenity Code="SADE"/>
-            <hotel:Amenity Code="SHWR"/>
-            <hotel:Amenity Code="SPAA"/>
-            <hotel:Amenity Code="TELV"/>
-            <hotel:Amenity Code="CBTV"/>
-            <hotel:Amenity Code="PRBT"/>
-            <hotel:Amenity Code="SFBD"/>
-            <hotel:Amenity Code="BATB"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="USD139.00" MaximumAmount="USD209.00"/>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="YO" VendorLocationID="43866" Key="+X25hC4R2BKApWxRCAAAAA=="/>
-        <hotel:HotelProperty HotelChain="YO" HotelCode="43866" HotelLocation="FSD" Name="CANDLEWOOD SUITES SIOUX FALLS" VendorLocationKey="+X25hC4R2BKApWxRCAAAAA==" ReserveRequirement="Other" ParticipationLevel="Lowest Public Rate" Availability="Available">
-          <hotel:PropertyAddress>
-            <hotel:Address>SIOUX FALLS  SD</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="6" Direction="SW"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>3</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="CHPR"/>
-            <hotel:Amenity Code="HSPI"/>
-            <hotel:Amenity Code="COSH"/>
-            <hotel:Amenity Code="CSFR"/>
-            <hotel:Amenity Code="COBU"/>
-            <hotel:Amenity Code="GOLF"/>
-            <hotel:Amenity Code="HAFA"/>
-            <hotel:Amenity Code="HECL"/>
-            <hotel:Amenity Code="MIOV"/>
-            <hotel:Amenity Code="KTCN"/>
-            <hotel:Amenity Code="LAVA"/>
-            <hotel:Amenity Code="NSMR"/>
-            <hotel:Amenity Code="PARK"/>
-            <hotel:Amenity Code="FPRK"/>
-            <hotel:Amenity Code="SPAL"/>
-            <hotel:Amenity Code="PHSV"/>
-            <hotel:Amenity Code="RFGR"/>
-            <hotel:Amenity Code="SADE"/>
-            <hotel:Amenity Code="SHWR"/>
-            <hotel:Amenity Code="TELV"/>
-            <hotel:Amenity Code="CBTV"/>
-            <hotel:Amenity Code="PRBT"/>
-            <hotel:Amenity Code="SFBD"/>
-            <hotel:Amenity Code="PHCO"/>
-            <hotel:Amenity Code="BATB"/>
-            <hotel:Amenity Code="FSTY"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="USD74.99" MinAmountRateChanged="false" MaximumAmount="USD144.99" MaxAmountRateChanged="false"/>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="RC" VendorLocationID="47590" Key="+X25hC4R2BKAqWxRCAAAAA=="/>
-        <hotel:HotelProperty HotelChain="RC" HotelCode="47590" HotelLocation="FSD" Name="RESIDENCE INN SIOUX MARRIOTT" VendorLocationKey="+X25hC4R2BKAqWxRCAAAAA==" HotelTransportation="Other" ReserveRequirement="Guarantee" ParticipationLevel="Lowest Public Rate" Availability="Available">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="RC" VendorLocationID="47590" Key="ysAiwC7Q2BKAdPMSBAAAAA=="/>
+        <hotel:HotelProperty HotelChain="RC" HotelCode="47590" HotelLocation="FSD" Name="RESIDENCE INN SIOUX MARRIOTT" VendorLocationKey="ysAiwC7Q2BKAdPMSBAAAAA==" HotelTransportation="Other" ReserveRequirement="Guarantee" ParticipationLevel="Lowest Public Rate" Availability="Available">
           <hotel:PropertyAddress>
             <hotel:Address>4509 W EMPIRE PL</hotel:Address>
           </hotel:PropertyAddress>
@@ -447,8 +319,91 @@
         <hotel:RateInfo MinimumAmount="USD129.00" MaximumAmount="USD179.00"/>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="SI" VendorLocationID="95451" Key="+X25hC4R2BKArWxRCAAAAA=="/>
-        <hotel:HotelProperty HotelChain="SI" HotelCode="95451" HotelLocation="FSD" Name="SHERATON SIOUX FALLS CONV CTR" VendorLocationKey="+X25hC4R2BKArWxRCAAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Guarantee" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="Available">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="TO" VendorLocationID="B6518" Key="ysAiwC7Q2BKAePMSBAAAAA=="/>
+        <hotel:HotelProperty HotelChain="TO" HotelCode="B6518" HotelLocation="FSD" Name="TOWNEPLACE STES SOUTH MARRIOTT" VendorLocationKey="ysAiwC7Q2BKAePMSBAAAAA==" HotelTransportation="Other" ReserveRequirement="Other" ParticipationLevel="Lowest Public Rate" Availability="Available">
+          <hotel:PropertyAddress>
+            <hotel:Address>6400 S CONNIE AVE</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="8" Direction="S"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="COBU"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="MIOV"/>
+            <hotel:Amenity Code="KTCN"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="FPRK"/>
+            <hotel:Amenity Code="SPAL"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="INPL"/>
+            <hotel:Amenity Code="RFGR"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="PRBT"/>
+            <hotel:Amenity Code="FXSV"/>
+            <hotel:Amenity Code="SFBD"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:RateInfo MinimumAmount="USD99.00" MaximumAmount="USD139.00"/>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="FN" VendorLocationID="44191" Key="ysAiwC7Q2BKAfPMSBAAAAA=="/>
+        <hotel:HotelProperty HotelChain="FN" HotelCode="44191" HotelLocation="FSD" Name="FAIRFIELD INN N STES MARRIOTT" VendorLocationKey="ysAiwC7Q2BKAfPMSBAAAAA==" HotelTransportation="Other" ReserveRequirement="Other" ParticipationLevel="Lowest Public Rate" Availability="Available">
+          <hotel:PropertyAddress>
+            <hotel:Address>4501 W EMPIRE PL</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="7" Direction="SW"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>3</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="COBU"/>
+            <hotel:Amenity Code="COBR"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="MIOV"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="FPRK"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="INPL"/>
+            <hotel:Amenity Code="RFGR"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="SPAA"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="PRBT"/>
+            <hotel:Amenity Code="SFBD"/>
+            <hotel:Amenity Code="BATB"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:RateInfo MinimumAmount="USD129.00" MaximumAmount="USD159.00"/>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="SI" VendorLocationID="95451" Key="ysAiwC7Q2BKAgPMSBAAAAA=="/>
+        <hotel:HotelProperty HotelChain="SI" HotelCode="95451" HotelLocation="FSD" Name="SHERATON SIOUX FALLS CONV CTR" VendorLocationKey="ysAiwC7Q2BKAgPMSBAAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Guarantee" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="Available">
           <hotel:PropertyAddress>
             <hotel:Address>1211 WEST AVENUE NOR</hotel:Address>
           </hotel:PropertyAddress>
@@ -495,8 +450,97 @@
         <hotel:RateInfo MinimumAmount="USD134.00" MaximumAmount="USD264.00"/>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="BW" VendorLocationID="40396" Key="+X25hC4R2BKAsWxRCAAAAA=="/>
-        <hotel:HotelProperty HotelChain="BW" HotelCode="40396" HotelLocation="FSD" Name="BEST WESTERN EMPIRE TOWER" VendorLocationKey="+X25hC4R2BKAsWxRCAAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Best Available Rate and Inside Shopper participant">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="XV" VendorLocationID="81750" Key="ysAiwC7Q2BKAhPMSBAAAAA=="/>
+        <hotel:HotelProperty HotelChain="XV" HotelCode="81750" HotelLocation="FSD" Name="SPRINGHILL STES SIOUX MARRIOTT" VendorLocationKey="ysAiwC7Q2BKAhPMSBAAAAA==" HotelTransportation="Limo" ReserveRequirement="Guarantee" ParticipationLevel="Lowest Public Rate" Availability="Available">
+          <hotel:PropertyAddress>
+            <hotel:Address>4304 W EMPIRE PLACE</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="6" Direction="SW"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>3</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="COBU"/>
+            <hotel:Amenity Code="CORO"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="FRTR"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="MIOV"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="FPRK"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="INPL"/>
+            <hotel:Amenity Code="RFGR"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="PRBT"/>
+            <hotel:Amenity Code="FXSV"/>
+            <hotel:Amenity Code="SFBD"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:RateInfo MinimumAmount="USD149.00" MaximumAmount="USD229.00"/>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="GI" VendorLocationID="85389" Key="ysAiwC7Q2BKAiPMSBAAAAA=="/>
+        <hotel:HotelProperty HotelChain="GI" HotelCode="85389" HotelLocation="FSD" Name="HILTON GARDEN SIOUX FALLS SOUTH" VendorLocationKey="ysAiwC7Q2BKAiPMSBAAAAA==" ReserveRequirement="Other" ParticipationLevel="Best Available Rate and Inside Shopper participant">
+          <hotel:PropertyAddress>
+            <hotel:Address>SIOUX FALLS  SD</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="7" Direction="S"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>3</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="CASI"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="COBU"/>
+            <hotel:Amenity Code="CORO"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="GOLF"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="MIOV"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="LUGE"/>
+            <hotel:Amenity Code="MOIR"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="FPRK"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="INPL"/>
+            <hotel:Amenity Code="ROSE"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="PRBT"/>
+            <hotel:Amenity Code="SFBD"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="BW" VendorLocationID="40396" Key="ysAiwC7Q2BKAjPMSBAAAAA=="/>
+        <hotel:HotelProperty HotelChain="BW" HotelCode="40396" HotelLocation="FSD" Name="BEST WESTERN EMPIRE TOWER" VendorLocationKey="ysAiwC7Q2BKAjPMSBAAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Best Available Rate and Inside Shopper participant">
           <hotel:PropertyAddress>
             <hotel:Address>SIOUX FALLS SD</hotel:Address>
           </hotel:PropertyAddress>
@@ -535,8 +579,8 @@
         <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="BW" VendorLocationID="12570" Key="+X25hC4R2BKAtWxRCAAAAA=="/>
-        <hotel:HotelProperty HotelChain="BW" HotelCode="12570" HotelLocation="FSD" Name="BEST WESTERN PLUS RAMKOTA HTL" VendorLocationKey="+X25hC4R2BKAtWxRCAAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Other" ParticipationLevel="Best Available Rate and Inside Shopper participant">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="BW" VendorLocationID="12570" Key="ysAiwC7Q2BKAkPMSBAAAAA=="/>
+        <hotel:HotelProperty HotelChain="BW" HotelCode="12570" HotelLocation="FSD" Name="BEST WESTERN PLUS RAMKOTA HTL" VendorLocationKey="ysAiwC7Q2BKAkPMSBAAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Other" ParticipationLevel="Best Available Rate and Inside Shopper participant">
           <hotel:PropertyAddress>
             <hotel:Address>SIOUX FALLS SD</hotel:Address>
           </hotel:PropertyAddress>
@@ -583,8 +627,38 @@
         <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="HI" VendorLocationID="96335" Key="+X25hC4R2BKAuWxRCAAAAA=="/>
-        <hotel:HotelProperty HotelChain="HI" HotelCode="96335" HotelLocation="FSD" Name="HOLIDAY INN EXPSTE EMPIRE MALL" VendorLocationKey="+X25hC4R2BKAuWxRCAAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Guarantee" ParticipationLevel="Link partner">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="GI" VendorLocationID="00160" Key="ysAiwC7Q2BKAlPMSBAAAAA=="/>
+        <hotel:HotelProperty HotelChain="GI" HotelCode="00160" HotelLocation="FSD" Name="HILTON GARDEN INN SIOUX FALLS DT" VendorLocationKey="ysAiwC7Q2BKAlPMSBAAAAA==" ReserveRequirement="Other" ParticipationLevel="Best Available Rate and Inside Shopper participant">
+          <hotel:PropertyAddress>
+            <hotel:Address>201 E 8TH STREET</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="2" Direction="S"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>3</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="COBU"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="GOLF"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="FPRK"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="FXSV"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="HI" VendorLocationID="96335" Key="ysAiwC7Q2BKAmPMSBAAAAA=="/>
+        <hotel:HotelProperty HotelChain="HI" HotelCode="96335" HotelLocation="FSD" Name="HOLIDAY INN EXPSTE EMPIRE MALL" VendorLocationKey="ysAiwC7Q2BKAmPMSBAAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Guarantee" ParticipationLevel="Link partner">
           <hotel:PropertyAddress>
             <hotel:Address>SIOUX FALLS  SD</hotel:Address>
           </hotel:PropertyAddress>
@@ -628,8 +702,8 @@
         </hotel:HotelProperty>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="HI" VendorLocationID="22346" Key="+X25hC4R2BKAvWxRCAAAAA=="/>
-        <hotel:HotelProperty HotelChain="HI" HotelCode="22346" HotelLocation="FSD" Name="HOLIDAY INN EXP AND STE SW" VendorLocationKey="+X25hC4R2BKAvWxRCAAAAA==" HotelTransportation="Other" ReserveRequirement="Other" ParticipationLevel="Link partner">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="HI" VendorLocationID="22346" Key="ysAiwC7Q2BKAnPMSBAAAAA=="/>
+        <hotel:HotelProperty HotelChain="HI" HotelCode="22346" HotelLocation="FSD" Name="HOLIDAY INN EXP AND STE SW" VendorLocationKey="ysAiwC7Q2BKAnPMSBAAAAA==" HotelTransportation="Other" ReserveRequirement="Other" ParticipationLevel="Link partner">
           <hotel:PropertyAddress>
             <hotel:Address>SIOUX FALLS  SD</hotel:Address>
           </hotel:PropertyAddress>
@@ -671,8 +745,8 @@
         </hotel:HotelProperty>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="HI" VendorLocationID="03459" Key="+X25hC4R2BKAwWxRCAAAAA=="/>
-        <hotel:HotelProperty HotelChain="HI" HotelCode="03459" HotelLocation="FSD" Name="HOLIDAY INN CITY CENTRE" VendorLocationKey="+X25hC4R2BKAwWxRCAAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Guarantee" ParticipationLevel="Link partner">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="HI" VendorLocationID="03459" Key="ysAiwC7Q2BKAoPMSBAAAAA=="/>
+        <hotel:HotelProperty HotelChain="HI" HotelCode="03459" HotelLocation="FSD" Name="HOLIDAY INN CITY CENTRE" VendorLocationKey="ysAiwC7Q2BKAoPMSBAAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Guarantee" ParticipationLevel="Link partner">
           <hotel:PropertyAddress>
             <hotel:Address>100 WEST 8TH ST</hotel:Address>
           </hotel:PropertyAddress>
@@ -719,8 +793,8 @@
         </hotel:HotelProperty>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="HI" VendorLocationID="00515" Key="+X25hC4R2BKAxWxRCAAAAA=="/>
-        <hotel:HotelProperty HotelChain="HI" HotelCode="00515" HotelLocation="FSD" Name="HOLIDAY INN EXP STES BRANDON" VendorLocationKey="+X25hC4R2BKAxWxRCAAAAA==" HotelTransportation="Other" ReserveRequirement="Other" ParticipationLevel="Link partner">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="HI" VendorLocationID="00515" Key="ysAiwC7Q2BKApPMSBAAAAA=="/>
+        <hotel:HotelProperty HotelChain="HI" HotelCode="00515" HotelLocation="FSD" Name="HOLIDAY INN EXP STES BRANDON" VendorLocationKey="ysAiwC7Q2BKApPMSBAAAAA==" HotelTransportation="Other" ReserveRequirement="Other" ParticipationLevel="Link partner">
           <hotel:PropertyAddress>
             <hotel:Address>BRANDON  SD</hotel:Address>
           </hotel:PropertyAddress>
@@ -762,8 +836,49 @@
         </hotel:HotelProperty>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="HG" VendorLocationID="36598" Key="+X25hC4R2BKAyWxRCAAAAA=="/>
-        <hotel:HotelProperty HotelChain="HG" HotelCode="36598" HotelLocation="FSD" Name="HOMEWOOD SUITES SIOUX FALLS" VendorLocationKey="+X25hC4R2BKAyWxRCAAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="NotAvailable">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="HX" VendorLocationID="86286" Key="ysAiwC7Q2BKAqPMSBAAAAA=="/>
+        <hotel:HotelProperty HotelChain="HX" HotelCode="86286" HotelLocation="FSD" Name="HAMPTON INN SIOUX FALLS" VendorLocationKey="ysAiwC7Q2BKAqPMSBAAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="NotAvailable">
+          <hotel:PropertyAddress>
+            <hotel:Address>SIOUX FALLS  SD</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="6" Direction="SW"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>3</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="CHPR"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="COBU"/>
+            <hotel:Amenity Code="FRTR"/>
+            <hotel:Amenity Code="GISH"/>
+            <hotel:Amenity Code="GOLF"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="MIOV"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="MOIR"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="FPRK"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="INPL"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="FXSV"/>
+            <hotel:Amenity Code="SFBD"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0601 NOT AVAILABLE FOR DATES REQUESTED</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="HG" VendorLocationID="36598" Key="ysAiwC7Q2BKArPMSBAAAAA=="/>
+        <hotel:HotelProperty HotelChain="HG" HotelCode="36598" HotelLocation="FSD" Name="HOMEWOOD SUITES SIOUX FALLS" VendorLocationKey="ysAiwC7Q2BKArPMSBAAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="NotAvailable">
           <hotel:PropertyAddress>
             <hotel:Address>3620 WEST AVERA DRIV</hotel:Address>
           </hotel:PropertyAddress>
@@ -803,8 +918,8 @@
         <hotel:HotelSearchError Code="5000" Type="Warning">0601 NOT AVAILABLE FOR DATES REQUESTED</hotel:HotelSearchError>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="CX" VendorLocationID="68438" Key="+X25hC4R2BKAzWxRCAAAAA=="/>
-        <hotel:HotelProperty HotelChain="CX" HotelCode="68438" HotelLocation="FSD" Name="COUNTRY INN SUITES SIOUX FALLS" VendorLocationKey="+X25hC4R2BKAzWxRCAAAAA==" HotelTransportation="Other" ReserveRequirement="Other" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="NotAvailable">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="CX" VendorLocationID="68438" Key="ysAiwC7Q2BKAsPMSBAAAAA=="/>
+        <hotel:HotelProperty HotelChain="CX" HotelCode="68438" HotelLocation="FSD" Name="COUNTRY INN SUITES SIOUX FALLS" VendorLocationKey="ysAiwC7Q2BKAsPMSBAAAAA==" HotelTransportation="Other" ReserveRequirement="Other" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="NotAvailable">
           <hotel:PropertyAddress>
             <hotel:Address>200 EAST 8TH ST</hotel:Address>
           </hotel:PropertyAddress>
@@ -855,123 +970,8 @@
         <hotel:HotelSearchError Code="5000" Type="Warning">0601 NOT AVAILABLE FOR DATES REQUESTED</hotel:HotelSearchError>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="GI" VendorLocationID="85389" Key="+X25hC4R2BKA0WxRCAAAAA=="/>
-        <hotel:HotelProperty HotelChain="GI" HotelCode="85389" HotelLocation="FSD" Name="HILTON GARDEN SIOUX FALLS SOUTH" VendorLocationKey="+X25hC4R2BKA0WxRCAAAAA==" ReserveRequirement="Other" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="NotAvailable">
-          <hotel:PropertyAddress>
-            <hotel:Address>SIOUX FALLS  SD</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="7" Direction="S"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>3</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="HSPI"/>
-            <hotel:Amenity Code="BRFT"/>
-            <hotel:Amenity Code="CASI"/>
-            <hotel:Amenity Code="CSFR"/>
-            <hotel:Amenity Code="COBU"/>
-            <hotel:Amenity Code="CORO"/>
-            <hotel:Amenity Code="ELEV"/>
-            <hotel:Amenity Code="GOLF"/>
-            <hotel:Amenity Code="HAFA"/>
-            <hotel:Amenity Code="HECL"/>
-            <hotel:Amenity Code="MIOV"/>
-            <hotel:Amenity Code="LAVA"/>
-            <hotel:Amenity Code="LUGE"/>
-            <hotel:Amenity Code="MOIR"/>
-            <hotel:Amenity Code="NSMR"/>
-            <hotel:Amenity Code="FPRK"/>
-            <hotel:Amenity Code="PHSV"/>
-            <hotel:Amenity Code="POOL"/>
-            <hotel:Amenity Code="INPL"/>
-            <hotel:Amenity Code="ROSE"/>
-            <hotel:Amenity Code="SADE"/>
-            <hotel:Amenity Code="TELV"/>
-            <hotel:Amenity Code="CBTV"/>
-            <hotel:Amenity Code="PRBT"/>
-            <hotel:Amenity Code="SFBD"/>
-            <hotel:Amenity Code="PHCO"/>
-            <hotel:Amenity Code="BATB"/>
-            <hotel:Amenity Code="FSTY"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:HotelSearchError Code="5000" Type="Warning">0601 NOT AVAILABLE FOR DATES REQUESTED</hotel:HotelSearchError>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="HX" VendorLocationID="86286" Key="+X25hC4R2BKA1WxRCAAAAA=="/>
-        <hotel:HotelProperty HotelChain="HX" HotelCode="86286" HotelLocation="FSD" Name="HAMPTON INN SIOUX FALLS" VendorLocationKey="+X25hC4R2BKA1WxRCAAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="NotAvailable">
-          <hotel:PropertyAddress>
-            <hotel:Address>SIOUX FALLS  SD</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="6" Direction="SW"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>3</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="CHPR"/>
-            <hotel:Amenity Code="HSPI"/>
-            <hotel:Amenity Code="BRFT"/>
-            <hotel:Amenity Code="COBU"/>
-            <hotel:Amenity Code="FRTR"/>
-            <hotel:Amenity Code="GISH"/>
-            <hotel:Amenity Code="GOLF"/>
-            <hotel:Amenity Code="HECL"/>
-            <hotel:Amenity Code="MIOV"/>
-            <hotel:Amenity Code="LAVA"/>
-            <hotel:Amenity Code="MEPL"/>
-            <hotel:Amenity Code="MOIR"/>
-            <hotel:Amenity Code="NSMR"/>
-            <hotel:Amenity Code="PARK"/>
-            <hotel:Amenity Code="FPRK"/>
-            <hotel:Amenity Code="PHSV"/>
-            <hotel:Amenity Code="POOL"/>
-            <hotel:Amenity Code="INPL"/>
-            <hotel:Amenity Code="SADE"/>
-            <hotel:Amenity Code="SHWR"/>
-            <hotel:Amenity Code="CBTV"/>
-            <hotel:Amenity Code="FXSV"/>
-            <hotel:Amenity Code="SFBD"/>
-            <hotel:Amenity Code="PHCO"/>
-            <hotel:Amenity Code="FSTY"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:HotelSearchError Code="5000" Type="Warning">0601 NOT AVAILABLE FOR DATES REQUESTED</hotel:HotelSearchError>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="GI" VendorLocationID="00160" Key="+X25hC4R2BKA2WxRCAAAAA=="/>
-        <hotel:HotelProperty HotelChain="GI" HotelCode="00160" HotelLocation="FSD" Name="HILTON GARDEN INN SIOUX FALLS DT" VendorLocationKey="+X25hC4R2BKA2WxRCAAAAA==" ReserveRequirement="Other" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="NotAvailable">
-          <hotel:PropertyAddress>
-            <hotel:Address>201 E 8TH STREET</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="2" Direction="S"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>3</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="BRFT"/>
-            <hotel:Amenity Code="CSFR"/>
-            <hotel:Amenity Code="COBU"/>
-            <hotel:Amenity Code="FAPL"/>
-            <hotel:Amenity Code="GOLF"/>
-            <hotel:Amenity Code="HECL"/>
-            <hotel:Amenity Code="LAVA"/>
-            <hotel:Amenity Code="MEFA"/>
-            <hotel:Amenity Code="PARK"/>
-            <hotel:Amenity Code="FPRK"/>
-            <hotel:Amenity Code="RTNT"/>
-            <hotel:Amenity Code="SADE"/>
-            <hotel:Amenity Code="FXSV"/>
-            <hotel:Amenity Code="PHCO"/>
-            <hotel:Amenity Code="FSTY"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:HotelSearchError Code="5000" Type="Warning">0601 NOT AVAILABLE FOR DATES REQUESTED</hotel:HotelSearchError>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="SC" VendorLocationID="86443" Key="+X25hC4R2BKA3WxRCAAAAA=="/>
-        <hotel:HotelProperty HotelChain="SC" HotelCode="86443" HotelLocation="FSD" Name="WOODSPRING SUITES SIOUX FALLS" VendorLocationKey="+X25hC4R2BKA3WxRCAAAAA==" ReserveRequirement="Other" ParticipationLevel="Inside Shopper participant" Availability="NotAvailable">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="SC" VendorLocationID="86443" Key="ysAiwC7Q2BKAtPMSBAAAAA=="/>
+        <hotel:HotelProperty HotelChain="SC" HotelCode="86443" HotelLocation="FSD" Name="WOODSPRING SUITES SIOUX FALLS" VendorLocationKey="ysAiwC7Q2BKAtPMSBAAAAA==" ReserveRequirement="Other" ParticipationLevel="Inside Shopper participant" Availability="NotAvailable">
           <hotel:PropertyAddress>
             <hotel:Address>SIOUX FALLS SD</hotel:Address>
           </hotel:PropertyAddress>

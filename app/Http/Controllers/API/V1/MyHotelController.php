@@ -12,6 +12,7 @@ use Sunra\PhpSimple\HtmlDomParser;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use App\Http\Controllers\Controller;
+use Mtownsend\XmlToArray\XmlToArray;
 
 class MyHotelController extends MyRequestController
 {
@@ -179,171 +180,6 @@ class MyHotelController extends MyRequestController
 
     }
 
-    /*private function xml_to_array($contents, $get_attributes=1){
-
-        if(!$contents) return array();
-
-        if(!function_exists('xml_parser_create')) {
-
-            return array();
-        }
-
-        $parser = xml_parser_create();
-
-        xml_parser_set_option( $parser, XML_OPTION_CASE_FOLDING, 0 );
-
-        xml_parser_set_option( $parser, XML_OPTION_SKIP_WHITE, 1 );
-
-        xml_parse_into_struct( $parser, $contents, $xml_values );
-
-        xml_parser_free( $parser );
-
-        if(!$xml_values) return;
-
-        $xml_array = array();
-
-        $parents = array();
-
-        $opened_tags = array();
-
-        $arr = array();
-
-        $current = &$xml_array;
-
-        foreach($xml_values as $data) {
-
-            unset($attributes,$value);
-
-            extract($data);
-
-            $result = '';
-
-            if($get_attributes) {
-
-                $result = array();
-
-                if(isset($value)) $result['value'] = $value;
-
-                if(isset($attributes)) {
-
-                    foreach($attributes as $attr => $val) {
-
-                        if($get_attributes == 1) $result['attr'][$attr] = $val;
-                    }
-                }
-
-            }elseif(isset($value)) {
-
-                $result = $value;
-            }
-
-            if($type == "open") {
-
-                $parent[$level-1] = &$current;
-
-                if(!is_array($current) or (!in_array($tag, array_keys($current)))) {
-
-                    $current[$tag] = $result;
-
-                    $current = &$current[$tag];
-
-                } else {
-
-                    if(isset($current[$tag][0])) {
-
-                        array_push($current[$tag], $result);
-
-                    } else {
-
-                        $current[$tag] = array($current[$tag],$result);
-                    }
-
-                    $last = count($current[$tag]) - 1;
-
-                    $current = &$current[$tag][$last];
-
-                }
-
-            }elseif($type == "complete") {
-
-                if(!isset($current[$tag])) {
-
-                    $current[$tag] = $result;
-                }else {
-
-                    if((is_array($current[$tag]) and $get_attributes == 0) or (isset($current[$tag][0]) and is_array($current[$tag][0]) and $get_attributes == 1)) {
-
-                        array_push($current[$tag],$result);
-
-                    } else {
-                        $current[$tag] = array($current[$tag],$result);
-                    }
-                }
-
-            }elseif($type == 'close') {
-
-                $current = &$parent[$level-1];
-            }
-        }
-        return($xml_array);
-    } // end XML to array function*/
-
-
-    /**
-     * Read csv file data
-     *
-     * @return void
-     */
-    public function ReadCsvFile($file)
-    {
-        $file = fopen($file,"r");
-
-        $i = 0;
-        $head_array = array();
-        $data_array = array();
-        while(! feof($file))
-        {
-            if($i == 0){
-                $head_array = fgetcsv($file);
-            }else{
-                $temp = array();
-                $data = fgetcsv($file);
-                if($data !=''){
-                    for($k = 0; $k <count($head_array); $k++){
-                        $temp[$head_array[$k]] = $data[$k];
-                    }
-                    $data_array[] = $temp;
-                }
-            }
-            $i++;
-        }
-        return $data_array;
-    }
-
-    /**
-     * cache csv file data and retrieve
-     *
-     * @return void
-     */
-    public function cacheCsvData()
-    {
-        $file      =   PUBLIC_PATH('/uploads/transactions.csv');
-
-        /*read csv data*/
-        $allData = $this->ReadCsvFile($file);
-
-        /*store data in cache*/
-        /*Cache::rememberForever('csvData', function () use($allData) {
-            return $allData;
-        });
-        $csvData = Cache::get('csvData');*/
-        Redis::set('csvData', json_encode($allData));
-        $csvData = Redis::get('csvData');
-        $csvData = json_decode($csvData);
-
-        return response()->json(['status' => true, 'message' => 'csv data retrieved from cache successfully.', 'data' => $csvData], 200) ;
-    }
-
     public function hotelSearch(Request $request) {
 
         $validator = Validator::make($request->all(), [
@@ -364,24 +200,30 @@ class MyHotelController extends MyRequestController
             return response()->json(['status' => false, 'message' => $response]);
         }
 
-        //Getting XML ready for API request
+//        Getting XML ready for API request
         ob_start();
         require public_path().'\xml_requests\low_fare_search.php';
         $requestXML = ob_get_clean();
         //End
 
+//        Get XML response
+        $sXML = MyRequestController::makeServerRequest($requestXML);
+
+        if(!$sXML['status']) {
+            return [ 'status' => false,'message' => 'Server Error Occured'];
+        }
+
         try
         {
-//            get xml response
-            $sXML = $this->makeRequest($requestXML);
+//            convert XML to Array
+            $myData = XmlToArray::convert($sXML['data']);
 
-//            parse xml to array
-            $myData = $this->XMLtoArray($sXML);
-
-//            prepare data for hotelSearchApi
-            $apiData = $this->hotelSearchApi($myData);
-
-            $refId = $this->getCacheFilename();
+//            Prepare Data
+            $apiData = MyRequestController::hotelSearchApi($myData);
+            if(!$apiData['status']) {
+                return [ 'status' => false,'message' => 'Error Occured in preparing data'];
+            }
+            $refId = MyRequestController::getCacheFilename();
 
             return [ 'status' => true, 'refId' => $refId ,'data' => $apiData];
         }
@@ -414,61 +256,51 @@ class MyHotelController extends MyRequestController
         }
 
         /*Stored JSON Parsing*/
-        try
+        $reference_response = json_decode(file_get_contents(public_path() . '/cache/hotel/reference_data/' . $refId . '_parsed.dat'), true);
+        if(json_last_error() != JSON_ERROR_NONE)
         {
-            $reference_response = json_decode(file_get_contents(public_path() . '/cache/hotel/reference_data/' . $refId . '_parsed.dat'), true);
-            if(json_last_error() != JSON_ERROR_NONE)
-            {
-                return ['status' => false, 'msg' => 'Something went wrong.'];
-            }
-            $reference_response = collect($reference_response);
-            $filtered = $reference_response->filter(function ($value) use ($hotelRefId) {
-                return $value['hotelRefId'] == $hotelRefId;
-            });
-            $hotelInfo = $filtered->first();
+            return ['status' => false, 'msg' => 'Something went wrong.'];
+        }
 
-            /*foreach($reference_response as $hotel)
-            {
-                if($hotel['hotelRefId'] == $hotelRefId)
-                {
-                    $hotelInfo = $hotel;
-                }
-            }*/
+        $reference_response = collect($reference_response);
+        $filtered = $reference_response->filter(function ($value) use ($hotelRefId) {
+            return $value['hotelRefId'] == $hotelRefId;
+        });
+        $hotelInfo = $filtered->first();
 //            dd($hotelInfo);
 
+        if($hotelInfo) {
             //Getting XML ready for API request
             ob_start();
             require public_path().'\xml_requests\hotel_media_req.php';
             $requestXML = ob_get_clean();
             //End
 
-            //            get xml response
+            $sXML = MyRequestController::makeServerRequest($requestXML, true);
 
-            /*if(!copy(getcwd() . '/cache/air/' . AirPrice::getCacheFilename() . '_raw.dat', getcwd() . '/cache/air/reference_data/' . $refId . '_raw_price.dat') || !copy(getcwd() . '/cache/air/' . AirPrice::getCacheFilename() . '_parsed.dat', getcwd() . '/cache/air/reference_data/' . $refId . '_parsed_price.dat'))
+            if(!$sXML['status']) {
+                return [ 'status' => false,'message' => 'Server Error Occured'];
+            }
+
+            try
             {
-                throw new AirException("Something Went Wrong. Please Try Again");
-            }*/
+//            convert XML to Array
+                $myData = XmlToArray::convert($sXML['data']);
 
-            $sXML = $this->makeRequest($requestXML, true);
-
-//            parse xml to array
-            $myData = $this->XMLtoArray($sXML);
-
-//            prepare data for hotelSearchApi
-            $apiData = $this->hotelMediaApi($myData, true);
-
-            return [ 'status' => true,'data' => $apiData];
-
+//            Prepare Data
+                $apiData = MyRequestController::hotelMediaApi($myData);
+                if(!$apiData['status']) {
+                    return [ 'status' => false,'message' => 'Error Occured in preparing data'];
+                }
+                return [ 'status' => true,'data' => $apiData];
+            }
+            catch (\Exception $e)
+            {
+                return [ 'status' => false,'message' => $e->errorMessage()];
+            }
+        } else {
+            return ['status' => false, 'msg' => 'Invalid Hotel Reference Id'];
         }
-        catch (\Exception $e)
-        {
-            $response['status'] = "error";
-            $response['msg'] 	= $e->errorMessage();
-           return $response;
-        }
-        /*End Parsing*/
-
-
     }
 
     public function hotelRateInfo(Request $request) {
@@ -483,8 +315,8 @@ class MyHotelController extends MyRequestController
             return response()->json(['status' => false, 'message' => $response]);
         }
 
-        $refId = $request->refId;
-        $hotelRefId = $request->hotelRefId;
+        $refId = $request->refId;//1b66b3d94fd4039107a0d008d707821f
+        $hotelRefId = $request->hotelRefId;//078c8a3b6d79b1b0da33c136413f1568
 
         if(!file_exists(public_path() . '/cache/hotel/reference_data/' . $refId . '_raw.dat') || !file_exists(public_path() . '/cache/hotel/reference_data/' . $refId . '_parsed.dat'))
         {
@@ -494,54 +326,51 @@ class MyHotelController extends MyRequestController
         }
 
         /*Stored JSON Parsing*/
-        try
+        $reference_response = json_decode(file_get_contents(public_path() . '/cache/hotel/reference_data/' . $refId . '_parsed.dat'), true);
+        if(json_last_error() != JSON_ERROR_NONE)
         {
-            $reference_response = json_decode(file_get_contents(public_path() . '/cache/hotel/reference_data/' . $refId . '_parsed.dat'), true);
-            if(json_last_error() != JSON_ERROR_NONE)
-            {
-                return ['status' => false, 'msg' => 'Something went wrong.'];
-            }
-            $reference_response = collect($reference_response);
-            $filtered = $reference_response->filter(function ($value) use ($hotelRefId) {
-                return $value['hotelRefId'] == $hotelRefId;
-            });
-            $hotelInfo = $filtered->first();
+            return ['status' => false, 'msg' => 'Something went wrong.'];
+        }
 
+        $reference_response = collect($reference_response);
+        $filtered = $reference_response->filter(function ($value) use ($hotelRefId) {
+            return $value['hotelRefId'] == $hotelRefId;
+        });
+        $hotelInfo = $filtered->first();
+//            dd($hotelInfo);
+
+        if($hotelInfo) {
             //Getting XML ready for API request
             ob_start();
             require public_path().'\xml_requests\hotel_rate_req.php';
             $requestXML = ob_get_clean();
             //End
-//            dd($requestXML);
 
-            //            get xml response
+            $sXML = MyRequestController::makeServerRequest($requestXML, true);
 
-            /*if(!copy(getcwd() . '/cache/air/' . AirPrice::getCacheFilename() . '_raw.dat', getcwd() . '/cache/air/reference_data/' . $refId . '_raw_price.dat') || !copy(getcwd() . '/cache/air/' . AirPrice::getCacheFilename() . '_parsed.dat', getcwd() . '/cache/air/reference_data/' . $refId . '_parsed_price.dat'))
+            if(!$sXML['status']) {
+                return [ 'status' => false,'message' => 'Server Error Occured'];
+            }
+
+            try
             {
-                throw new AirException("Something Went Wrong. Please Try Again");
-            }*/
+//            convert XML to Array
+                $myData = XmlToArray::convert($sXML['data']);
 
-            $sXML = $this->makeRequest($requestXML, true);
-//            $sXML = $this->makeRequestGuzzle($requestXML);
-
-//            parse xml to array
-            $myData = $this->XMLtoArray($sXML);
-
-//            prepare data for hotelSearchApi
-            $apiData = $this->hotelRateInfoApi($myData);
-
-            return [ 'status' => true,'data' => $apiData];
-
+//            Prepare Data
+                $apiData = MyRequestController::hotelRateInfoApi($myData);
+                if(!$apiData['status']) {
+                    return [ 'status' => false,'message' => 'Error Occured in preparing data'];
+                }
+                return [ 'status' => true,'data' => $apiData];
+            }
+            catch (\Exception $e)
+            {
+                return [ 'status' => false,'message' => $e->errorMessage()];
+            }
+        } else {
+            return ['status' => false, 'msg' => 'Invalid Hotel Reference Id'];
         }
-        catch (\Exception $e)
-        {
-            $response['status'] = "error";
-            $response['msg'] 	= $e->errorMessage();
-            return $response;
-        }
-        /*End Parsing*/
-
-
     }
 
     public function hotelRuleInfo(Request $request) {
@@ -567,52 +396,51 @@ class MyHotelController extends MyRequestController
         }
 
         /*Stored JSON Parsing*/
-        try
+        $reference_response = json_decode(file_get_contents(public_path() . '/cache/hotel/reference_data/' . $refId . '_parsed.dat'), true);
+        if(json_last_error() != JSON_ERROR_NONE)
         {
-            $reference_response = json_decode(file_get_contents(public_path() . '/cache/hotel/reference_data/' . $refId . '_parsed.dat'), true);
-            if(json_last_error() != JSON_ERROR_NONE)
-            {
-                return ['status' => false, 'msg' => 'Something went wrong.'];
-            }
-            $reference_response = collect($reference_response);
-            $filtered = $reference_response->filter(function ($value) use ($hotelRefId) {
-                return $value['hotelRefId'] == $hotelRefId;
-            });
-            $hotelInfo = $filtered->first();
+            return ['status' => false, 'msg' => 'Something went wrong.'];
+        }
 
+        $reference_response = collect($reference_response);
+        $filtered = $reference_response->filter(function ($value) use ($hotelRefId) {
+            return $value['hotelRefId'] == $hotelRefId;
+        });
+        $hotelInfo = $filtered->first();
+//            dd($hotelInfo);
+
+        if($hotelInfo) {
             //Getting XML ready for API request
             ob_start();
             require public_path().'\xml_requests\hotel_rule_req.php';
             $requestXML = ob_get_clean();
             //End
-//            dd($requestXML);
 
-            //            get xml response
+            $sXML = MyRequestController::makeServerRequest($requestXML, true);
 
-            /*if(!copy(getcwd() . '/cache/air/' . AirPrice::getCacheFilename() . '_raw.dat', getcwd() . '/cache/air/reference_data/' . $refId . '_raw_price.dat') || !copy(getcwd() . '/cache/air/' . AirPrice::getCacheFilename() . '_parsed.dat', getcwd() . '/cache/air/reference_data/' . $refId . '_parsed_price.dat'))
+            if(!$sXML['status']) {
+                return [ 'status' => false,'message' => 'Server Error Occured'];
+            }
+
+            try
             {
-                throw new AirException("Something Went Wrong. Please Try Again");
-            }*/
+//            convert XML to Array
+                $myData = XmlToArray::convert($sXML['data']);
 
-            $sXML = $this->makeRequest($requestXML, true);
-//            $sXML = $this->makeRequestGuzzle($requestXML);
-
-//            parse xml to array
-            $myData = $this->XMLtoArray($sXML);
-
-//            prepare data for hotelSearchApi
-            $apiData = $this->hotelRuleInfoApi($myData);
-
-            return [ 'status' => true,'data' => $apiData];
-
+//            Prepare Data
+                $apiData = MyRequestController::hotelRuleInfoApi($myData);
+                if(!$apiData['status']) {
+                    return [ 'status' => false,'message' => 'Error Occured in preparing data'];
+                }
+                return [ 'status' => true,'data' => $apiData];
+            }
+            catch (\Exception $e)
+            {
+                return [ 'status' => false,'message' => $e->errorMessage()];
+            }
+        } else {
+            return ['status' => false, 'msg' => 'Invalid Hotel Reference Id'];
         }
-        catch (\Exception $e)
-        {
-            $response['status'] = "error";
-            $response['msg'] 	= $e->errorMessage();
-            return $response;
-        }
-        /*End Parsing*/
 
 
     }
@@ -694,6 +522,79 @@ class MyHotelController extends MyRequestController
     public function test()
     {
         dd('her');
+    }
+
+    public function hotelBookingInfo(Request $request) {
+
+        $validator = Validator::make($request->all(), [
+            'refId'         => 'required',
+            'hotelRefId'    => 'required',
+        ]);
+
+        if ($validator->fails()) {
+            $response = $validator->messages()->first();
+            return response()->json(['status' => false, 'message' => $response]);
+        }
+
+        $refId = $request->refId;
+        $hotelRefId = $request->hotelRefId;
+
+        if(!file_exists(public_path() . '/cache/hotel/reference_data/' . $refId . '_raw.dat') || !file_exists(public_path() . '/cache/hotel/reference_data/' . $refId . '_parsed.dat'))
+        {
+            $response['status']	= 'error';
+            $response['msg']	= 'Invalid Reference ID.';
+            return $response;
+        }
+
+        /*Stored JSON Parsing*/
+        $reference_response = json_decode(file_get_contents(public_path() . '/cache/hotel/reference_data/' . $refId . '_parsed.dat'), true);
+        if(json_last_error() != JSON_ERROR_NONE)
+        {
+            return ['status' => false, 'msg' => 'Something went wrong.'];
+        }
+
+        $reference_response = collect($reference_response);
+        $filtered = $reference_response->filter(function ($value) use ($hotelRefId) {
+            return $value['hotelRefId'] == $hotelRefId;
+        });
+        $hotelInfo = $filtered->first();
+//            dd($hotelInfo);
+
+        if($hotelInfo) {
+            //Getting XML ready for API request
+            ob_start();
+            require public_path().'\xml_requests\hotel_booking_req.php';
+            $requestXML = ob_get_clean();
+//            dd($requestXML);
+            //End
+
+            $sXML = MyRequestController::makeServerRequest($requestXML, true);
+
+            if(!$sXML['status']) {
+                return [ 'status' => false,'message' => 'Server Error Occured'];
+            }
+
+            try
+            {
+//            convert XML to Array
+                $myData = XmlToArray::convert($sXML['data']);
+                dd($myData);
+
+//            Prepare Data
+                $apiData = MyRequestController::hotelBookingInfoApi($myData);
+                if(!$apiData['status']) {
+                    return [ 'status' => false,'message' => 'Error Occured in preparing data'];
+                }
+                return [ 'status' => true,'data' => $apiData];
+            }
+            catch (\Exception $e)
+            {
+                return [ 'status' => false,'message' => $e->errorMessage()];
+            }
+        } else {
+            return ['status' => false, 'msg' => 'Invalid Hotel Reference Id'];
+        }
+
     }
 
 

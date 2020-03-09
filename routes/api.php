@@ -32,6 +32,7 @@ Route::prefix('v1')->group(function () {
     Route::post('rate', 'API\V1\MyHotelController@hotelRateInfo');
     Route::post('rule', 'API\V1\MyHotelController@hotelRuleInfo');
     Route::post('description', 'API\V1\MyHotelController@hotelDescInfo');
+    Route::post('booking', 'API\V1\MyHotelController@hotelBookingInfo');
 });
 
 
