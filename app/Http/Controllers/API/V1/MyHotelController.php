@@ -468,60 +468,52 @@ class MyHotelController extends MyRequestController
         }
 
         /*Stored JSON Parsing*/
-        try
+        $reference_response = json_decode(file_get_contents(public_path() . '/cache/hotel/reference_data/' . $refId . '_parsed.dat'), true);
+        if(json_last_error() != JSON_ERROR_NONE)
         {
-            $reference_response = json_decode(file_get_contents(public_path() . '/cache/hotel/reference_data/' . $refId . '_parsed.dat'), true);
-            if(json_last_error() != JSON_ERROR_NONE)
-            {
-                return ['status' => false, 'msg' => 'Something went wrong.'];
-            }
-            $reference_response = collect($reference_response);
-            $filtered = $reference_response->filter(function ($value) use ($hotelRefId) {
-                return $value['hotelRefId'] == $hotelRefId;
-            });
-            $hotelInfo = $filtered->first();
+            return ['status' => false, 'msg' => 'Something went wrong.'];
+        }
 
+        $reference_response = collect($reference_response);
+        $filtered = $reference_response->filter(function ($value) use ($hotelRefId) {
+            return $value['hotelRefId'] == $hotelRefId;
+        });
+        $hotelInfo = $filtered->first();
+//            dd($hotelInfo);
+
+        if($hotelInfo) {
             //Getting XML ready for API request
             ob_start();
             require public_path().'\xml_requests\hotel_description_req.php';
             $requestXML = ob_get_clean();
             //End
-//            dd($requestXML);
 
-            //            get xml response
+            $sXML = MyRequestController::makeServerRequest($requestXML, true);
 
-            /*if(!copy(getcwd() . '/cache/air/' . AirPrice::getCacheFilename() . '_raw.dat', getcwd() . '/cache/air/reference_data/' . $refId . '_raw_price.dat') || !copy(getcwd() . '/cache/air/' . AirPrice::getCacheFilename() . '_parsed.dat', getcwd() . '/cache/air/reference_data/' . $refId . '_parsed_price.dat'))
+            if(!$sXML['status']) {
+                return [ 'status' => false,'message' => 'Server Error Occured'];
+            }
+
+            try
             {
-                throw new AirException("Something Went Wrong. Please Try Again");
-            }*/
+//            convert XML to Array
+                $myData = XmlToArray::convert($sXML['data']);
 
-            $sXML = $this->makeRequest($requestXML, true);
-//            $sXML = $this->makeRequestGuzzle($requestXML);
-
-//            parse xml to array
-            $myData = $this->XMLtoArray($sXML);
-            dd($myData);
-
-//            prepare data for hotelSearchApi
-            $apiData = $this->hotelDescInfoApi($myData);
-
-            return [ 'status' => true,'data' => $apiData];
-
+//            Prepare Data
+                $apiData = MyRequestController::hotelDescInfoApi($myData);
+                if(!$apiData['status']) {
+                    return [ 'status' => false,'message' => 'Error Occured in preparing data'];
+                }
+                return [ 'status' => true,'data' => $apiData];
+            }
+            catch (\Exception $e)
+            {
+                return [ 'status' => false,'message' => $e->errorMessage()];
+            }
+        } else {
+            return ['status' => false, 'msg' => 'Invalid Hotel Reference Id'];
         }
-        catch (\Exception $e)
-        {
-            $response['status'] = "error";
-            $response['msg'] 	= $e->errorMessage();
-            return $response;
-        }
-        /*End Parsing*/
 
-
-    }
-
-    public function test()
-    {
-        dd('her');
     }
 
     public function hotelBookingInfo(Request $request) {
@@ -596,6 +588,8 @@ class MyHotelController extends MyRequestController
         }
 
     }
+
+//https://support.travelport.com/webhelp/GWS/Content/TRANSACTIONHELP/1API_Dev_Notes/HotelShoppingandBooking.pdf
 
 
 }

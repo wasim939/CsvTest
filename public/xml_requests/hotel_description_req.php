@@ -1,9 +1,9 @@
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
     <soapenv:Header/>
     <soapenv:Body>
-        <hot:HotelDetailsReq xmlns:hot="http://www.travelport.com/schema/hotel_v34_0" TargetBranch="P7119574">
+        <hot:HotelDetailsReq xmlns:hot="http://www.travelport.com/schema/hotel_v34_0" TargetBranch="P3468561">
             <com:BillingPointOfSaleInfo xmlns:com="http://www.travelport.com/schema/common_v34_0" OriginApplication="UAPI"/>
-            <hot:HotelProperty HotelChain="HI" HotelCode="43163" Name="HOLIDAY INN SYDNEY AIRPORT"/>
+            <hot:HotelProperty HotelChain="<?=$hotelInfo['hotelInfo']['HotelChain']?>" HotelCode="<?=$hotelInfo['hotelInfo']['HotelCode']?>" Name="<?=$hotelInfo['hotelInfo']['Name']?>"/>
             <hot:HotelDetailsModifiers NumberOfAdults="1" RateRuleDetail="None">
                 <com:PermittedProviders xmlns:com="http://www.travelport.com/schema/common_v34_0">
                     <com:Provider Code="1G"/>

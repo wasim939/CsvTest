@@ -1,10 +1,10 @@
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
     <soapenv:Header />
     <soapenv:Body>
-        <hot:HotelSearchAvailabilityReq xmlns:hot="http://www.travelport.com/schema/hotel_v34_0" TargetBranch="P7119574">
+        <hot:HotelSearchAvailabilityReq xmlns:hot="http://www.travelport.com/schema/hotel_v34_0" TargetBranch="P3468561">
             <com:BillingPointOfSaleInfo xmlns:com="http://www.travelport.com/schema/common_v34_0" OriginApplication="UAPI" />
             <hot:HotelSearchLocation>
-                <hot:HotelLocation Location="<?=$request->from?>" />
+                <hot:HotelLocation Location="<?=$request->to?>" />
             </hot:HotelSearchLocation>
             <hot:HotelSearchModifiers MaxWait="50000" NumberOfAdults="1">
                 <com:PermittedProviders xmlns:com="http://www.travelport.com/schema/common_v34_0">

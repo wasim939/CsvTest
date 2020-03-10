@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
     <soapenv:Body>
-        <univ:HotelCreateReservationReq xmlns:com="http://www.travelport.com/schema/common_v34_0" xmlns:common_v34_0="http://www.travelport.com/schema/common_v34_0" xmlns:hotel="http://www.travelport.com/schema/hotel_v34_0" xmlns:univ="http://www.travelport.com/schema/universal_v34_0" AuthorizedBy="user" ProviderCode="1G" TargetBranch="P7119574" TraceId="trace" UserAcceptance="true">
+        <univ:HotelCreateReservationReq xmlns:com="http://www.travelport.com/schema/common_v34_0" xmlns:common_v34_0="http://www.travelport.com/schema/common_v34_0" xmlns:hotel="http://www.travelport.com/schema/hotel_v34_0" xmlns:univ="http://www.travelport.com/schema/universal_v34_0" AuthorizedBy="user" ProviderCode="1G" TargetBranch="P3468561" TraceId="trace" UserAcceptance="true">
             <com:BillingPointOfSaleInfo OriginApplication="UAPI" />
             <com:BookingTraveler Age="46" DOB="1967-11-23" Gender="F" Key="lNzFo4NIQIeU22gx5VKZjA==" Nationality="US" TravelerType="ADT">
                 <com:BookingTravelerName First="Charlotte" Last="Broker-Greene" Middle="Jane" Prefix="Ms" />

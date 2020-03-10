@@ -115,9 +115,9 @@ class MyRequestController extends Controller
 
     public function makeServerRequest($request, $param = false)
     {
-        $username         = 'Universal API/uAPI5164233131-8f975dd6';
-        $password         = 'j+2A7wT{F4';
-        $url              = 'https://apac.universal-api.pp.travelport.com/B2BGateway/connect/uAPI/HotelService';
+        $username         = 'Universal API/uAPI5887624131-353671c4';
+        $password         = 'eJ$9&8Nf7b';
+        $url              = 'https://apac.universal-api.travelport.com/B2BGateway/connect/uAPI/HotelService';
 
         self::$cacheFile 		= md5($request);
 
@@ -322,15 +322,8 @@ class MyRequestController extends Controller
                 $finalArray['room_rate_description'][] = $additional_info;
             }
 
-            foreach($response['hotel:HotelRateDetail']['hotel:GuaranteeInfo']['hotel:GuaranteePaymentType'] as $data) {
 
-                $additional_info = [
-                    $data['@attributes']['Type']         => $data['@attributes']['Description'],
-                ];
-                $finalArray['guarantee_payment_info'][] = $additional_info;
-            }
-
-            $finalArray['rate_by_date'] = $response['hotel:HotelRateDetail']['hotel:HotelRateByDate']['@attributes'];
+            $finalArray['rate_by_date'] = $response['hotel:HotelRateDetail']['hotel:GuaranteeInfo']['@attributes'];
             return [ 'status' => true,'message' => 'Data Found', 'data' => $finalArray];
         } catch (\Exception $e) {
             return [ 'status' => false,'message' => 'Something went wrong.'];
@@ -338,6 +331,7 @@ class MyRequestController extends Controller
     }
 
     protected function hotelDescInfoApi($myData) {
+        dd($myData);
 
         $response = $myData['SOAP:Envelope']['SOAP:Body']['hotel:HotelRulesRsp'];
 
