@@ -9,8 +9,8 @@
                     <com:Provider Code="1G"/>
                 </com:PermittedProviders>
                 <hot:HotelStay>
-                    <hot:CheckinDate><?=$request->checkinDate?></hot:CheckinDate>
-                    <hot:CheckoutDate><?=$request->checkoutDate?></hot:CheckoutDate>
+                    <hot:CheckinDate><?=$request->checkin_date?></hot:CheckinDate>
+                    <hot:CheckoutDate><?=$request->checkout_date?></hot:CheckoutDate>
                 </hot:HotelStay>
             </hot:HotelDetailsModifiers>
         </hot:HotelDetailsReq>

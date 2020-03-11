@@ -282,19 +282,41 @@ class MyRequestController extends Controller
     protected function hotelRateInfoApi($myData) {
         $finalArray = [];
         try{
-            foreach ($myData['SOAP:Body']['hotel:HotelDetailsRsp']['hotel:RequestedHotelDetails']['hotel:HotelRateDetail'] as $data) {
-                $additional_info = [
-                    'ratePlanInfo'          => $data['@attributes'],
-                    'hotelRateByDateInfo'   => $data['hotel:HotelRateByDate']['@attributes'],
-                    'cancellationInfo'      => $data['hotel:CancelInfo']['@attributes']??'',
-                    'hotelGuaranteeInfo'    => $data['hotel:GuaranteeInfo']['@attributes']
 
+            foreach ($myData['SOAP:Body']['hotel:HotelDetailsRsp']['hotel:RequestedHotelDetails']['hotel:HotelRateDetail'] as $data) {
+
+                $RoomRateDescription = [];
+                foreach($data['hotel:RoomRateDescription'] as $row) {
+
+                    $RoomRateDescription[] = [
+                        Str::slug($row['@attributes']['Name'], '-')          => $row['hotel:Text'],
+                    ];
+                }
+
+                $HotelRateByDate = [];
+                foreach($data['hotel:HotelRateByDate'] as $row) {
+
+                    $HotelRateByDate[] = $row['@attributes'];
+                }
+
+                $RateMatchIndicator = [];
+                foreach($data['hotel:RateMatchIndicator'] as $row) {
+
+                    $RateMatchIndicator[] = $row['@attributes'];
+                }
+
+                $additional_info[] = [
+                    'RoomRateDescription'   => $RoomRateDescription,
+                    'HotelRateByDate'       => $HotelRateByDate,
+                    'RateMatchIndicator'    => $RateMatchIndicator,
+                    'cancellationInfo'      => $data['hotel:CancelInfo']['@attributes']??'',
+                    'hotelGuaranteeInfo'    => $data['hotel:GuaranteeInfo']['@attributes'],
+                    'ratePlanInfo'          => $data['@attributes']
                 ];
-                $hotelInfo = [
-                    'hotelRoomRateInfo'     => $additional_info
-                ];
-                $finalArray[] = $hotelInfo;
+
+                $finalArray['HotelRateDetail'] = $additional_info;
             }
+
             return [ 'status' => true,'message' => 'Data Found', 'data' => $finalArray];
         } catch (\Exception $e) {
             return [ 'status' => false,'message' => $e->errorMessage()];

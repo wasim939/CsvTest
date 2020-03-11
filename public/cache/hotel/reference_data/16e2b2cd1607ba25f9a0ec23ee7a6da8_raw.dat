@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
   <SOAP:Body>
-    <hotel:HotelSearchAvailabilityRsp xmlns:hotel="http://www.travelport.com/schema/hotel_v34_0" xmlns:common_v34_0="http://www.travelport.com/schema/common_v34_0" TransactionId="C3522A840A0E561B1D75FE267F4BD439" ResponseTime="2782">
-      <common_v34_0:NextResultReference ProviderCode="1G">bCXfcAc0c0ZsJd9wBzRzRoh96atHv0UpBWQIhK/P8i0bC2V5iXrRAjrQcEmJhCqWSwzBNhScjPGW0pcOeA6lFoirxR8/UyLpXkHYLevG9whXcXhgjfmFAw==</common_v34_0:NextResultReference>
+    <hotel:HotelSearchAvailabilityRsp xmlns:hotel="http://www.travelport.com/schema/hotel_v34_0" xmlns:common_v34_0="http://www.travelport.com/schema/common_v34_0" TransactionId="C8EB9CF40A0759D56F8B99204401E3A7" ResponseTime="2986">
+      <common_v34_0:NextResultReference ProviderCode="1G">bCXfcAc0c0ZsJd9wBzRzRjdSfgC3nPDKBWQIhK/P8i0Fd92ajCX7IzrQcEmJhCqWSwzBNhScjPGW0pcOeA6lFtvduKL3Oa1UXkHYLevG9whXcXhgjfmFAw==</common_v34_0:NextResultReference>
       <hotel:ReferencePoint>KINGSFORD SMITH</hotel:ReferencePoint>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="IC" VendorLocationID="19246" Key="vLHh1CbYlDKAf4eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="IC" HotelCode="19246" HotelLocation="SYD" Name="INTERCONTINENTAL SYDNEY" VendorLocationKey="vLHh1CbYlDKAf4eK7GAAAA==" HotelTransportation="Public" ReserveRequirement="Guarantee" ParticipationLevel="Lowest Public Rate" Availability="Available">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="RG" VendorLocationID="86638" Key="7bnU1CBAAA/BQCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="RG" HotelCode="86638" HotelLocation="SYD" Name="RYDGES SYDNEY AIRPORT" VendorLocationKey="7bnU1CBAAA/BQCCkOKAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Lowest Public Rate" Availability="Available">
           <hotel:PropertyAddress>
-            <hotel:Address>117 MACQUARIE STREET</hotel:Address>
+            <hotel:Address>8 ARRIVAL COURT</hotel:Address>
           </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="7" Direction="N"/>
+          <common_v34_0:Distance Units="KM" Value="1" Direction="NW"/>
           <hotel:HotelRating RatingProvider="AAA">
             <hotel:Rating>0</hotel:Rating>
           </hotel:HotelRating>
@@ -18,87 +18,120 @@
             <hotel:Amenity Code="AICO"/>
             <hotel:Amenity Code="BALC"/>
             <hotel:Amenity Code="HSPI"/>
-            <hotel:Amenity Code="COBU"/>
-            <hotel:Amenity Code="CODE"/>
-            <hotel:Amenity Code="COLE"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="COSH"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="CORO"/>
+            <hotel:Amenity Code="COBR"/>
             <hotel:Amenity Code="DINR"/>
-            <hotel:Amenity Code="GOLF"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="FRTR"/>
+            <hotel:Amenity Code="GISH"/>
             <hotel:Amenity Code="HAFA"/>
-            <hotel:Amenity Code="HECL"/>
-            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="LUGE"/>
             <hotel:Amenity Code="LNCH"/>
+            <hotel:Amenity Code="MEPL"/>
             <hotel:Amenity Code="MEFA"/>
             <hotel:Amenity Code="MIBA"/>
-            <hotel:Amenity Code="MTGL"/>
             <hotel:Amenity Code="NSMR"/>
-            <hotel:Amenity Code="PARK"/>
             <hotel:Amenity Code="PHSV"/>
-            <hotel:Amenity Code="POOL"/>
-            <hotel:Amenity Code="INPL"/>
-            <hotel:Amenity Code="OUPL"/>
-            <hotel:Amenity Code="PTRS"/>
             <hotel:Amenity Code="RTNT"/>
             <hotel:Amenity Code="ROSE"/>
             <hotel:Amenity Code="SAIR"/>
             <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="SHWR"/>
             <hotel:Amenity Code="TELV"/>
             <hotel:Amenity Code="CBTV"/>
-            <hotel:Amenity Code="PRBT"/>
-            <hotel:Amenity Code="FXSV"/>
-            <hotel:Amenity Code="PHCO"/>
-            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="SFBD"/>
             <hotel:Amenity Code="FSTY"/>
           </hotel:Amenities>
         </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD359.10" MinAmountRateChanged="false" MaximumAmount="AUD542.40" MaxAmountRateChanged="false"/>
+        <hotel:RateInfo MinimumAmount="AUD262.00" MinAmountRateChanged="false" MaximumAmount="AUD625.00" MaxAmountRateChanged="false"/>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="FP" VendorLocationID="E5471" Key="vLHh1CbYlDKAg4eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="FP" HotelCode="E5471" HotelLocation="SYD" Name="FOUR POINTS SYDNEY CENTRAL PRK" VendorLocationKey="vLHh1CbYlDKAg4eK7GAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Lowest Public Rate" Availability="Available">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="RG" VendorLocationID="31059" Key="7bnU1CBAAA/BRCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="RG" HotelCode="31059" HotelLocation="SYD" Name="RYDGES SYDNEY HARBOUR" VendorLocationKey="7bnU1CBAAA/BRCCkOKAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Guarantee" ParticipationLevel="Lowest Public Rate" Availability="Available">
           <hotel:PropertyAddress>
-            <hotel:Address>CHIPPENDALE NSW AU</hotel:Address>
+            <hotel:Address>55 GEORGE ST</hotel:Address>
           </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="5" Direction="N"/>
+          <common_v34_0:Distance Units="KM" Value="7" Direction="N"/>
           <hotel:HotelRating RatingProvider="AAA">
             <hotel:Rating>0</hotel:Rating>
           </hotel:HotelRating>
           <hotel:Amenities>
             <hotel:Amenity Code="AICO"/>
             <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BRFT"/>
             <hotel:Amenity Code="COSH"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="CORO"/>
+            <hotel:Amenity Code="DINR"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="GOLF"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="LUGE"/>
+            <hotel:Amenity Code="LNCH"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="MIBA"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="OUPL"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="ROSE"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:RateInfo MinimumAmount="AUD288.00" MinAmountRateChanged="false" MaximumAmount="AUD434.00" MaxAmountRateChanged="false"/>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="YX" VendorLocationID="24660" Key="7bnU1CBAAA/BSCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="YX" HotelCode="24660" HotelLocation="SYD" Name="AMORA HOTEL JAMISON SYDNEY" VendorLocationKey="7bnU1CBAAA/BSCCkOKAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
+          <hotel:PropertyAddress>
+            <hotel:Address>11 JAMISON STREET</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="COSH"/>
+            <hotel:Amenity Code="CSFR"/>
             <hotel:Amenity Code="COBU"/>
             <hotel:Amenity Code="CODE"/>
-            <hotel:Amenity Code="COBR"/>
+            <hotel:Amenity Code="COLE"/>
+            <hotel:Amenity Code="DINR"/>
             <hotel:Amenity Code="ELEV"/>
             <hotel:Amenity Code="HAFA"/>
             <hotel:Amenity Code="HECL"/>
-            <hotel:Amenity Code="MIOV"/>
-            <hotel:Amenity Code="LAVA"/>
             <hotel:Amenity Code="LUGE"/>
+            <hotel:Amenity Code="LNCH"/>
+            <hotel:Amenity Code="MEPL"/>
             <hotel:Amenity Code="MEFA"/>
             <hotel:Amenity Code="MIBA"/>
             <hotel:Amenity Code="NSMR"/>
             <hotel:Amenity Code="PARK"/>
-            <hotel:Amenity Code="RFGR"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="INPL"/>
+            <hotel:Amenity Code="PTRS"/>
             <hotel:Amenity Code="RTNT"/>
             <hotel:Amenity Code="ROSE"/>
-            <hotel:Amenity Code="SAIR"/>
-            <hotel:Amenity Code="SADE"/>
-            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="SAUN"/>
             <hotel:Amenity Code="SPAA"/>
-            <hotel:Amenity Code="TELV"/>
-            <hotel:Amenity Code="CBTV"/>
-            <hotel:Amenity Code="PRBT"/>
-            <hotel:Amenity Code="WTBR"/>
-            <hotel:Amenity Code="SFBD"/>
-            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
           </hotel:Amenities>
         </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD211.65" MaximumAmount="AUD879.00"/>
+        <hotel:RateInfo MinimumAmount="AUD410.00" MinAmountRateChanged="false" MaximumAmount="AUD1710.00" MaxAmountRateChanged="false"/>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="SI" VendorLocationID="58047" Key="vLHh1CbYlDKAh4eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="SI" HotelCode="58047" HotelLocation="SYD" Name="SHERATON GRAND SYDNEY HYDE PRK" VendorLocationKey="vLHh1CbYlDKAh4eK7GAAAA==" HotelTransportation="Other" ReserveRequirement="Guarantee" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="Available">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="SI" VendorLocationID="58047" Key="7bnU1CBAAA/BTCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="SI" HotelCode="58047" HotelLocation="SYD" Name="SHERATON GRAND SYDNEY HYDE PRK" VendorLocationKey="7bnU1CBAAA/BTCCkOKAAAA==" HotelTransportation="Other" ReserveRequirement="Guarantee" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="Available">
           <hotel:PropertyAddress>
             <hotel:Address>161 ELIZABETH STREET</hotel:Address>
           </hotel:PropertyAddress>
@@ -145,136 +178,8 @@
         <hotel:RateInfo MinimumAmount="AUD330.65" MaximumAmount="AUD2969.10"/>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="RG" VendorLocationID="86638" Key="vLHh1CbYlDKAi4eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="RG" HotelCode="86638" HotelLocation="SYD" Name="RYDGES SYDNEY AIRPORT" VendorLocationKey="vLHh1CbYlDKAi4eK7GAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Lowest Public Rate" Availability="Available">
-          <hotel:PropertyAddress>
-            <hotel:Address>8 ARRIVAL COURT</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="1" Direction="NW"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>0</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="BALC"/>
-            <hotel:Amenity Code="HSPI"/>
-            <hotel:Amenity Code="BRFT"/>
-            <hotel:Amenity Code="COSH"/>
-            <hotel:Amenity Code="CSFR"/>
-            <hotel:Amenity Code="CORO"/>
-            <hotel:Amenity Code="COBR"/>
-            <hotel:Amenity Code="DINR"/>
-            <hotel:Amenity Code="ELEV"/>
-            <hotel:Amenity Code="FAPL"/>
-            <hotel:Amenity Code="FRTR"/>
-            <hotel:Amenity Code="GISH"/>
-            <hotel:Amenity Code="HAFA"/>
-            <hotel:Amenity Code="LUGE"/>
-            <hotel:Amenity Code="LNCH"/>
-            <hotel:Amenity Code="MEPL"/>
-            <hotel:Amenity Code="MEFA"/>
-            <hotel:Amenity Code="MIBA"/>
-            <hotel:Amenity Code="NSMR"/>
-            <hotel:Amenity Code="PHSV"/>
-            <hotel:Amenity Code="RTNT"/>
-            <hotel:Amenity Code="ROSE"/>
-            <hotel:Amenity Code="SAIR"/>
-            <hotel:Amenity Code="SADE"/>
-            <hotel:Amenity Code="SHWR"/>
-            <hotel:Amenity Code="TELV"/>
-            <hotel:Amenity Code="CBTV"/>
-            <hotel:Amenity Code="SFBD"/>
-            <hotel:Amenity Code="FSTY"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD262.00" MinAmountRateChanged="false" MaximumAmount="AUD625.00" MaxAmountRateChanged="false"/>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="YX" VendorLocationID="24660" Key="vLHh1CbYlDKAj4eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="YX" HotelCode="24660" HotelLocation="SYD" Name="AMORA HOTEL JAMISON SYDNEY" VendorLocationKey="vLHh1CbYlDKAj4eK7GAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
-          <hotel:PropertyAddress>
-            <hotel:Address>11 JAMISON STREET</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>0</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="HSPI"/>
-            <hotel:Amenity Code="BRFT"/>
-            <hotel:Amenity Code="COSH"/>
-            <hotel:Amenity Code="CSFR"/>
-            <hotel:Amenity Code="COBU"/>
-            <hotel:Amenity Code="CODE"/>
-            <hotel:Amenity Code="COLE"/>
-            <hotel:Amenity Code="DINR"/>
-            <hotel:Amenity Code="ELEV"/>
-            <hotel:Amenity Code="HAFA"/>
-            <hotel:Amenity Code="HECL"/>
-            <hotel:Amenity Code="LUGE"/>
-            <hotel:Amenity Code="LNCH"/>
-            <hotel:Amenity Code="MEPL"/>
-            <hotel:Amenity Code="MEFA"/>
-            <hotel:Amenity Code="MIBA"/>
-            <hotel:Amenity Code="NSMR"/>
-            <hotel:Amenity Code="PARK"/>
-            <hotel:Amenity Code="POOL"/>
-            <hotel:Amenity Code="INPL"/>
-            <hotel:Amenity Code="PTRS"/>
-            <hotel:Amenity Code="RTNT"/>
-            <hotel:Amenity Code="ROSE"/>
-            <hotel:Amenity Code="SAUN"/>
-            <hotel:Amenity Code="SPAA"/>
-            <hotel:Amenity Code="FSTY"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD410.00" MinAmountRateChanged="false" MaximumAmount="AUD1710.00" MaxAmountRateChanged="false"/>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="RT" VendorLocationID="18792" Key="vLHh1CbYlDKAk4eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="RT" HotelCode="18792" HotelLocation="SYD" Name="NOVOTEL SYDNEY DARLING SQUARE" VendorLocationKey="vLHh1CbYlDKAk4eK7GAAAA==" HotelTransportation="Other" ReserveRequirement="Other" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="Available">
-          <hotel:PropertyAddress>
-            <hotel:Address>17 LITTLE PIER STREE</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="5" Direction="N"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>0</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="CARE"/>
-            <hotel:Amenity Code="CSFR"/>
-            <hotel:Amenity Code="CODE"/>
-            <hotel:Amenity Code="COLE"/>
-            <hotel:Amenity Code="CORO"/>
-            <hotel:Amenity Code="FAPL"/>
-            <hotel:Amenity Code="HAFA"/>
-            <hotel:Amenity Code="HECL"/>
-            <hotel:Amenity Code="LAVA"/>
-            <hotel:Amenity Code="MEPL"/>
-            <hotel:Amenity Code="MEFA"/>
-            <hotel:Amenity Code="MIBA"/>
-            <hotel:Amenity Code="NSMR"/>
-            <hotel:Amenity Code="PARK"/>
-            <hotel:Amenity Code="PHSV"/>
-            <hotel:Amenity Code="RTNT"/>
-            <hotel:Amenity Code="SADE"/>
-            <hotel:Amenity Code="SHWR"/>
-            <hotel:Amenity Code="TELV"/>
-            <hotel:Amenity Code="CBTV"/>
-            <hotel:Amenity Code="WTBR"/>
-            <hotel:Amenity Code="A220"/>
-            <hotel:Amenity Code="PHCO"/>
-            <hotel:Amenity Code="BATB"/>
-            <hotel:Amenity Code="FSTY"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD243.00" MinAmountRateChanged="true" MaximumAmount="AUD389.00" MaxAmountRateChanged="true"/>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="HI" VendorLocationID="49203" Key="vLHh1CbYlDKAl4eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="HI" HotelCode="49203" HotelLocation="SYD" Name="HOLIDAY INN DARLING HARBOUR" VendorLocationKey="vLHh1CbYlDKAl4eK7GAAAA==" HotelTransportation="Public" ReserveRequirement="Other" ParticipationLevel="Lowest Public Rate" Availability="Available">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="HI" VendorLocationID="49203" Key="7bnU1CBAAA/BUCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="HI" HotelCode="49203" HotelLocation="SYD" Name="HOLIDAY INN DARLING HARBOUR" VendorLocationKey="7bnU1CBAAA/BUCCkOKAAAA==" HotelTransportation="Public" ReserveRequirement="Other" ParticipationLevel="Lowest Public Rate" Availability="Available">
           <hotel:PropertyAddress>
             <hotel:Address>68 HARBOUR ST</hotel:Address>
           </hotel:PropertyAddress>
@@ -314,46 +219,8 @@
         <hotel:RateInfo MinimumAmount="AUD241.40" MinAmountRateChanged="false" MaximumAmount="AUD283.40" MaxAmountRateChanged="false"/>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="RG" VendorLocationID="31059" Key="vLHh1CbYlDKAm4eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="RG" HotelCode="31059" HotelLocation="SYD" Name="RYDGES SYDNEY HARBOUR" VendorLocationKey="vLHh1CbYlDKAm4eK7GAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Guarantee" ParticipationLevel="Lowest Public Rate" Availability="Available">
-          <hotel:PropertyAddress>
-            <hotel:Address>55 GEORGE ST</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="7" Direction="N"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>0</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="HSPI"/>
-            <hotel:Amenity Code="BRFT"/>
-            <hotel:Amenity Code="COSH"/>
-            <hotel:Amenity Code="CODE"/>
-            <hotel:Amenity Code="CORO"/>
-            <hotel:Amenity Code="DINR"/>
-            <hotel:Amenity Code="ELEV"/>
-            <hotel:Amenity Code="GOLF"/>
-            <hotel:Amenity Code="HAFA"/>
-            <hotel:Amenity Code="LUGE"/>
-            <hotel:Amenity Code="LNCH"/>
-            <hotel:Amenity Code="MEPL"/>
-            <hotel:Amenity Code="MIBA"/>
-            <hotel:Amenity Code="NSMR"/>
-            <hotel:Amenity Code="PARK"/>
-            <hotel:Amenity Code="POOL"/>
-            <hotel:Amenity Code="OUPL"/>
-            <hotel:Amenity Code="RTNT"/>
-            <hotel:Amenity Code="ROSE"/>
-            <hotel:Amenity Code="TELV"/>
-            <hotel:Amenity Code="CBTV"/>
-            <hotel:Amenity Code="FSTY"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD288.00" MinAmountRateChanged="false" MaximumAmount="AUD434.00" MaxAmountRateChanged="false"/>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="HI" VendorLocationID="43163" Key="vLHh1CbYlDKAn4eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="HI" HotelCode="43163" HotelLocation="SYD" Name="HOLIDAY INN SYDNEY AIRPORT" VendorLocationKey="vLHh1CbYlDKAn4eK7GAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Other" ParticipationLevel="Lowest Public Rate" Availability="Available">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="HI" VendorLocationID="43163" Key="7bnU1CBAAA/BVCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="HI" HotelCode="43163" HotelLocation="SYD" Name="HOLIDAY INN SYDNEY AIRPORT" VendorLocationKey="7bnU1CBAAA/BVCCkOKAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Other" ParticipationLevel="Lowest Public Rate" Availability="Available">
           <hotel:PropertyAddress>
             <hotel:Address>CORNER OF O RIORDAN</hotel:Address>
           </hotel:PropertyAddress>
@@ -395,8 +262,52 @@
         <hotel:RateInfo MinimumAmount="AUD162.80" MinAmountRateChanged="false" MaximumAmount="AUD272.80" MaxAmountRateChanged="false"/>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="HY" VendorLocationID="09992" Key="vLHh1CbYlDKAo4eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="HY" HotelCode="09992" HotelLocation="SYD" Name="PARK HYATT SYDNEY" VendorLocationKey="vLHh1CbYlDKAo4eK7GAAAA==" HotelTransportation="Public" ReserveRequirement="Guarantee" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="Available">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="FP" VendorLocationID="E5471" Key="7bnU1CBAAA/BWCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="FP" HotelCode="E5471" HotelLocation="SYD" Name="FOUR POINTS SYDNEY CENTRAL PRK" VendorLocationKey="7bnU1CBAAA/BWCCkOKAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Lowest Public Rate" Availability="Available">
+          <hotel:PropertyAddress>
+            <hotel:Address>CHIPPENDALE NSW AU</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="5" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="COSH"/>
+            <hotel:Amenity Code="COBU"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="COBR"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="MIOV"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="LUGE"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="MIBA"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="RFGR"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="ROSE"/>
+            <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="SPAA"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="PRBT"/>
+            <hotel:Amenity Code="WTBR"/>
+            <hotel:Amenity Code="SFBD"/>
+            <hotel:Amenity Code="BATB"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:RateInfo MinimumAmount="AUD211.65" MaximumAmount="AUD879.00"/>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="HY" VendorLocationID="09992" Key="7bnU1CBAAA/BXCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="HY" HotelCode="09992" HotelLocation="SYD" Name="PARK HYATT SYDNEY" VendorLocationKey="7bnU1CBAAA/BXCCkOKAAAA==" HotelTransportation="Public" ReserveRequirement="Guarantee" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="Available">
           <hotel:PropertyAddress>
             <hotel:Address>7 HICKSON ROAD</hotel:Address>
           </hotel:PropertyAddress>
@@ -454,8 +365,131 @@
         <hotel:RateInfo MinimumAmount="AUD1440.00" MinAmountRateChanged="false" MaximumAmount="AUD1440.00" MaxAmountRateChanged="false"/>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="PH" VendorLocationID="13273" Key="vLHh1CbYlDKAp4eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="PH" HotelCode="13273" HotelLocation="SYD" Name="THE FULLERTON HOTEL SYDNEY LEG" VendorLocationKey="vLHh1CbYlDKAp4eK7GAAAA==" HotelTransportation="Limo" ReserveRequirement="Other" ParticipationLevel="Lowest Public Rate" Availability="Available">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="IC" VendorLocationID="19246" Key="7bnU1CBAAA/BYCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="IC" HotelCode="19246" HotelLocation="SYD" Name="INTERCONTINENTAL SYDNEY" VendorLocationKey="7bnU1CBAAA/BYCCkOKAAAA==" HotelTransportation="Public" ReserveRequirement="Guarantee" ParticipationLevel="Lowest Public Rate" Availability="Available">
+          <hotel:PropertyAddress>
+            <hotel:Address>117 MACQUARIE STREET</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="7" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="BALC"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="COBU"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="COLE"/>
+            <hotel:Amenity Code="DINR"/>
+            <hotel:Amenity Code="GOLF"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="LNCH"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="MIBA"/>
+            <hotel:Amenity Code="MTGL"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="INPL"/>
+            <hotel:Amenity Code="OUPL"/>
+            <hotel:Amenity Code="PTRS"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="ROSE"/>
+            <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="PRBT"/>
+            <hotel:Amenity Code="FXSV"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:RateInfo MinimumAmount="AUD359.10" MinAmountRateChanged="false" MaximumAmount="AUD542.40" MaxAmountRateChanged="false"/>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="PL" VendorLocationID="26033" Key="7bnU1CBAAA/BZCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="PL" HotelCode="26033" HotelLocation="SYD" Name="PARKROYAL DARLING HARBOUR SYDN" VendorLocationKey="7bnU1CBAAA/BZCCkOKAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
+          <hotel:PropertyAddress>
+            <hotel:Address>150 DAY STREET</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="COBU"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="COLE"/>
+            <hotel:Amenity Code="CORO"/>
+            <hotel:Amenity Code="DINR"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="LUGE"/>
+            <hotel:Amenity Code="LNCH"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="ROSE"/>
+            <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:RateInfo MinimumAmount="AUD318.00" MinAmountRateChanged="false" MaximumAmount="AUD999.00" MaxAmountRateChanged="false"/>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="RT" VendorLocationID="18792" Key="7bnU1CBAAA/BaCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="RT" HotelCode="18792" HotelLocation="SYD" Name="NOVOTEL SYDNEY DARLING SQUARE" VendorLocationKey="7bnU1CBAAA/BaCCkOKAAAA==" HotelTransportation="Other" ReserveRequirement="Other" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="Available">
+          <hotel:PropertyAddress>
+            <hotel:Address>17 LITTLE PIER STREE</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="5" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="CARE"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="COLE"/>
+            <hotel:Amenity Code="CORO"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="MIBA"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="WTBR"/>
+            <hotel:Amenity Code="A220"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:RateInfo MinimumAmount="AUD243.00" MinAmountRateChanged="true" MaximumAmount="AUD389.00" MaxAmountRateChanged="true"/>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="PH" VendorLocationID="13273" Key="7bnU1CBAAA/BbCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="PH" HotelCode="13273" HotelLocation="SYD" Name="THE FULLERTON HOTEL SYDNEY LEG" VendorLocationKey="7bnU1CBAAA/BbCCkOKAAAA==" HotelTransportation="Limo" ReserveRequirement="Other" ParticipationLevel="Lowest Public Rate" Availability="Available">
           <hotel:PropertyAddress>
             <hotel:Address>NO 1 MARTIN PLACE</hotel:Address>
           </hotel:PropertyAddress>
@@ -495,10 +529,111 @@
         <hotel:RateInfo MinimumAmount="AUD427.50" MinAmountRateChanged="false" MaximumAmount="AUD786.00" MaxAmountRateChanged="false"/>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="PL" VendorLocationID="26033" Key="vLHh1CbYlDKAq4eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="PL" HotelCode="26033" HotelLocation="SYD" Name="PARKROYAL DARLING HARBOUR SYDN" VendorLocationKey="vLHh1CbYlDKAq4eK7GAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="YX" VendorLocationID="30008" Key="7bnU1CBAAA/BcCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="YX" HotelCode="30008" HotelLocation="SYD" Name="MERITON SUITES KENT STREET" VendorLocationKey="7bnU1CBAAA/BcCCkOKAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
           <hotel:PropertyAddress>
-            <hotel:Address>150 DAY STREET</hotel:Address>
+            <hotel:Address>528 KENT STREET</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="COSH"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="MIOV"/>
+            <hotel:Amenity Code="KTCN"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="INPL"/>
+            <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="SAUN"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:RateInfo MinimumAmount="AUD265.00" MinAmountRateChanged="false" MaximumAmount="AUD2496.00" MaxAmountRateChanged="false"/>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="TD" VendorLocationID="97361" Key="7bnU1CBAAA/BdCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="TD" HotelCode="97361" HotelLocation="SYD" Name="ADINA SYDNEY MARTIN PLACE" VendorLocationKey="7bnU1CBAAA/BdCCkOKAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
+          <hotel:PropertyAddress>
+            <hotel:Address>1 HOSKING PLACE</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="BALC"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="MIOV"/>
+            <hotel:Amenity Code="KTCN"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="RFGR"/>
+            <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="FXSV"/>
+            <hotel:Amenity Code="SFBD"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:RateInfo MinimumAmount="AUD309.00" MinAmountRateChanged="false" MaximumAmount="AUD359.00" MaxAmountRateChanged="false"/>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="RT" VendorLocationID="01511" Key="7bnU1CBAAA/BeCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="RT" HotelCode="01511" HotelLocation="SYD" Name="NOVOTEL SYDNEY CENTRAL" VendorLocationKey="7bnU1CBAAA/BeCCkOKAAAA==" HotelTransportation="Other" ReserveRequirement="Guarantee" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="Available">
+          <hotel:PropertyAddress>
+            <hotel:Address>169 179 THOMAS STREE</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="5" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="COLE"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="MIBA"/>
+            <hotel:Amenity Code="MOIR"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="OUPL"/>
+            <hotel:Amenity Code="PTRS"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="WTBR"/>
+            <hotel:Amenity Code="A220"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:RateInfo MinimumAmount="AUD224.00" MinAmountRateChanged="true" MaximumAmount="AUD359.00" MaxAmountRateChanged="true"/>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="TD" VendorLocationID="32638" Key="7bnU1CBAAA/BfCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="TD" HotelCode="32638" HotelLocation="SYD" Name="TRAVELODGE SYDNEY MARTIN PLACE" VendorLocationKey="7bnU1CBAAA/BfCCkOKAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
+          <hotel:PropertyAddress>
+            <hotel:Address>165 PHILLIP ST</hotel:Address>
           </hotel:PropertyAddress>
           <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
           <hotel:HotelRating RatingProvider="AAA">
@@ -508,31 +643,70 @@
             <hotel:Amenity Code="AICO"/>
             <hotel:Amenity Code="HSPI"/>
             <hotel:Amenity Code="BRFT"/>
-            <hotel:Amenity Code="COBU"/>
-            <hotel:Amenity Code="CODE"/>
-            <hotel:Amenity Code="COLE"/>
-            <hotel:Amenity Code="CORO"/>
-            <hotel:Amenity Code="DINR"/>
             <hotel:Amenity Code="ELEV"/>
-            <hotel:Amenity Code="LUGE"/>
-            <hotel:Amenity Code="LNCH"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="MIOV"/>
             <hotel:Amenity Code="MEPL"/>
-            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="MOIR"/>
             <hotel:Amenity Code="NSMR"/>
-            <hotel:Amenity Code="PARK"/>
-            <hotel:Amenity Code="RTNT"/>
-            <hotel:Amenity Code="ROSE"/>
+            <hotel:Amenity Code="RFGR"/>
             <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="CBTV"/>
             <hotel:Amenity Code="FSTY"/>
           </hotel:Amenities>
         </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD323.85" MinAmountRateChanged="false" MaximumAmount="AUD999.00" MaxAmountRateChanged="false"/>
+        <hotel:RateInfo MinimumAmount="AUD259.00" MinAmountRateChanged="false" MaximumAmount="AUD259.00" MaxAmountRateChanged="false"/>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="YX" VendorLocationID="10848" Key="vLHh1CbYlDKAr4eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="YX" HotelCode="10848" HotelLocation="SYD" Name="MERITON SUITES PITT STREET" VendorLocationKey="vLHh1CbYlDKAr4eK7GAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="TD" VendorLocationID="26523" Key="7bnU1CBAAA/BgCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="TD" HotelCode="26523" HotelLocation="SYD" Name="ADINA SYDNEY CENTRAL" VendorLocationKey="7bnU1CBAAA/BgCCkOKAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
           <hotel:PropertyAddress>
-            <hotel:Address>329 PITT STREET</hotel:Address>
+            <hotel:Address>2 LEE ST</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="5" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="BALC"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="DINR"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="MIOV"/>
+            <hotel:Amenity Code="KTCN"/>
+            <hotel:Amenity Code="LNCH"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="MIBA"/>
+            <hotel:Amenity Code="MOIR"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="OUPL"/>
+            <hotel:Amenity Code="RFGR"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="ROSE"/>
+            <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="SAUN"/>
+            <hotel:Amenity Code="SPAA"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:RateInfo MinimumAmount="AUD231.20" MinAmountRateChanged="false" MaximumAmount="AUD344.00" MaxAmountRateChanged="false"/>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="TD" VendorLocationID="65628" Key="7bnU1CBAAA/BhCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="TD" HotelCode="65628" HotelLocation="SYD" Name="RENDEZVOUS SYDNEY THE ROCKS" VendorLocationKey="7bnU1CBAAA/BhCCkOKAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
+          <hotel:PropertyAddress>
+            <hotel:Address>75 HARRINGTON STREET</hotel:Address>
           </hotel:PropertyAddress>
           <common_v34_0:Distance Units="KM" Value="7" Direction="N"/>
           <hotel:HotelRating RatingProvider="AAA">
@@ -540,336 +714,71 @@
           </hotel:HotelRating>
           <hotel:Amenities>
             <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="HSPI"/>
-            <hotel:Amenity Code="COSH"/>
-            <hotel:Amenity Code="CSFR"/>
-            <hotel:Amenity Code="ELEV"/>
-            <hotel:Amenity Code="FAPL"/>
-            <hotel:Amenity Code="MIOV"/>
-            <hotel:Amenity Code="KTCN"/>
-            <hotel:Amenity Code="NSMR"/>
-            <hotel:Amenity Code="PARK"/>
-            <hotel:Amenity Code="POOL"/>
-            <hotel:Amenity Code="INPL"/>
-            <hotel:Amenity Code="SAIR"/>
-            <hotel:Amenity Code="SAUN"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD286.00" MinAmountRateChanged="false" MaximumAmount="AUD2296.00" MaxAmountRateChanged="false"/>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="RD" VendorLocationID="97178" Key="vLHh1CbYlDKAs4eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="RD" HotelCode="97178" HotelLocation="SYD" Name="RADISSON HOTEL SUITES SYDNEY" VendorLocationKey="vLHh1CbYlDKAs4eK7GAAAA==" HotelTransportation="Public" ReserveRequirement="Other" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="Available">
-          <hotel:PropertyAddress>
-            <hotel:Address>72 LIVERPOOL ST</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>0</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="AICO"/>
             <hotel:Amenity Code="BALC"/>
             <hotel:Amenity Code="HSPI"/>
-            <hotel:Amenity Code="BRFT"/>
-            <hotel:Amenity Code="CSFR"/>
-            <hotel:Amenity Code="COBU"/>
-            <hotel:Amenity Code="CODE"/>
-            <hotel:Amenity Code="COBR"/>
             <hotel:Amenity Code="ELEV"/>
-            <hotel:Amenity Code="GOLF"/>
-            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="FAPL"/>
             <hotel:Amenity Code="HECL"/>
             <hotel:Amenity Code="MIOV"/>
-            <hotel:Amenity Code="KTCN"/>
-            <hotel:Amenity Code="LAVA"/>
-            <hotel:Amenity Code="MEFA"/>
             <hotel:Amenity Code="MIBA"/>
-            <hotel:Amenity Code="MOIR"/>
-            <hotel:Amenity Code="MTGL"/>
             <hotel:Amenity Code="NSMR"/>
             <hotel:Amenity Code="PARK"/>
             <hotel:Amenity Code="PHSV"/>
-            <hotel:Amenity Code="POOL"/>
-            <hotel:Amenity Code="INPL"/>
+            <hotel:Amenity Code="RFGR"/>
             <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="ROSE"/>
             <hotel:Amenity Code="SAIR"/>
             <hotel:Amenity Code="SADE"/>
-            <hotel:Amenity Code="SAUN"/>
-            <hotel:Amenity Code="SCCV"/>
             <hotel:Amenity Code="SHWR"/>
-            <hotel:Amenity Code="SPAA"/>
-            <hotel:Amenity Code="TRDK"/>
             <hotel:Amenity Code="TELV"/>
             <hotel:Amenity Code="CBTV"/>
-            <hotel:Amenity Code="PRBT"/>
-            <hotel:Amenity Code="WTBR"/>
-            <hotel:Amenity Code="FXSV"/>
             <hotel:Amenity Code="PHCO"/>
-            <hotel:Amenity Code="BATB"/>
             <hotel:Amenity Code="FSTY"/>
           </hotel:Amenities>
         </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD319.20" MinAmountRateChanged="true" MaximumAmount="AUD479.00" MaxAmountRateChanged="true"/>
+        <hotel:RateInfo MinimumAmount="AUD287.20" MinAmountRateChanged="false" MaximumAmount="AUD439.00" MaxAmountRateChanged="false"/>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="TD" VendorLocationID="32832" Key="vLHh1CbYlDKAt4eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="TD" HotelCode="32832" HotelLocation="SYD" Name="TRAVELODGE SYDNEY" VendorLocationKey="vLHh1CbYlDKAt4eK7GAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="LM" VendorLocationID="09843" Key="7bnU1CBAAA/BiCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="LM" HotelCode="09843" HotelLocation="SYD" Name="VIEW SYDNEY FORMER HARBOURVIEW" VendorLocationKey="7bnU1CBAAA/BiCCkOKAAAA==" HotelTransportation="Limo" ReserveRequirement="Other" ParticipationLevel="Inside Shopper participant" Availability="Available">
           <hotel:PropertyAddress>
-            <hotel:Address>27 WENTWORTH AVE</hotel:Address>
+            <hotel:Address>17 BLUE ST</hotel:Address>
           </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
+          <common_v34_0:Distance Units="KM" Value="8" Direction="N"/>
           <hotel:HotelRating RatingProvider="AAA">
             <hotel:Rating>0</hotel:Rating>
           </hotel:HotelRating>
           <hotel:Amenities>
             <hotel:Amenity Code="AICO"/>
             <hotel:Amenity Code="CHCA"/>
-            <hotel:Amenity Code="BALC"/>
             <hotel:Amenity Code="HSPI"/>
             <hotel:Amenity Code="BRFT"/>
-            <hotel:Amenity Code="CODE"/>
-            <hotel:Amenity Code="ELEV"/>
-            <hotel:Amenity Code="FAPL"/>
-            <hotel:Amenity Code="MIOV"/>
-            <hotel:Amenity Code="MEPL"/>
-            <hotel:Amenity Code="MEFA"/>
-            <hotel:Amenity Code="MOIR"/>
-            <hotel:Amenity Code="NSMR"/>
-            <hotel:Amenity Code="PHSV"/>
-            <hotel:Amenity Code="RFGR"/>
-            <hotel:Amenity Code="RTNT"/>
-            <hotel:Amenity Code="SAIR"/>
-            <hotel:Amenity Code="SHWR"/>
-            <hotel:Amenity Code="TELV"/>
-            <hotel:Amenity Code="CBTV"/>
-            <hotel:Amenity Code="SFBD"/>
-            <hotel:Amenity Code="FSTY"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD151.20" MinAmountRateChanged="false" MaximumAmount="AUD249.00" MaxAmountRateChanged="false"/>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="BT" VendorLocationID="C0261" Key="vLHh1CbYlDKAu4eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="BT" HotelCode="C0261" HotelLocation="SYD" Name="PRIMUS HOTEL SYDNEY" VendorLocationKey="vLHh1CbYlDKAu4eK7GAAAA==" HotelTransportation="Public" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
-          <hotel:PropertyAddress>
-            <hotel:Address>339 PITT ST</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>0</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="HSPI"/>
-            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="COSH"/>
             <hotel:Amenity Code="COBU"/>
             <hotel:Amenity Code="CODE"/>
             <hotel:Amenity Code="CORO"/>
+            <hotel:Amenity Code="COBR"/>
             <hotel:Amenity Code="DINR"/>
             <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="GOLF"/>
             <hotel:Amenity Code="HAFA"/>
-            <hotel:Amenity Code="LNCH"/>
-            <hotel:Amenity Code="MEPL"/>
-            <hotel:Amenity Code="MEFA"/>
-            <hotel:Amenity Code="MIBA"/>
-            <hotel:Amenity Code="MOIR"/>
-            <hotel:Amenity Code="NSMR"/>
-            <hotel:Amenity Code="PARK"/>
-            <hotel:Amenity Code="PHSV"/>
-            <hotel:Amenity Code="POOL"/>
-            <hotel:Amenity Code="OUPL"/>
-            <hotel:Amenity Code="PTRS"/>
-            <hotel:Amenity Code="RTNT"/>
-            <hotel:Amenity Code="ROSE"/>
-            <hotel:Amenity Code="SAIR"/>
-            <hotel:Amenity Code="SHWR"/>
-            <hotel:Amenity Code="CBTV"/>
-            <hotel:Amenity Code="FXSV"/>
-            <hotel:Amenity Code="PHCO"/>
-            <hotel:Amenity Code="FSTY"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD351.20" MinAmountRateChanged="false" MaximumAmount="AUD3209.00" MaxAmountRateChanged="false"/>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="MP" VendorLocationID="95582" Key="vLHh1CbYlDKAv4eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="MP" HotelCode="95582" HotelLocation="SYD" Name="MANTRA 2 BOND STREET" VendorLocationKey="vLHh1CbYlDKAv4eK7GAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Other" ParticipationLevel="Inside Shopper participant" Availability="Available">
-          <hotel:PropertyAddress>
-            <hotel:Address>CNR GEORGE ST AND BO</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>0</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="AIDE"/>
-            <hotel:Amenity Code="HSPI"/>
-            <hotel:Amenity Code="BRFT"/>
-            <hotel:Amenity Code="CARE"/>
-            <hotel:Amenity Code="COSH"/>
-            <hotel:Amenity Code="CSFR"/>
-            <hotel:Amenity Code="COBU"/>
-            <hotel:Amenity Code="CODE"/>
-            <hotel:Amenity Code="DINR"/>
-            <hotel:Amenity Code="ELEV"/>
-            <hotel:Amenity Code="HAFA"/>
-            <hotel:Amenity Code="HECL"/>
             <hotel:Amenity Code="LAVA"/>
             <hotel:Amenity Code="LUGE"/>
             <hotel:Amenity Code="LNCH"/>
             <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="MIBA"/>
             <hotel:Amenity Code="NSMR"/>
             <hotel:Amenity Code="PARK"/>
             <hotel:Amenity Code="PHSV"/>
-            <hotel:Amenity Code="POOL"/>
-            <hotel:Amenity Code="OUPL"/>
             <hotel:Amenity Code="PTRS"/>
             <hotel:Amenity Code="RTNT"/>
             <hotel:Amenity Code="ROSE"/>
+            <hotel:Amenity Code="SAIR"/>
             <hotel:Amenity Code="SADE"/>
             <hotel:Amenity Code="SCCV"/>
-            <hotel:Amenity Code="SPAA"/>
             <hotel:Amenity Code="TRDK"/>
-            <hotel:Amenity Code="FXSV"/>
-            <hotel:Amenity Code="PHCO"/>
-            <hotel:Amenity Code="FSTY"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD264.00" MinAmountRateChanged="true" MaximumAmount="AUD480.00" MaxAmountRateChanged="true"/>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="IQ" VendorLocationID="64570" Key="vLHh1CbYlDKAw4eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="IQ" HotelCode="64570" HotelLocation="SYD" Name="HOTEL URBAN ST LEONARDS" VendorLocationKey="vLHh1CbYlDKAw4eK7GAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
-          <hotel:PropertyAddress>
-            <hotel:Address>ST LEONARDS AU</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="9" Direction="N"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>0</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="BALC"/>
-            <hotel:Amenity Code="HSPI"/>
-            <hotel:Amenity Code="BRFT"/>
-            <hotel:Amenity Code="CARE"/>
-            <hotel:Amenity Code="COSH"/>
-            <hotel:Amenity Code="CSFR"/>
-            <hotel:Amenity Code="CODE"/>
-            <hotel:Amenity Code="CORO"/>
-            <hotel:Amenity Code="COBR"/>
-            <hotel:Amenity Code="DINR"/>
-            <hotel:Amenity Code="ELEV"/>
-            <hotel:Amenity Code="ENTR"/>
-            <hotel:Amenity Code="FAPL"/>
-            <hotel:Amenity Code="FRTR"/>
-            <hotel:Amenity Code="GOLF"/>
-            <hotel:Amenity Code="HAFA"/>
-            <hotel:Amenity Code="HECL"/>
-            <hotel:Amenity Code="LAVA"/>
-            <hotel:Amenity Code="LUGE"/>
-            <hotel:Amenity Code="LNCH"/>
-            <hotel:Amenity Code="MEFA"/>
-            <hotel:Amenity Code="MIBA"/>
-            <hotel:Amenity Code="MOIR"/>
-            <hotel:Amenity Code="NSMR"/>
-            <hotel:Amenity Code="PARK"/>
-            <hotel:Amenity Code="RFGR"/>
-            <hotel:Amenity Code="RTNT"/>
-            <hotel:Amenity Code="ROSE"/>
-            <hotel:Amenity Code="WERO"/>
-            <hotel:Amenity Code="SAIR"/>
-            <hotel:Amenity Code="SADE"/>
-            <hotel:Amenity Code="SCCV"/>
-            <hotel:Amenity Code="SHWR"/>
-            <hotel:Amenity Code="SPAA"/>
-            <hotel:Amenity Code="PRBT"/>
-            <hotel:Amenity Code="WTBR"/>
-            <hotel:Amenity Code="A220"/>
-            <hotel:Amenity Code="D220"/>
-            <hotel:Amenity Code="FXSV"/>
-            <hotel:Amenity Code="PHCO"/>
-            <hotel:Amenity Code="BATB"/>
-            <hotel:Amenity Code="FSTY"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD249.00" MaximumAmount="AUD349.00"/>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="TD" VendorLocationID="95581" Key="vLHh1CbYlDKAx4eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="TD" HotelCode="95581" HotelLocation="SYD" Name="ADINA COOGEE SYDNEY" VendorLocationKey="vLHh1CbYlDKAx4eK7GAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
-          <hotel:PropertyAddress>
-            <hotel:Address>COOGEE  NSW</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="5" Direction="E"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>0</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="BALC"/>
-            <hotel:Amenity Code="HSPI"/>
-            <hotel:Amenity Code="BRFT"/>
-            <hotel:Amenity Code="CODE"/>
-            <hotel:Amenity Code="COBR"/>
-            <hotel:Amenity Code="ELEV"/>
-            <hotel:Amenity Code="FAPL"/>
-            <hotel:Amenity Code="GOLF"/>
-            <hotel:Amenity Code="HECL"/>
-            <hotel:Amenity Code="MIOV"/>
-            <hotel:Amenity Code="KTCN"/>
-            <hotel:Amenity Code="MEPL"/>
-            <hotel:Amenity Code="MEFA"/>
-            <hotel:Amenity Code="MIBA"/>
-            <hotel:Amenity Code="MOIR"/>
-            <hotel:Amenity Code="NSMR"/>
-            <hotel:Amenity Code="PARK"/>
-            <hotel:Amenity Code="PHSV"/>
-            <hotel:Amenity Code="RFGR"/>
-            <hotel:Amenity Code="SAIR"/>
-            <hotel:Amenity Code="SAUN"/>
             <hotel:Amenity Code="TELV"/>
-            <hotel:Amenity Code="CBTV"/>
-            <hotel:Amenity Code="FSTY"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD279.20" MinAmountRateChanged="false" MaximumAmount="AUD584.00" MaxAmountRateChanged="false"/>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="GD" VendorLocationID="35559" Key="vLHh1CbYlDKAy4eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="GD" HotelCode="35559" HotelLocation="SYD" Name="QUEST MASCOT" VendorLocationKey="vLHh1CbYlDKAy4eK7GAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
-          <hotel:PropertyAddress>
-            <hotel:Address>108 ROBEY STREET</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="1" Direction="N"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>0</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="BALC"/>
-            <hotel:Amenity Code="HASA"/>
-            <hotel:Amenity Code="HSPI"/>
-            <hotel:Amenity Code="BRFT"/>
-            <hotel:Amenity Code="COBU"/>
-            <hotel:Amenity Code="COBR"/>
-            <hotel:Amenity Code="ELEV"/>
-            <hotel:Amenity Code="FAPL"/>
-            <hotel:Amenity Code="FRTR"/>
-            <hotel:Amenity Code="GOLF"/>
-            <hotel:Amenity Code="MIOV"/>
-            <hotel:Amenity Code="KTCN"/>
-            <hotel:Amenity Code="MEPL"/>
-            <hotel:Amenity Code="MEFA"/>
-            <hotel:Amenity Code="PARK"/>
-            <hotel:Amenity Code="SPAL"/>
-            <hotel:Amenity Code="PHSV"/>
-            <hotel:Amenity Code="ROSE"/>
-            <hotel:Amenity Code="SAIR"/>
-            <hotel:Amenity Code="SHWR"/>
-            <hotel:Amenity Code="CBTV"/>
             <hotel:Amenity Code="PRBT"/>
             <hotel:Amenity Code="FXSV"/>
             <hotel:Amenity Code="SFBD"/>
@@ -878,11 +787,11 @@
             <hotel:Amenity Code="FSTY"/>
           </hotel:Amenities>
         </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD210.00" MinAmountRateChanged="false" MaximumAmount="AUD395.00" MaxAmountRateChanged="false"/>
+        <hotel:RateInfo MinimumAmount="AUD216.00" MinAmountRateChanged="false" MaximumAmount="AUD380.00" MaxAmountRateChanged="false"/>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="SL" VendorLocationID="17012" Key="vLHh1CbYlDKAz4eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="SL" HotelCode="17012" HotelLocation="SYD" Name="SWISSOTEL SYDNEY" VendorLocationKey="vLHh1CbYlDKAz4eK7GAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Other" ParticipationLevel="Lowest Public Rate" Availability="Available">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="SL" VendorLocationID="17012" Key="7bnU1CBAAA/BjCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="SL" HotelCode="17012" HotelLocation="SYD" Name="SWISSOTEL SYDNEY" VendorLocationKey="7bnU1CBAAA/BjCCkOKAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Other" ParticipationLevel="Lowest Public Rate" Availability="Available">
           <hotel:PropertyAddress>
             <hotel:Address>68 MARKET STREET</hotel:Address>
           </hotel:PropertyAddress>
@@ -943,12 +852,12 @@
         <hotel:RateInfo MinimumAmount="AUD459.00" MinAmountRateChanged="true" MaximumAmount="AUD1129.00" MaxAmountRateChanged="true"/>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="TD" VendorLocationID="95778" Key="vLHh1CbYlDKA04eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="TD" HotelCode="95778" HotelLocation="SYD" Name="ADINA SYDNEY TOWN HALL" VendorLocationKey="vLHh1CbYlDKA04eK7GAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="GD" VendorLocationID="81618" Key="7bnU1CBAAA/BkCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="GD" HotelCode="81618" HotelLocation="SYD" Name="QUEST POTTS POINT" VendorLocationKey="7bnU1CBAAA/BkCCkOKAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
           <hotel:PropertyAddress>
-            <hotel:Address>511 KENT ST</hotel:Address>
+            <hotel:Address>15 SPRINGFIELD AVE</hotel:Address>
           </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
+          <common_v34_0:Distance Units="KM" Value="7" Direction="NE"/>
           <hotel:HotelRating RatingProvider="AAA">
             <hotel:Rating>0</hotel:Rating>
           </hotel:HotelRating>
@@ -957,216 +866,20 @@
             <hotel:Amenity Code="BALC"/>
             <hotel:Amenity Code="HSPI"/>
             <hotel:Amenity Code="CODE"/>
-            <hotel:Amenity Code="DINR"/>
             <hotel:Amenity Code="ELEV"/>
-            <hotel:Amenity Code="FAPL"/>
-            <hotel:Amenity Code="HAFA"/>
-            <hotel:Amenity Code="HECL"/>
             <hotel:Amenity Code="MIOV"/>
             <hotel:Amenity Code="KTCN"/>
-            <hotel:Amenity Code="LNCH"/>
+            <hotel:Amenity Code="LAVA"/>
             <hotel:Amenity Code="MEPL"/>
-            <hotel:Amenity Code="MEFA"/>
-            <hotel:Amenity Code="MIBA"/>
-            <hotel:Amenity Code="MOIR"/>
             <hotel:Amenity Code="NSMR"/>
             <hotel:Amenity Code="PARK"/>
             <hotel:Amenity Code="PHSV"/>
-            <hotel:Amenity Code="POOL"/>
-            <hotel:Amenity Code="OUPL"/>
             <hotel:Amenity Code="RFGR"/>
-            <hotel:Amenity Code="RTNT"/>
             <hotel:Amenity Code="ROSE"/>
             <hotel:Amenity Code="SAIR"/>
-            <hotel:Amenity Code="TELV"/>
-            <hotel:Amenity Code="CBTV"/>
-            <hotel:Amenity Code="FSTY"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD303.20" MinAmountRateChanged="false" MaximumAmount="AUD589.00" MaxAmountRateChanged="false"/>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="CP" VendorLocationID="03506" Key="vLHh1CbYlDKA14eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="CP" HotelCode="03506" HotelLocation="SYD" Name="CROWNE PLAZA COOGEE BEACH" VendorLocationKey="vLHh1CbYlDKA14eK7GAAAA==" HotelTransportation="Other" ReserveRequirement="Guarantee" ParticipationLevel="Lowest Public Rate" Availability="Available">
-          <hotel:PropertyAddress>
-            <hotel:Address>242 ARDEN STREET</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="5" Direction="E"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>0</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="BALC"/>
-            <hotel:Amenity Code="CHPR"/>
-            <hotel:Amenity Code="COSH"/>
-            <hotel:Amenity Code="CSFR"/>
-            <hotel:Amenity Code="CODE"/>
-            <hotel:Amenity Code="DINR"/>
-            <hotel:Amenity Code="GOLF"/>
-            <hotel:Amenity Code="HAFA"/>
-            <hotel:Amenity Code="HECL"/>
-            <hotel:Amenity Code="LAVA"/>
-            <hotel:Amenity Code="LNCH"/>
-            <hotel:Amenity Code="MEFA"/>
-            <hotel:Amenity Code="MIBA"/>
-            <hotel:Amenity Code="NSMR"/>
-            <hotel:Amenity Code="PARK"/>
-            <hotel:Amenity Code="PHSV"/>
-            <hotel:Amenity Code="POOL"/>
-            <hotel:Amenity Code="INPL"/>
-            <hotel:Amenity Code="OUPL"/>
-            <hotel:Amenity Code="PTRS"/>
-            <hotel:Amenity Code="RTNT"/>
-            <hotel:Amenity Code="ROSE"/>
-            <hotel:Amenity Code="SAIR"/>
-            <hotel:Amenity Code="SADE"/>
-            <hotel:Amenity Code="SCCV"/>
-            <hotel:Amenity Code="TELV"/>
-            <hotel:Amenity Code="CBTV"/>
-            <hotel:Amenity Code="PRBT"/>
-            <hotel:Amenity Code="PHCO"/>
-            <hotel:Amenity Code="BATB"/>
-            <hotel:Amenity Code="FSTY"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD272.34" MinAmountRateChanged="false" MaximumAmount="AUD368.90" MaxAmountRateChanged="false"/>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="RT" VendorLocationID="01511" Key="vLHh1CbYlDKA24eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="RT" HotelCode="01511" HotelLocation="SYD" Name="NOVOTEL SYDNEY CENTRAL" VendorLocationKey="vLHh1CbYlDKA24eK7GAAAA==" HotelTransportation="Other" ReserveRequirement="Guarantee" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="Available">
-          <hotel:PropertyAddress>
-            <hotel:Address>169 179 THOMAS STREE</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="5" Direction="N"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>0</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="HSPI"/>
-            <hotel:Amenity Code="CSFR"/>
-            <hotel:Amenity Code="CODE"/>
-            <hotel:Amenity Code="COLE"/>
-            <hotel:Amenity Code="FAPL"/>
-            <hotel:Amenity Code="HAFA"/>
-            <hotel:Amenity Code="HECL"/>
-            <hotel:Amenity Code="LAVA"/>
-            <hotel:Amenity Code="MEFA"/>
-            <hotel:Amenity Code="MIBA"/>
-            <hotel:Amenity Code="MOIR"/>
-            <hotel:Amenity Code="NSMR"/>
-            <hotel:Amenity Code="PHSV"/>
-            <hotel:Amenity Code="POOL"/>
-            <hotel:Amenity Code="OUPL"/>
-            <hotel:Amenity Code="PTRS"/>
-            <hotel:Amenity Code="RTNT"/>
-            <hotel:Amenity Code="SAIR"/>
-            <hotel:Amenity Code="SHWR"/>
-            <hotel:Amenity Code="TELV"/>
-            <hotel:Amenity Code="WTBR"/>
-            <hotel:Amenity Code="A220"/>
-            <hotel:Amenity Code="PHCO"/>
-            <hotel:Amenity Code="BATB"/>
-            <hotel:Amenity Code="FSTY"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD224.00" MinAmountRateChanged="true" MaximumAmount="AUD359.00" MaxAmountRateChanged="true"/>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="RT" VendorLocationID="33958" Key="vLHh1CbYlDKA34eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="RT" HotelCode="33958" HotelLocation="SYD" Name="IBIS SYDNEY AIRPORT" VendorLocationKey="vLHh1CbYlDKA34eK7GAAAA==" HotelTransportation="Other" ReserveRequirement="Other" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="Available">
-          <hotel:PropertyAddress>
-            <hotel:Address>205 ORIORDAN STREET</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="1" Direction="N"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>0</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="CHPR"/>
-            <hotel:Amenity Code="HSPI"/>
-            <hotel:Amenity Code="CSFR"/>
-            <hotel:Amenity Code="EFFI"/>
-            <hotel:Amenity Code="FAPL"/>
-            <hotel:Amenity Code="HAFA"/>
-            <hotel:Amenity Code="HECL"/>
-            <hotel:Amenity Code="MEPL"/>
-            <hotel:Amenity Code="MEFA"/>
-            <hotel:Amenity Code="NSMR"/>
-            <hotel:Amenity Code="PARK"/>
-            <hotel:Amenity Code="PHSV"/>
-            <hotel:Amenity Code="RTNT"/>
-            <hotel:Amenity Code="WERO"/>
             <hotel:Amenity Code="SHWR"/>
             <hotel:Amenity Code="TRDK"/>
-            <hotel:Amenity Code="TELV"/>
             <hotel:Amenity Code="CBTV"/>
-            <hotel:Amenity Code="WTBR"/>
-            <hotel:Amenity Code="A220"/>
-            <hotel:Amenity Code="BATB"/>
-            <hotel:Amenity Code="FSTY"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD130.00" MinAmountRateChanged="true" MaximumAmount="AUD265.00" MaxAmountRateChanged="true"/>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="GD" VendorLocationID="A9211" Key="vLHh1CbYlDKA44eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="GD" HotelCode="A9211" HotelLocation="SYD" Name="CKS SYDNEY AIRPORT HOTEL" VendorLocationKey="vLHh1CbYlDKA44eK7GAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
-          <hotel:PropertyAddress>
-            <hotel:Address>35 LEVEY STREET</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="2" Direction="NW"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>0</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="BRFT"/>
-            <hotel:Amenity Code="COBU"/>
-            <hotel:Amenity Code="COBR"/>
-            <hotel:Amenity Code="ELEV"/>
-            <hotel:Amenity Code="MEPL"/>
-            <hotel:Amenity Code="MEFA"/>
-            <hotel:Amenity Code="NSMR"/>
-            <hotel:Amenity Code="PHSV"/>
-            <hotel:Amenity Code="RFGR"/>
-            <hotel:Amenity Code="RTNT"/>
-            <hotel:Amenity Code="FSTY"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD194.00" MinAmountRateChanged="false" MaximumAmount="AUD379.00" MaxAmountRateChanged="false"/>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="GD" VendorLocationID="56688" Key="vLHh1CbYlDKA54eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="GD" HotelCode="56688" HotelLocation="SYD" Name="APX DARLING HARBOUR" VendorLocationKey="vLHh1CbYlDKA54eK7GAAAA==" HotelTransportation="Limo" ReserveRequirement="Deposit" ParticipationLevel="Inside Shopper participant" Availability="Available">
-          <hotel:PropertyAddress>
-            <hotel:Address>8 DIXON STREET</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>0</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="BALC"/>
-            <hotel:Amenity Code="HSPI"/>
-            <hotel:Amenity Code="BRFT"/>
-            <hotel:Amenity Code="COBU"/>
-            <hotel:Amenity Code="COBR"/>
-            <hotel:Amenity Code="ELEV"/>
-            <hotel:Amenity Code="MIOV"/>
-            <hotel:Amenity Code="LAVA"/>
-            <hotel:Amenity Code="MEPL"/>
-            <hotel:Amenity Code="MEFA"/>
-            <hotel:Amenity Code="MIBA"/>
-            <hotel:Amenity Code="NSMR"/>
-            <hotel:Amenity Code="PARK"/>
-            <hotel:Amenity Code="PHSV"/>
-            <hotel:Amenity Code="RFGR"/>
-            <hotel:Amenity Code="SAIR"/>
-            <hotel:Amenity Code="SHWR"/>
             <hotel:Amenity Code="PRBT"/>
             <hotel:Amenity Code="FXSV"/>
             <hotel:Amenity Code="SFBD"/>
@@ -1175,116 +888,110 @@
             <hotel:Amenity Code="FSTY"/>
           </hotel:Amenities>
         </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD194.00" MinAmountRateChanged="false" MaximumAmount="AUD272.00" MaxAmountRateChanged="false"/>
+        <hotel:RateInfo MinimumAmount="AUD236.00" MinAmountRateChanged="false" MaximumAmount="AUD476.00" MaxAmountRateChanged="false"/>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="TD" VendorLocationID="06677" Key="vLHh1CbYlDKA64eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="TD" HotelCode="06677" HotelLocation="SYD" Name="VIBE RUSHCUTTERS BAY SYDNEY" VendorLocationKey="vLHh1CbYlDKA64eK7GAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="RG" VendorLocationID="10593" Key="7bnU1CBAAA/BlCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="RG" HotelCode="10593" HotelLocation="SYD" Name="RYDGES CRONULLA BEACHSIDE" VendorLocationKey="7bnU1CBAAA/BlCCkOKAAAA==" ReserveRequirement="Other" ParticipationLevel="Lowest Public Rate" Availability="Available">
           <hotel:PropertyAddress>
-            <hotel:Address>RUSHCUTTERS BAY  NSW</hotel:Address>
+            <hotel:Address>CRONULLA  NSW</hotel:Address>
           </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="7" Direction="NE"/>
+          <common_v34_0:Distance Units="KM" Value="8" Direction="S"/>
           <hotel:HotelRating RatingProvider="AAA">
             <hotel:Rating>0</hotel:Rating>
           </hotel:HotelRating>
           <hotel:Amenities>
             <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BALC"/>
             <hotel:Amenity Code="BRFT"/>
             <hotel:Amenity Code="COSH"/>
-            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="CSFR"/>
             <hotel:Amenity Code="CORO"/>
             <hotel:Amenity Code="COBR"/>
             <hotel:Amenity Code="DINR"/>
             <hotel:Amenity Code="ELEV"/>
             <hotel:Amenity Code="FAPL"/>
-            <hotel:Amenity Code="HAFA"/>
-            <hotel:Amenity Code="HECL"/>
-            <hotel:Amenity Code="LUGE"/>
-            <hotel:Amenity Code="LNCH"/>
-            <hotel:Amenity Code="MEPL"/>
-            <hotel:Amenity Code="MEFA"/>
-            <hotel:Amenity Code="MIBA"/>
-            <hotel:Amenity Code="MOIR"/>
-            <hotel:Amenity Code="NSMR"/>
-            <hotel:Amenity Code="PARK"/>
-            <hotel:Amenity Code="PHSV"/>
-            <hotel:Amenity Code="POOL"/>
-            <hotel:Amenity Code="OUPL"/>
-            <hotel:Amenity Code="RFGR"/>
-            <hotel:Amenity Code="RTNT"/>
-            <hotel:Amenity Code="ROSE"/>
-            <hotel:Amenity Code="SAIR"/>
-            <hotel:Amenity Code="TRDK"/>
-            <hotel:Amenity Code="TELV"/>
-            <hotel:Amenity Code="CBTV"/>
-            <hotel:Amenity Code="FSTY"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD207.20" MinAmountRateChanged="false" MaximumAmount="AUD659.00" MaxAmountRateChanged="false"/>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="WV" VendorLocationID="51897" Key="vLHh1CbYlDKA74eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="WV" HotelCode="51897" HotelLocation="SYD" Name="THE DARLING" VendorLocationKey="vLHh1CbYlDKA74eK7GAAAA==" HotelTransportation="Other" ReserveRequirement="Other" ParticipationLevel="Inside Shopper participant" Availability="Available">
-          <hotel:PropertyAddress>
-            <hotel:Address>80 PYRMONT STREET</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>0</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="HASA"/>
-            <hotel:Amenity Code="HSPI"/>
-            <hotel:Amenity Code="BRFT"/>
-            <hotel:Amenity Code="CARE"/>
-            <hotel:Amenity Code="CASI"/>
-            <hotel:Amenity Code="CODE"/>
-            <hotel:Amenity Code="COLE"/>
-            <hotel:Amenity Code="CORO"/>
-            <hotel:Amenity Code="DINR"/>
-            <hotel:Amenity Code="ELEV"/>
             <hotel:Amenity Code="GISH"/>
             <hotel:Amenity Code="GOLF"/>
             <hotel:Amenity Code="HAFA"/>
-            <hotel:Amenity Code="HECL"/>
             <hotel:Amenity Code="LUGE"/>
             <hotel:Amenity Code="LNCH"/>
             <hotel:Amenity Code="MEPL"/>
             <hotel:Amenity Code="MEFA"/>
             <hotel:Amenity Code="MIBA"/>
-            <hotel:Amenity Code="MOIR"/>
-            <hotel:Amenity Code="MTGL"/>
             <hotel:Amenity Code="NSMR"/>
             <hotel:Amenity Code="PARK"/>
-            <hotel:Amenity Code="PHSV"/>
             <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="INPL"/>
             <hotel:Amenity Code="OUPL"/>
-            <hotel:Amenity Code="PTRS"/>
             <hotel:Amenity Code="RTNT"/>
-            <hotel:Amenity Code="ROSE"/>
-            <hotel:Amenity Code="SAUN"/>
-            <hotel:Amenity Code="SCCV"/>
-            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="SADE"/>
             <hotel:Amenity Code="SPAA"/>
-            <hotel:Amenity Code="TRDK"/>
-            <hotel:Amenity Code="TELV"/>
-            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="PRBT"/>
+            <hotel:Amenity Code="FXSV"/>
             <hotel:Amenity Code="PHCO"/>
             <hotel:Amenity Code="BATB"/>
             <hotel:Amenity Code="FSTY"/>
           </hotel:Amenities>
         </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD574.20" MinAmountRateChanged="true" MaximumAmount="AUD1806.00" MaxAmountRateChanged="true"/>
+        <hotel:RateInfo MinimumAmount="AUD263.00" MinAmountRateChanged="false" MaximumAmount="AUD519.00" MaxAmountRateChanged="false"/>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="YX" VendorLocationID="80314" Key="vLHh1CbYlDKA84eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="YX" HotelCode="80314" HotelLocation="SYD" Name="MERITON SUITES CAMPBELL STREET" VendorLocationKey="vLHh1CbYlDKA84eK7GAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="RT" VendorLocationID="95094" Key="7bnU1CBAAA/BmCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="RT" HotelCode="95094" HotelLocation="SYD" Name="MERCURE SYDNEY" VendorLocationKey="7bnU1CBAAA/BmCCkOKAAAA==" HotelTransportation="Other" ReserveRequirement="Other" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="Available">
           <hotel:PropertyAddress>
-            <hotel:Address>6 CAMPBELL STREET</hotel:Address>
+            <hotel:Address>818-820 GEORGE STREE</hotel:Address>
           </hotel:PropertyAddress>
           <common_v34_0:Distance Units="KM" Value="5" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="CARE"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="COLE"/>
+            <hotel:Amenity Code="CORO"/>
+            <hotel:Amenity Code="EFFI"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="GISH"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="LNCH"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="MTGL"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="INPL"/>
+            <hotel:Amenity Code="PTRS"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="WERO"/>
+            <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="SAUN"/>
+            <hotel:Amenity Code="TRDK"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="WTBR"/>
+            <hotel:Amenity Code="A220"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:RateInfo MinimumAmount="AUD188.00" MinAmountRateChanged="true" MaximumAmount="AUD389.00" MaxAmountRateChanged="true"/>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="YX" VendorLocationID="00539" Key="7bnU1CBAAA/BnCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="YX" HotelCode="00539" HotelLocation="SYD" Name="MERITON SUITES ZETLAND" VendorLocationKey="7bnU1CBAAA/BnCCkOKAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
+          <hotel:PropertyAddress>
+            <hotel:Address>ZETLAND  NSW</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="4" Direction="NE"/>
           <hotel:HotelRating RatingProvider="AAA">
             <hotel:Rating>0</hotel:Rating>
           </hotel:HotelRating>
@@ -1294,18 +1001,149 @@
             <hotel:Amenity Code="COSH"/>
             <hotel:Amenity Code="CSFR"/>
             <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="HAFA"/>
             <hotel:Amenity Code="KTCN"/>
             <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
             <hotel:Amenity Code="POOL"/>
             <hotel:Amenity Code="INPL"/>
             <hotel:Amenity Code="SAUN"/>
           </hotel:Amenities>
         </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD266.00" MinAmountRateChanged="false" MaximumAmount="AUD306.00" MaxAmountRateChanged="false"/>
+        <hotel:RateInfo MinimumAmount="AUD176.00" MinAmountRateChanged="false" MaximumAmount="AUD796.00" MaxAmountRateChanged="false"/>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="WW" VendorLocationID="08900" Key="vLHh1CbYlDKA94eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="WW" HotelCode="08900" HotelLocation="SYD" Name="SIR STAMFORD AT CIRCULAR QUAY" VendorLocationKey="vLHh1CbYlDKA94eK7GAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="Available">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="MP" VendorLocationID="27819" Key="7bnU1CBAAA/BoCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="MP" HotelCode="27819" HotelLocation="SYD" Name="MANTRA SYDNEY CENTRAL" VendorLocationKey="7bnU1CBAAA/BoCCkOKAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
+          <hotel:PropertyAddress>
+            <hotel:Address>653 GEORGE STREET</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="BALC"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="COBU"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="CORO"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="SPAA"/>
+            <hotel:Amenity Code="TRDK"/>
+            <hotel:Amenity Code="FXSV"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:RateInfo MinimumAmount="AUD138.00" MinAmountRateChanged="true" MaximumAmount="AUD414.00" MaxAmountRateChanged="true"/>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="CI" VendorLocationID="03882" Key="7bnU1CBAAA/BpCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="CI" HotelCode="03882" HotelLocation="SYD" Name="COMFORT INN AND SUITES BURWOOD" VendorLocationKey="7bnU1CBAAA/BpCCkOKAAAA==" HotelTransportation="Other" ReserveRequirement="Guarantee" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="Available">
+          <hotel:PropertyAddress>
+            <hotel:Address>117 LIVERPOOL ROAD</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="7" Direction="NW"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="BALC"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="COBR"/>
+            <hotel:Amenity Code="DINR"/>
+            <hotel:Amenity Code="GOLF"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="MIOV"/>
+            <hotel:Amenity Code="KTCN"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="FPRK"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="RFGR"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="ROSE"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="PRBT"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="BATB"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:RateInfo MinimumAmount="AUD150.00" MinAmountRateChanged="false" MaximumAmount="AUD285.00" MaxAmountRateChanged="false"/>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="MP" VendorLocationID="18832" Key="7bnU1CBAAA/BqCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="MP" HotelCode="18832" HotelLocation="SYD" Name="MANTRA CHATSWOOD" VendorLocationKey="7bnU1CBAAA/BqCCkOKAAAA==" HotelTransportation="Other" ReserveRequirement="Other" ParticipationLevel="Inside Shopper participant" Availability="Available">
+          <hotel:PropertyAddress>
+            <hotel:Address>CHATSWOOD  NSW</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="10" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="CHCA"/>
+            <hotel:Amenity Code="BALC"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="CARE"/>
+            <hotel:Amenity Code="COSH"/>
+            <hotel:Amenity Code="COBU"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="CORO"/>
+            <hotel:Amenity Code="COBR"/>
+            <hotel:Amenity Code="DINR"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="GOLF"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="MIOV"/>
+            <hotel:Amenity Code="KTCN"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="LUGE"/>
+            <hotel:Amenity Code="LNCH"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="MIBA"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="INPL"/>
+            <hotel:Amenity Code="OUPL"/>
+            <hotel:Amenity Code="RFGR"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="ROSE"/>
+            <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="SAUN"/>
+            <hotel:Amenity Code="SCCV"/>
+            <hotel:Amenity Code="SPAA"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="PRBT"/>
+            <hotel:Amenity Code="FXSV"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:RateInfo MinimumAmount="AUD185.00" MinAmountRateChanged="true" MaximumAmount="AUD460.00" MaxAmountRateChanged="true"/>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="WW" VendorLocationID="08900" Key="7bnU1CBAAA/BrCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="WW" HotelCode="08900" HotelLocation="SYD" Name="SIR STAMFORD AT CIRCULAR QUAY" VendorLocationKey="7bnU1CBAAA/BrCCkOKAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="Available">
           <hotel:PropertyAddress>
             <hotel:Address>93 MACQUARIE STREET</hotel:Address>
           </hotel:PropertyAddress>
@@ -1345,10 +1183,117 @@
         <hotel:RateInfo MinimumAmount="AUD375.00" MinAmountRateChanged="false" MaximumAmount="AUD1685.00" MaxAmountRateChanged="false"/>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="GD" VendorLocationID="81618" Key="vLHh1CbYlDKA+4eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="GD" HotelCode="81618" HotelLocation="SYD" Name="QUEST POTTS POINT" VendorLocationKey="vLHh1CbYlDKA+4eK7GAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="YX" VendorLocationID="10848" Key="7bnU1CBAAA/BsCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="YX" HotelCode="10848" HotelLocation="SYD" Name="MERITON SUITES PITT STREET" VendorLocationKey="7bnU1CBAAA/BsCCkOKAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
           <hotel:PropertyAddress>
-            <hotel:Address>15 SPRINGFIELD AVE</hotel:Address>
+            <hotel:Address>329 PITT STREET</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="7" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="COSH"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="MIOV"/>
+            <hotel:Amenity Code="KTCN"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="INPL"/>
+            <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="SAUN"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:RateInfo MinimumAmount="AUD286.00" MinAmountRateChanged="false" MaximumAmount="AUD2296.00" MaxAmountRateChanged="false"/>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="RT" VendorLocationID="99318" Key="7bnU1CBAAA/BtCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="RT" HotelCode="99318" HotelLocation="SYD" Name="IBIS SYDNEY KING STREET WHARF" VendorLocationKey="7bnU1CBAAA/BtCCkOKAAAA==" HotelTransportation="Other" ReserveRequirement="Other" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="Available">
+          <hotel:PropertyAddress>
+            <hotel:Address>22 SHELLEY STREET</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="WTBR"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:RateInfo MinimumAmount="AUD208.00" MinAmountRateChanged="true" MaximumAmount="AUD331.00" MaxAmountRateChanged="true"/>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="LO" VendorLocationID="62402" Key="7bnU1CBAAA/BuCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="LO" HotelCode="62402" HotelLocation="SYD" Name="THE LANGHAM SYDNEY" VendorLocationKey="7bnU1CBAAA/BuCCkOKAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="Available">
+          <hotel:PropertyAddress>
+            <hotel:Address>89 113 KENT STREET</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="CHCA"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="CORO"/>
+            <hotel:Amenity Code="DINR"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="ENTR"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="GISH"/>
+            <hotel:Amenity Code="GOLF"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="LUGE"/>
+            <hotel:Amenity Code="LNCH"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="SPAL"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="INPL"/>
+            <hotel:Amenity Code="PTRS"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="ROSE"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="SAUN"/>
+            <hotel:Amenity Code="SPAA"/>
+            <hotel:Amenity Code="TNCT"/>
+            <hotel:Amenity Code="TRDK"/>
+            <hotel:Amenity Code="JGTK"/>
+            <hotel:Amenity Code="SFBD"/>
+            <hotel:Amenity Code="PHCO"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:RateInfo MinimumAmount="AUD566.00" MinAmountRateChanged="false" MaximumAmount="AUD2758.00" MaxAmountRateChanged="false"/>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="LM" VendorLocationID="76258" Key="7bnU1CBAAA/BvCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="LM" HotelCode="76258" HotelLocation="SYD" Name="MACLEAY SERVICED APARTMENTS" VendorLocationKey="7bnU1CBAAA/BvCCkOKAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
+          <hotel:PropertyAddress>
+            <hotel:Address>28 MACLEAY ST</hotel:Address>
           </hotel:PropertyAddress>
           <common_v34_0:Distance Units="KM" Value="7" Direction="NE"/>
           <hotel:HotelRating RatingProvider="AAA">
@@ -1357,39 +1302,186 @@
           <hotel:Amenities>
             <hotel:Amenity Code="AICO"/>
             <hotel:Amenity Code="BALC"/>
+            <hotel:Amenity Code="HASA"/>
             <hotel:Amenity Code="HSPI"/>
-            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="CARE"/>
+            <hotel:Amenity Code="CASI"/>
+            <hotel:Amenity Code="COBU"/>
             <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="GOLF"/>
+            <hotel:Amenity Code="HECL"/>
             <hotel:Amenity Code="MIOV"/>
             <hotel:Amenity Code="KTCN"/>
             <hotel:Amenity Code="LAVA"/>
-            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="LUGE"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="OUPL"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="ROSE"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="SPAA"/>
+            <hotel:Amenity Code="TNCT"/>
+            <hotel:Amenity Code="TRDK"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="VDCR"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:RateInfo MinimumAmount="AUD171.00" MinAmountRateChanged="false" MaximumAmount="AUD500.00" MaxAmountRateChanged="false"/>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="RD" VendorLocationID="97178" Key="7bnU1CBAAA/BwCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="RD" HotelCode="97178" HotelLocation="SYD" Name="RADISSON HOTEL SUITES SYDNEY" VendorLocationKey="7bnU1CBAAA/BwCCkOKAAAA==" HotelTransportation="Public" ReserveRequirement="Other" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="Available">
+          <hotel:PropertyAddress>
+            <hotel:Address>72 LIVERPOOL ST</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="BALC"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="COBU"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="COBR"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="GOLF"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="MIOV"/>
+            <hotel:Amenity Code="KTCN"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="MIBA"/>
+            <hotel:Amenity Code="MOIR"/>
+            <hotel:Amenity Code="MTGL"/>
             <hotel:Amenity Code="NSMR"/>
             <hotel:Amenity Code="PARK"/>
             <hotel:Amenity Code="PHSV"/>
-            <hotel:Amenity Code="RFGR"/>
-            <hotel:Amenity Code="ROSE"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="INPL"/>
+            <hotel:Amenity Code="RTNT"/>
             <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="SAUN"/>
+            <hotel:Amenity Code="SCCV"/>
             <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="SPAA"/>
             <hotel:Amenity Code="TRDK"/>
+            <hotel:Amenity Code="TELV"/>
             <hotel:Amenity Code="CBTV"/>
             <hotel:Amenity Code="PRBT"/>
+            <hotel:Amenity Code="WTBR"/>
             <hotel:Amenity Code="FXSV"/>
-            <hotel:Amenity Code="SFBD"/>
             <hotel:Amenity Code="PHCO"/>
             <hotel:Amenity Code="BATB"/>
             <hotel:Amenity Code="FSTY"/>
           </hotel:Amenities>
         </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD236.00" MinAmountRateChanged="false" MaximumAmount="AUD476.00" MaxAmountRateChanged="false"/>
+        <hotel:RateInfo MinimumAmount="AUD319.20" MinAmountRateChanged="true" MaximumAmount="AUD479.00" MaxAmountRateChanged="true"/>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="CI" VendorLocationID="70529" Key="vLHh1CbYlDKA/4eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="CI" HotelCode="70529" HotelLocation="SYD" Name="COMFORT INN NORTH SHORE" VendorLocationKey="vLHh1CbYlDKA/4eK7GAAAA==" HotelTransportation="Other" ReserveRequirement="Guarantee" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="Available">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="LM" VendorLocationID="29166" Key="7bnU1CBAAA/BxCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="LM" HotelCode="29166" HotelLocation="SYD" Name="COOGEE SANDS HOTEL AND APARTMENTS" VendorLocationKey="7bnU1CBAAA/BxCCkOKAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
           <hotel:PropertyAddress>
-            <hotel:Address>1 GATACRE AVENUE</hotel:Address>
+            <hotel:Address>161-167 DOLPHIN ST</hotel:Address>
           </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="9" Direction="N"/>
+          <common_v34_0:Distance Units="KM" Value="6" Direction="NE"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="BALC"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="COBU"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="MIOV"/>
+            <hotel:Amenity Code="KTCN"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="LUGE"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="MIBA"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="FPRK"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="RFGR"/>
+            <hotel:Amenity Code="ROSE"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="SFBD"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:RateInfo MinimumAmount="AUD200.00" MinAmountRateChanged="true" MaximumAmount="AUD235.00" MaxAmountRateChanged="true"/>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="PU" VendorLocationID="14603" Key="7bnU1CBAAA/ByCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="PU" HotelCode="14603" HotelLocation="SYD" Name="PULLMAN SYDNEY HYDE PARK" VendorLocationKey="7bnU1CBAAA/ByCCkOKAAAA==" HotelTransportation="Other" ReserveRequirement="Other" ParticipationLevel="Lowest Public Rate" Availability="Available">
+          <hotel:PropertyAddress>
+            <hotel:Address>36 COLLEGE STREET</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="CARE"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="COLE"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="LNCH"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="MIBA"/>
+            <hotel:Amenity Code="MTGL"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="OUPL"/>
+            <hotel:Amenity Code="PTRS"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="SAUN"/>
+            <hotel:Amenity Code="SCCV"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="WTBR"/>
+            <hotel:Amenity Code="A220"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:RateInfo MinimumAmount="AUD339.00" MinAmountRateChanged="true" MaximumAmount="AUD929.00" MaxAmountRateChanged="true"/>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="TD" VendorLocationID="32355" Key="7bnU1CBAAA/BzCCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="TD" HotelCode="32355" HotelLocation="SYD" Name="TRAVELODGE BANKSTOWN SYDNEY" VendorLocationKey="7bnU1CBAAA/BzCCkOKAAAA==" HotelTransportation="Other" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
+          <hotel:PropertyAddress>
+            <hotel:Address>BANKSTOWN  NSW</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="9" Direction="W"/>
           <hotel:HotelRating RatingProvider="AAA">
             <hotel:Rating>0</hotel:Rating>
           </hotel:HotelRating>
@@ -1397,30 +1489,60 @@
             <hotel:Amenity Code="AICO"/>
             <hotel:Amenity Code="HSPI"/>
             <hotel:Amenity Code="BRFT"/>
-            <hotel:Amenity Code="CSFR"/>
-            <hotel:Amenity Code="COBR"/>
+            <hotel:Amenity Code="COSH"/>
             <hotel:Amenity Code="DINR"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="FAPL"/>
             <hotel:Amenity Code="GOLF"/>
+            <hotel:Amenity Code="HAFA"/>
             <hotel:Amenity Code="MIOV"/>
-            <hotel:Amenity Code="MIBA"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="LNCH"/>
+            <hotel:Amenity Code="MEPL"/>
             <hotel:Amenity Code="NSMR"/>
             <hotel:Amenity Code="PARK"/>
             <hotel:Amenity Code="FPRK"/>
             <hotel:Amenity Code="PHSV"/>
             <hotel:Amenity Code="RFGR"/>
             <hotel:Amenity Code="RTNT"/>
-            <hotel:Amenity Code="ROSE"/>
-            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="TELV"/>
             <hotel:Amenity Code="CBTV"/>
-            <hotel:Amenity Code="PRBT"/>
-            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FXSV"/>
+            <hotel:Amenity Code="FSTY"/>
           </hotel:Amenities>
         </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD209.00" MinAmountRateChanged="false" MaximumAmount="AUD289.00" MaxAmountRateChanged="false"/>
+        <hotel:RateInfo MinimumAmount="AUD151.20" MinAmountRateChanged="false" MaximumAmount="AUD244.00" MaxAmountRateChanged="false"/>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="LM" VendorLocationID="87867" Key="vLHh1CbYlDKAA5eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="LM" HotelCode="87867" HotelLocation="SYD" Name="ROYAL PACIFIC HOTEL" VendorLocationKey="vLHh1CbYlDKAA5eK7GAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="YX" VendorLocationID="80314" Key="7bnU1CBAAA/B0CCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="YX" HotelCode="80314" HotelLocation="SYD" Name="MERITON SUITES CAMPBELL STREET" VendorLocationKey="7bnU1CBAAA/B0CCkOKAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
+          <hotel:PropertyAddress>
+            <hotel:Address>6 CAMPBELL STREET</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="5" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="COSH"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="KTCN"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="INPL"/>
+            <hotel:Amenity Code="SAUN"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:RateInfo MinimumAmount="AUD266.00" MinAmountRateChanged="false" MaximumAmount="AUD306.00" MaxAmountRateChanged="false"/>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="LM" VendorLocationID="87867" Key="7bnU1CBAAA/B1CCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="LM" HotelCode="87867" HotelLocation="SYD" Name="ROYAL PACIFIC HOTEL" VendorLocationKey="7bnU1CBAAA/B1CCkOKAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
           <hotel:PropertyAddress>
             <hotel:Address>472 PACIFIC HIGHWAY</hotel:Address>
           </hotel:PropertyAddress>
@@ -1465,120 +1587,8 @@
         <hotel:RateInfo MinimumAmount="AUD180.00" MinAmountRateChanged="true" MaximumAmount="AUD200.00" MaxAmountRateChanged="true"/>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="RT" VendorLocationID="04971" Key="vLHh1CbYlDKAB5eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="RT" HotelCode="04971" HotelLocation="SYD" Name="NOVOTEL SYDNEY INT AIRPORT" VendorLocationKey="vLHh1CbYlDKAB5eK7GAAAA==" ReserveRequirement="Other" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="Available">
-          <hotel:PropertyAddress>
-            <hotel:Address>WOLLI CREEK AU</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="2" Direction="NW"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>0</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="FRTR"/>
-            <hotel:Amenity Code="PHSV"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD186.00" MinAmountRateChanged="true" MaximumAmount="AUD525.00" MaxAmountRateChanged="true"/>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="TD" VendorLocationID="45022" Key="vLHh1CbYlDKAC5eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="TD" HotelCode="45022" HotelLocation="SYD" Name="ADINA SYDNEY SURRY HILLS" VendorLocationKey="vLHh1CbYlDKAC5eK7GAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
-          <hotel:PropertyAddress>
-            <hotel:Address>359 CROWN ST</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="5" Direction="NE"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>0</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="BALC"/>
-            <hotel:Amenity Code="HSPI"/>
-            <hotel:Amenity Code="BRFT"/>
-            <hotel:Amenity Code="DINR"/>
-            <hotel:Amenity Code="ELEV"/>
-            <hotel:Amenity Code="FAPL"/>
-            <hotel:Amenity Code="MIOV"/>
-            <hotel:Amenity Code="KTCN"/>
-            <hotel:Amenity Code="LNCH"/>
-            <hotel:Amenity Code="MEPL"/>
-            <hotel:Amenity Code="MEFA"/>
-            <hotel:Amenity Code="MIBA"/>
-            <hotel:Amenity Code="MOIR"/>
-            <hotel:Amenity Code="NSMR"/>
-            <hotel:Amenity Code="PARK"/>
-            <hotel:Amenity Code="PHSV"/>
-            <hotel:Amenity Code="POOL"/>
-            <hotel:Amenity Code="OUPL"/>
-            <hotel:Amenity Code="RFGR"/>
-            <hotel:Amenity Code="RTNT"/>
-            <hotel:Amenity Code="ROSE"/>
-            <hotel:Amenity Code="SAIR"/>
-            <hotel:Amenity Code="SAUN"/>
-            <hotel:Amenity Code="SPAA"/>
-            <hotel:Amenity Code="TELV"/>
-            <hotel:Amenity Code="CBTV"/>
-            <hotel:Amenity Code="PHCO"/>
-            <hotel:Amenity Code="FSTY"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD191.20" MinAmountRateChanged="false" MaximumAmount="AUD369.00" MaxAmountRateChanged="false"/>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="RT" VendorLocationID="23653" Key="vLHh1CbYlDKAD5eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="RT" HotelCode="23653" HotelLocation="SYD" Name="NOVOTEL SYDNEY DARLING HARBOUR" VendorLocationKey="vLHh1CbYlDKAD5eK7GAAAA==" HotelTransportation="Other" ReserveRequirement="Other" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="Available">
-          <hotel:PropertyAddress>
-            <hotel:Address>100 MURRAY STREET</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>0</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="CHCA"/>
-            <hotel:Amenity Code="CHPR"/>
-            <hotel:Amenity Code="HSPI"/>
-            <hotel:Amenity Code="CARE"/>
-            <hotel:Amenity Code="CSFR"/>
-            <hotel:Amenity Code="CODE"/>
-            <hotel:Amenity Code="COLE"/>
-            <hotel:Amenity Code="CORO"/>
-            <hotel:Amenity Code="FAPL"/>
-            <hotel:Amenity Code="GARO"/>
-            <hotel:Amenity Code="HAFA"/>
-            <hotel:Amenity Code="HECL"/>
-            <hotel:Amenity Code="LAVA"/>
-            <hotel:Amenity Code="MEPL"/>
-            <hotel:Amenity Code="MEFA"/>
-            <hotel:Amenity Code="MIBA"/>
-            <hotel:Amenity Code="NSMR"/>
-            <hotel:Amenity Code="PARK"/>
-            <hotel:Amenity Code="PHSV"/>
-            <hotel:Amenity Code="POOL"/>
-            <hotel:Amenity Code="OUPL"/>
-            <hotel:Amenity Code="PTRS"/>
-            <hotel:Amenity Code="RFGR"/>
-            <hotel:Amenity Code="RTNT"/>
-            <hotel:Amenity Code="SAIR"/>
-            <hotel:Amenity Code="SHWR"/>
-            <hotel:Amenity Code="TNCT"/>
-            <hotel:Amenity Code="TRDK"/>
-            <hotel:Amenity Code="TELV"/>
-            <hotel:Amenity Code="CBTV"/>
-            <hotel:Amenity Code="WTBR"/>
-            <hotel:Amenity Code="A220"/>
-            <hotel:Amenity Code="PHCO"/>
-            <hotel:Amenity Code="BATB"/>
-            <hotel:Amenity Code="FSTY"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD519.00" MinAmountRateChanged="true" MaximumAmount="AUD599.00" MaxAmountRateChanged="true"/>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="YX" VendorLocationID="11922" Key="vLHh1CbYlDKAE5eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="YX" HotelCode="11922" HotelLocation="SYD" Name="MERITON SUITES BONDI JUNCTION" VendorLocationKey="vLHh1CbYlDKAE5eK7GAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="YX" VendorLocationID="11922" Key="7bnU1CBAAA/B2CCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="YX" HotelCode="11922" HotelLocation="SYD" Name="MERITON SUITES BONDI JUNCTION" VendorLocationKey="7bnU1CBAAA/B2CCkOKAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
           <hotel:PropertyAddress>
             <hotel:Address>BONDI JUNCTION  NSW</hotel:Address>
           </hotel:PropertyAddress>
@@ -1603,227 +1613,44 @@
         <hotel:RateInfo MinimumAmount="AUD226.00" MinAmountRateChanged="false" MaximumAmount="AUD2296.00" MaxAmountRateChanged="false"/>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="LE" VendorLocationID="30594" Key="vLHh1CbYlDKAF5eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="LE" HotelCode="30594" HotelLocation="SYD" Name="MEDUSA" VendorLocationKey="vLHh1CbYlDKAF5eK7GAAAA==" HotelTransportation="Limo" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="GD" VendorLocationID="B8213" Key="7bnU1CBAAA/B3CCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="GD" HotelCode="B8213" HotelLocation="SYD" Name="QUEST ST LEONARDS" VendorLocationKey="7bnU1CBAAA/B3CCkOKAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
           <hotel:PropertyAddress>
-            <hotel:Address>267 DARLINGHURST ROA</hotel:Address>
+            <hotel:Address>ST LEONARDS  NSW</hotel:Address>
           </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="6" Direction="NE"/>
+          <common_v34_0:Distance Units="KM" Value="9" Direction="N"/>
           <hotel:HotelRating RatingProvider="AAA">
             <hotel:Rating>0</hotel:Rating>
           </hotel:HotelRating>
           <hotel:Amenities>
             <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="HSPI"/>
-            <hotel:Amenity Code="BRFT"/>
-            <hotel:Amenity Code="COBU"/>
-            <hotel:Amenity Code="CODE"/>
-            <hotel:Amenity Code="COBR"/>
-            <hotel:Amenity Code="LAVA"/>
-            <hotel:Amenity Code="NSMR"/>
-            <hotel:Amenity Code="PARK"/>
-            <hotel:Amenity Code="SPAL"/>
-            <hotel:Amenity Code="RTNT"/>
-            <hotel:Amenity Code="ROSE"/>
-            <hotel:Amenity Code="SPAA"/>
-            <hotel:Amenity Code="PHCO"/>
-            <hotel:Amenity Code="FSTY"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD205.00" MinAmountRateChanged="false" MaximumAmount="AUD420.00" MaxAmountRateChanged="false"/>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="YX" VendorLocationID="93649" Key="vLHh1CbYlDKAG5eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="YX" HotelCode="93649" HotelLocation="SYD" Name="OVOLO 1888 DARLING HARBOUR" VendorLocationKey="vLHh1CbYlDKAG5eK7GAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
-          <hotel:PropertyAddress>
-            <hotel:Address>139 MURRAY ST</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>0</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="BRFT"/>
-            <hotel:Amenity Code="COSH"/>
-            <hotel:Amenity Code="COBU"/>
-            <hotel:Amenity Code="COBR"/>
-            <hotel:Amenity Code="DINR"/>
-            <hotel:Amenity Code="ELEV"/>
-            <hotel:Amenity Code="HAFA"/>
-            <hotel:Amenity Code="LAVA"/>
-            <hotel:Amenity Code="LUGE"/>
-            <hotel:Amenity Code="MEPL"/>
-            <hotel:Amenity Code="MEFA"/>
-            <hotel:Amenity Code="MIBA"/>
-            <hotel:Amenity Code="NSMR"/>
-            <hotel:Amenity Code="PHSV"/>
-            <hotel:Amenity Code="RTNT"/>
-            <hotel:Amenity Code="ROSE"/>
-            <hotel:Amenity Code="SHWR"/>
-            <hotel:Amenity Code="TELV"/>
-            <hotel:Amenity Code="PHCO"/>
-            <hotel:Amenity Code="FSTY"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD260.10" MinAmountRateChanged="false" MaximumAmount="AUD620.10" MaxAmountRateChanged="false"/>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="WV" VendorLocationID="B6193" Key="vLHh1CbYlDKAH5eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="WV" HotelCode="B6193" HotelLocation="SYD" Name="ATLAS SERVICED APARTMENTS" VendorLocationKey="vLHh1CbYlDKAH5eK7GAAAA==" HotelTransportation="Other" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
-          <hotel:PropertyAddress>
-            <hotel:Address>13 LAYTON ST. CAMPER</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="4" Direction="N"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>0</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="CHCA"/>
             <hotel:Amenity Code="BALC"/>
             <hotel:Amenity Code="HSPI"/>
             <hotel:Amenity Code="ELEV"/>
-            <hotel:Amenity Code="MIOV"/>
-            <hotel:Amenity Code="KTCN"/>
-            <hotel:Amenity Code="PARK"/>
-            <hotel:Amenity Code="PHSV"/>
-            <hotel:Amenity Code="SHWR"/>
-            <hotel:Amenity Code="TELV"/>
-            <hotel:Amenity Code="CBTV"/>
-            <hotel:Amenity Code="SFBD"/>
-            <hotel:Amenity Code="PHCO"/>
-            <hotel:Amenity Code="FSTY"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD188.10" MinAmountRateChanged="true" MaximumAmount="AUD349.00" MaxAmountRateChanged="true"/>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="YX" VendorLocationID="30008" Key="vLHh1CbYlDKAI5eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="YX" HotelCode="30008" HotelLocation="SYD" Name="MERITON SUITES KENT STREET" VendorLocationKey="vLHh1CbYlDKAI5eK7GAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
-          <hotel:PropertyAddress>
-            <hotel:Address>528 KENT STREET</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>0</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="HSPI"/>
-            <hotel:Amenity Code="COSH"/>
-            <hotel:Amenity Code="CSFR"/>
-            <hotel:Amenity Code="ELEV"/>
-            <hotel:Amenity Code="MIOV"/>
-            <hotel:Amenity Code="KTCN"/>
-            <hotel:Amenity Code="NSMR"/>
-            <hotel:Amenity Code="PARK"/>
-            <hotel:Amenity Code="POOL"/>
-            <hotel:Amenity Code="INPL"/>
-            <hotel:Amenity Code="SAIR"/>
-            <hotel:Amenity Code="SAUN"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD265.00" MinAmountRateChanged="false" MaximumAmount="AUD2496.00" MaxAmountRateChanged="false"/>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="WV" VendorLocationID="82925" Key="vLHh1CbYlDKAJ5eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="WV" HotelCode="82925" HotelLocation="SYD" Name="THE GRACE HOTEL" VendorLocationKey="vLHh1CbYlDKAJ5eK7GAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
-          <hotel:PropertyAddress>
-            <hotel:Address>77 YORK STREET</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>0</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="HASA"/>
-            <hotel:Amenity Code="HSPI"/>
-            <hotel:Amenity Code="BRFT"/>
-            <hotel:Amenity Code="COSH"/>
-            <hotel:Amenity Code="CSFR"/>
-            <hotel:Amenity Code="COBU"/>
-            <hotel:Amenity Code="CODE"/>
-            <hotel:Amenity Code="CORO"/>
-            <hotel:Amenity Code="COBR"/>
-            <hotel:Amenity Code="DINR"/>
-            <hotel:Amenity Code="ELEV"/>
-            <hotel:Amenity Code="GISH"/>
+            <hotel:Amenity Code="FAPL"/>
             <hotel:Amenity Code="GOLF"/>
-            <hotel:Amenity Code="HAFA"/>
             <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="MIOV"/>
+            <hotel:Amenity Code="KTCN"/>
             <hotel:Amenity Code="LAVA"/>
-            <hotel:Amenity Code="LUGE"/>
-            <hotel:Amenity Code="LNCH"/>
-            <hotel:Amenity Code="MEPL"/>
-            <hotel:Amenity Code="MEFA"/>
-            <hotel:Amenity Code="MIBA"/>
-            <hotel:Amenity Code="MOIR"/>
-            <hotel:Amenity Code="NSMR"/>
             <hotel:Amenity Code="PARK"/>
             <hotel:Amenity Code="PHSV"/>
-            <hotel:Amenity Code="POOL"/>
-            <hotel:Amenity Code="INPL"/>
-            <hotel:Amenity Code="PTRS"/>
-            <hotel:Amenity Code="RTNT"/>
-            <hotel:Amenity Code="ROSE"/>
-            <hotel:Amenity Code="SADE"/>
-            <hotel:Amenity Code="SAUN"/>
+            <hotel:Amenity Code="RFGR"/>
+            <hotel:Amenity Code="SAIR"/>
             <hotel:Amenity Code="SHWR"/>
-            <hotel:Amenity Code="TELV"/>
-            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="PRBT"/>
+            <hotel:Amenity Code="FXSV"/>
             <hotel:Amenity Code="PHCO"/>
             <hotel:Amenity Code="BATB"/>
             <hotel:Amenity Code="FSTY"/>
           </hotel:Amenities>
         </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD360.05" MinAmountRateChanged="true" MaximumAmount="AUD579.00" MaxAmountRateChanged="true"/>
+        <hotel:RateInfo MinimumAmount="AUD203.15" MinAmountRateChanged="false" MaximumAmount="AUD389.00" MaxAmountRateChanged="false"/>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="TD" VendorLocationID="71294" Key="vLHh1CbYlDKAK5eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="TD" HotelCode="71294" HotelLocation="SYD" Name="TRAVELODGE SYDNEY WYNYARD" VendorLocationKey="vLHh1CbYlDKAK5eK7GAAAA==" HotelTransportation="Public" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
-          <hotel:PropertyAddress>
-            <hotel:Address>7 TO 9 YORK ST</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>0</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="HSPI"/>
-            <hotel:Amenity Code="BRFT"/>
-            <hotel:Amenity Code="COBR"/>
-            <hotel:Amenity Code="DINR"/>
-            <hotel:Amenity Code="ELEV"/>
-            <hotel:Amenity Code="ENTR"/>
-            <hotel:Amenity Code="FAPL"/>
-            <hotel:Amenity Code="HECL"/>
-            <hotel:Amenity Code="MIOV"/>
-            <hotel:Amenity Code="LNCH"/>
-            <hotel:Amenity Code="MEPL"/>
-            <hotel:Amenity Code="MIBA"/>
-            <hotel:Amenity Code="MOIR"/>
-            <hotel:Amenity Code="NSMR"/>
-            <hotel:Amenity Code="PARK"/>
-            <hotel:Amenity Code="PHSV"/>
-            <hotel:Amenity Code="RFGR"/>
-            <hotel:Amenity Code="RTNT"/>
-            <hotel:Amenity Code="ROSE"/>
-            <hotel:Amenity Code="SAIR"/>
-            <hotel:Amenity Code="SHWR"/>
-            <hotel:Amenity Code="TRDK"/>
-            <hotel:Amenity Code="TELV"/>
-            <hotel:Amenity Code="CBTV"/>
-            <hotel:Amenity Code="SFBD"/>
-            <hotel:Amenity Code="FSTY"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD199.20" MinAmountRateChanged="false" MaximumAmount="AUD345.00" MaxAmountRateChanged="false"/>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="TD" VendorLocationID="30500" Key="vLHh1CbYlDKAL5eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="TD" HotelCode="30500" HotelLocation="SYD" Name="ADINA SYDNEY DARLING HARBOUR" VendorLocationKey="vLHh1CbYlDKAL5eK7GAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="TD" VendorLocationID="30500" Key="7bnU1CBAAA/B4CCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="TD" HotelCode="30500" HotelLocation="SYD" Name="ADINA SYDNEY DARLING HARBOUR" VendorLocationKey="7bnU1CBAAA/B4CCkOKAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
           <hotel:PropertyAddress>
             <hotel:Address>55 SHELLEY ST</hotel:Address>
           </hotel:PropertyAddress>
@@ -1870,54 +1697,12 @@
         <hotel:RateInfo MinimumAmount="AUD279.20" MinAmountRateChanged="false" MaximumAmount="AUD469.00" MaxAmountRateChanged="false"/>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="RG" VendorLocationID="05116" Key="vLHh1CbYlDKAM5eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="RG" HotelCode="05116" HotelLocation="SYD" Name="RYDGES NORTH SYDNEY" VendorLocationKey="vLHh1CbYlDKAM5eK7GAAAA==" ReserveRequirement="Other" ParticipationLevel="Lowest Public Rate" Availability="Available">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="GD" VendorLocationID="95170" Key="7bnU1CBAAA/B5CCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="GD" HotelCode="95170" HotelLocation="SYD" Name="APX WORLD SQUARE" VendorLocationKey="7bnU1CBAAA/B5CCkOKAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
           <hotel:PropertyAddress>
-            <hotel:Address>NORTH SYDNEY NSW</hotel:Address>
+            <hotel:Address>2 CUNNINGHAM ST</hotel:Address>
           </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="8" Direction="N"/>
-          <hotel:HotelRating RatingProvider="AAA">
-            <hotel:Rating>0</hotel:Rating>
-          </hotel:HotelRating>
-          <hotel:Amenities>
-            <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="BALC"/>
-            <hotel:Amenity Code="BRFT"/>
-            <hotel:Amenity Code="COSH"/>
-            <hotel:Amenity Code="CSFR"/>
-            <hotel:Amenity Code="CORO"/>
-            <hotel:Amenity Code="COBR"/>
-            <hotel:Amenity Code="DINR"/>
-            <hotel:Amenity Code="ELEV"/>
-            <hotel:Amenity Code="FAPL"/>
-            <hotel:Amenity Code="GOLF"/>
-            <hotel:Amenity Code="LUGE"/>
-            <hotel:Amenity Code="LNCH"/>
-            <hotel:Amenity Code="MEPL"/>
-            <hotel:Amenity Code="MEFA"/>
-            <hotel:Amenity Code="MIBA"/>
-            <hotel:Amenity Code="PARK"/>
-            <hotel:Amenity Code="PHSV"/>
-            <hotel:Amenity Code="POOL"/>
-            <hotel:Amenity Code="OUPL"/>
-            <hotel:Amenity Code="RTNT"/>
-            <hotel:Amenity Code="SHWR"/>
-            <hotel:Amenity Code="TNCT"/>
-            <hotel:Amenity Code="CBTV"/>
-            <hotel:Amenity Code="FXSV"/>
-            <hotel:Amenity Code="PHCO"/>
-            <hotel:Amenity Code="FSTY"/>
-          </hotel:Amenities>
-        </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD172.00" MinAmountRateChanged="false" MaximumAmount="AUD427.00" MaxAmountRateChanged="false"/>
-      </hotel:HotelSearchResult>
-      <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="CI" VendorLocationID="03882" Key="vLHh1CbYlDKAN5eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="CI" HotelCode="03882" HotelLocation="SYD" Name="COMFORT INN AND SUITES BURWOOD" VendorLocationKey="vLHh1CbYlDKAN5eK7GAAAA==" HotelTransportation="Other" ReserveRequirement="Guarantee" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="Available">
-          <hotel:PropertyAddress>
-            <hotel:Address>117 LIVERPOOL ROAD</hotel:Address>
-          </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="7" Direction="NW"/>
+          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
           <hotel:HotelRating RatingProvider="AAA">
             <hotel:Rating>0</hotel:Rating>
           </hotel:HotelRating>
@@ -1926,33 +1711,207 @@
             <hotel:Amenity Code="BALC"/>
             <hotel:Amenity Code="HSPI"/>
             <hotel:Amenity Code="BRFT"/>
-            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="COBU"/>
             <hotel:Amenity Code="COBR"/>
-            <hotel:Amenity Code="DINR"/>
-            <hotel:Amenity Code="GOLF"/>
-            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="ELEV"/>
             <hotel:Amenity Code="MIOV"/>
-            <hotel:Amenity Code="KTCN"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="MIBA"/>
             <hotel:Amenity Code="NSMR"/>
             <hotel:Amenity Code="PARK"/>
-            <hotel:Amenity Code="FPRK"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="RFGR"/>
+            <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="PRBT"/>
+            <hotel:Amenity Code="FXSV"/>
+            <hotel:Amenity Code="SFBD"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:RateInfo MinimumAmount="AUD256.00" MinAmountRateChanged="false" MaximumAmount="AUD621.00" MaxAmountRateChanged="false"/>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="GD" VendorLocationID="15623" Key="7bnU1CBAAA/B6CCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="GD" HotelCode="15623" HotelLocation="SYD" Name="QUEST BONDI JUNCTION" VendorLocationKey="7bnU1CBAAA/B6CCkOKAAAA==" ReserveRequirement="Other" ParticipationLevel="Inside Shopper participant" Availability="Available">
+          <hotel:PropertyAddress>
+            <hotel:Address>28 SPRING STREET</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="6" Direction="NE"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="CHCA"/>
+            <hotel:Amenity Code="BALC"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="COBR"/>
+            <hotel:Amenity Code="DINR"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="GOLF"/>
+            <hotel:Amenity Code="MIOV"/>
+            <hotel:Amenity Code="KTCN"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="LNCH"/>
+            <hotel:Amenity Code="MIBA"/>
+            <hotel:Amenity Code="NSMR"/>
             <hotel:Amenity Code="PHSV"/>
             <hotel:Amenity Code="RFGR"/>
             <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="TRDK"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="PRBT"/>
+            <hotel:Amenity Code="FXSV"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:RateInfo MinimumAmount="AUD199.00" MinAmountRateChanged="false" MaximumAmount="AUD299.00" MaxAmountRateChanged="false"/>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="YX" VendorLocationID="B8626" Key="7bnU1CBAAA/B7CCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="YX" HotelCode="B8626" HotelLocation="SYD" Name="THE TANK STREAM HOTEL" VendorLocationKey="7bnU1CBAAA/B7CCkOKAAAA==" HotelTransportation="Public" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
+          <hotel:PropertyAddress>
+            <hotel:Address>97 PITT STREET</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="6" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="COSH"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="DINR"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="LNCH"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="MIBA"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="RTNT"/>
             <hotel:Amenity Code="ROSE"/>
             <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="PRBT"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:RateInfo MinimumAmount="AUD290.00" MinAmountRateChanged="false" MaximumAmount="AUD361.00" MaxAmountRateChanged="false"/>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="HI" VendorLocationID="93189" Key="7bnU1CBAAA/B8CCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="HI" HotelCode="93189" HotelLocation="SYD" Name="HOLIDAY INN POTTS POINT" VendorLocationKey="7bnU1CBAAA/B8CCkOKAAAA==" HotelTransportation="CourtesyBus" ReserveRequirement="Guarantee" ParticipationLevel="Lowest Public Rate" Availability="Available">
+          <hotel:PropertyAddress>
+            <hotel:Address>203 VICTORIA STREET</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="7" Direction="NE"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="CHPR"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="CARE"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="COBU"/>
+            <hotel:Amenity Code="DINR"/>
+            <hotel:Amenity Code="GISH"/>
+            <hotel:Amenity Code="GOLF"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="LNCH"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="ROSE"/>
+            <hotel:Amenity Code="SAIR"/>
             <hotel:Amenity Code="TELV"/>
             <hotel:Amenity Code="CBTV"/>
             <hotel:Amenity Code="PRBT"/>
+            <hotel:Amenity Code="FXSV"/>
+            <hotel:Amenity Code="SFBD"/>
             <hotel:Amenity Code="PHCO"/>
             <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
           </hotel:Amenities>
         </hotel:HotelProperty>
-        <hotel:RateInfo MinimumAmount="AUD150.00" MinAmountRateChanged="false" MaximumAmount="AUD285.00" MaxAmountRateChanged="false"/>
+        <hotel:RateInfo MinimumAmount="AUD208.21" MinAmountRateChanged="false" MaximumAmount="AUD265.90" MaxAmountRateChanged="false"/>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="OI" VendorLocationID="A1319" Key="vLHh1CbYlDKAO5eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="OI" HotelCode="A1319" HotelLocation="SYD" Name="NAPOLEON ON KENT" VendorLocationKey="vLHh1CbYlDKAO5eK7GAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Best Available Rate and Inside Shopper participant">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="FS" VendorLocationID="16708" Key="7bnU1CBAAA/B9CCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="FS" HotelCode="16708" HotelLocation="SYD" Name="FOUR SEASONS HOTEL SYDNEY" VendorLocationKey="7bnU1CBAAA/B9CCkOKAAAA==" HotelTransportation="Limo" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="Available">
+          <hotel:PropertyAddress>
+            <hotel:Address>199 GEORGE STREET</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="7" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="CHCA"/>
+            <hotel:Amenity Code="CHPR"/>
+            <hotel:Amenity Code="HASA"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="CARE"/>
+            <hotel:Amenity Code="CSFR"/>
+            <hotel:Amenity Code="COBU"/>
+            <hotel:Amenity Code="CODE"/>
+            <hotel:Amenity Code="COLE"/>
+            <hotel:Amenity Code="COBR"/>
+            <hotel:Amenity Code="DINR"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="GISH"/>
+            <hotel:Amenity Code="GOLF"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="HECL"/>
+            <hotel:Amenity Code="LAVA"/>
+            <hotel:Amenity Code="LUGE"/>
+            <hotel:Amenity Code="LNCH"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="MIBA"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="PHSV"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="OUPL"/>
+            <hotel:Amenity Code="PTRS"/>
+            <hotel:Amenity Code="RFGR"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="ROSE"/>
+            <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="SPAA"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="CBTV"/>
+            <hotel:Amenity Code="PRBT"/>
+            <hotel:Amenity Code="FXSV"/>
+            <hotel:Amenity Code="BATB"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:RateInfo MinimumAmount="AUD314.50" MinAmountRateChanged="false" MaximumAmount="AUD6880.00" MaxAmountRateChanged="false"/>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="OI" VendorLocationID="A1319" Key="7bnU1CBAAA/B+CCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="OI" HotelCode="A1319" HotelLocation="SYD" Name="NAPOLEON ON KENT" VendorLocationKey="7bnU1CBAAA/B+CCkOKAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Best Available Rate and Inside Shopper participant">
           <hotel:PropertyAddress>
             <hotel:Address>219  KENT STREET</hotel:Address>
           </hotel:PropertyAddress>
@@ -1979,8 +1938,50 @@
         <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="HY" VendorLocationID="26229" Key="vLHh1CbYlDKAP5eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="HY" HotelCode="26229" HotelLocation="SYD" Name="HYATT REGENCY SYDNEY" VendorLocationKey="vLHh1CbYlDKAP5eK7GAAAA==" HotelTransportation="Other" ReserveRequirement="Other" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="NotAvailable">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="TD" VendorLocationID="94621" Key="7bnU1CBAAA/B/CCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="TD" HotelCode="94621" HotelLocation="SYD" Name="RENDEZVOUS SYDNEY CENTRAL" VendorLocationKey="7bnU1CBAAA/B/CCkOKAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant">
+          <hotel:PropertyAddress>
+            <hotel:Address>CNR GEORGE AND QUAY</hotel:Address>
+          </hotel:PropertyAddress>
+          <common_v34_0:Distance Units="KM" Value="5" Direction="N"/>
+          <hotel:HotelRating RatingProvider="AAA">
+            <hotel:Rating>0</hotel:Rating>
+          </hotel:HotelRating>
+          <hotel:Amenities>
+            <hotel:Amenity Code="AICO"/>
+            <hotel:Amenity Code="BALC"/>
+            <hotel:Amenity Code="HSPI"/>
+            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="COBR"/>
+            <hotel:Amenity Code="DINR"/>
+            <hotel:Amenity Code="ELEV"/>
+            <hotel:Amenity Code="ENTR"/>
+            <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="GOLF"/>
+            <hotel:Amenity Code="MEPL"/>
+            <hotel:Amenity Code="MEFA"/>
+            <hotel:Amenity Code="MIBA"/>
+            <hotel:Amenity Code="MOIR"/>
+            <hotel:Amenity Code="NSMR"/>
+            <hotel:Amenity Code="PARK"/>
+            <hotel:Amenity Code="POOL"/>
+            <hotel:Amenity Code="OUPL"/>
+            <hotel:Amenity Code="RTNT"/>
+            <hotel:Amenity Code="ROSE"/>
+            <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="SAUN"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="TELV"/>
+            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="FSTY"/>
+          </hotel:Amenities>
+        </hotel:HotelProperty>
+        <hotel:HotelSearchError Code="5000" Type="Warning">0606 REQUEST HOC FOR RATES</hotel:HotelSearchError>
+      </hotel:HotelSearchResult>
+      <hotel:HotelSearchResult>
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="HY" VendorLocationID="26229" Key="7bnU1CBAAA/BADCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="HY" HotelCode="26229" HotelLocation="SYD" Name="HYATT REGENCY SYDNEY" VendorLocationKey="7bnU1CBAAA/BADCkOKAAAA==" HotelTransportation="Other" ReserveRequirement="Other" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="NotAvailable">
           <hotel:PropertyAddress>
             <hotel:Address>161 SUSSEX STREET</hotel:Address>
           </hotel:PropertyAddress>
@@ -2030,42 +2031,51 @@
         <hotel:HotelSearchError Code="5000" Type="Warning">0601 NOT AVAILABLE FOR DATES REQUESTED</hotel:HotelSearchError>
       </hotel:HotelSearchResult>
       <hotel:HotelSearchResult>
-        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="WV" VendorLocationID="91400" Key="vLHh1CbYlDKAQ5eK7GAAAA=="/>
-        <hotel:HotelProperty HotelChain="WV" HotelCode="91400" HotelLocation="SYD" Name="CAMBRIDGE HOTEL SYDNEY" VendorLocationKey="vLHh1CbYlDKAQ5eK7GAAAA==" HotelTransportation="Other" ReserveRequirement="Guarantee" ParticipationLevel="Inside Shopper participant" Availability="NotAvailable">
+        <common_v34_0:VendorLocation ProviderCode="1G" VendorCode="RT" VendorLocationID="43295" Key="7bnU1CBAAA/BBDCkOKAAAA=="/>
+        <hotel:HotelProperty HotelChain="RT" HotelCode="43295" HotelLocation="SYD" Name="NOVOTEL BRIGHTON BEACH" VendorLocationKey="7bnU1CBAAA/BBDCkOKAAAA==" HotelTransportation="Other" ReserveRequirement="Other" ParticipationLevel="Best Available Rate and Inside Shopper participant" Availability="NotAvailable">
           <hotel:PropertyAddress>
-            <hotel:Address>212 RILEY STREET SUR</hotel:Address>
+            <hotel:Address>CNR GRAND PDE AND PR</hotel:Address>
           </hotel:PropertyAddress>
-          <common_v34_0:Distance Units="KM" Value="6" Direction="NE"/>
+          <common_v34_0:Distance Units="KM" Value="2" Direction="SW"/>
           <hotel:HotelRating RatingProvider="AAA">
             <hotel:Rating>0</hotel:Rating>
           </hotel:HotelRating>
           <hotel:Amenities>
             <hotel:Amenity Code="AICO"/>
-            <hotel:Amenity Code="BALC"/>
+            <hotel:Amenity Code="CHPR"/>
+            <hotel:Amenity Code="HASA"/>
             <hotel:Amenity Code="HSPI"/>
-            <hotel:Amenity Code="BRFT"/>
+            <hotel:Amenity Code="CARE"/>
             <hotel:Amenity Code="CSFR"/>
-            <hotel:Amenity Code="COBU"/>
             <hotel:Amenity Code="CODE"/>
-            <hotel:Amenity Code="CORO"/>
+            <hotel:Amenity Code="COLE"/>
             <hotel:Amenity Code="FAPL"/>
+            <hotel:Amenity Code="HAFA"/>
+            <hotel:Amenity Code="HECL"/>
             <hotel:Amenity Code="LAVA"/>
-            <hotel:Amenity Code="LUGE"/>
             <hotel:Amenity Code="LNCH"/>
             <hotel:Amenity Code="MEPL"/>
             <hotel:Amenity Code="MEFA"/>
             <hotel:Amenity Code="MIBA"/>
+            <hotel:Amenity Code="NSMR"/>
             <hotel:Amenity Code="PARK"/>
             <hotel:Amenity Code="PHSV"/>
             <hotel:Amenity Code="POOL"/>
             <hotel:Amenity Code="INPL"/>
+            <hotel:Amenity Code="OUPL"/>
             <hotel:Amenity Code="PTRS"/>
+            <hotel:Amenity Code="RFGR"/>
             <hotel:Amenity Code="RTNT"/>
-            <hotel:Amenity Code="ROSE"/>
-            <hotel:Amenity Code="SAIR"/>
+            <hotel:Amenity Code="SADE"/>
+            <hotel:Amenity Code="SAUN"/>
+            <hotel:Amenity Code="SCCV"/>
+            <hotel:Amenity Code="SHWR"/>
+            <hotel:Amenity Code="SPAA"/>
+            <hotel:Amenity Code="TELV"/>
             <hotel:Amenity Code="CBTV"/>
-            <hotel:Amenity Code="FXSV"/>
-            <hotel:Amenity Code="PHCO"/>
+            <hotel:Amenity Code="WTBR"/>
+            <hotel:Amenity Code="A220"/>
+            <hotel:Amenity Code="BATB"/>
             <hotel:Amenity Code="FSTY"/>
           </hotel:Amenities>
         </hotel:HotelProperty>

@@ -42,8 +42,6 @@ U
 %myFiles/test/test/HotelController.php,0\9\09acb631399868e767cf0b23c53615ec9021956e
 W
 'public/xml_requests/hotel_media_req.php,e\6\e6963d72ea3c28a14fc021c191734fd3aafb1e80
-}
-Mpublic/cache/hotel/reference_data/1b66b3d94fd4039107a0d008d707821f_parsed.dat,c\c\cc8fec813feaa81bc7714ddbfd50277067e9eb6d
 W
 'myFiles/test/test/RequestController.php,9\9\99ce1c97eb378d8aa00edf44aff19019a3684d2b
 I
@@ -64,3 +62,7 @@ Y
 )public/xml_requests/hotel_booking_req.php,4\9\4997849838b0b91c5c809e2223c22995938269d2
 a
 1app/Http/Controllers/API/V1/MyHotelController.php,b\0\b09a9d6a31ff0b69dcfa5f1ff724dc29775fd426
+H
+storage/logs/laravel.log,5\9\594b7055003ba7ec361dc917d3fd69234d89a509
+S
+#storage/logs/laravel-2020-03-10.log,f\1\f16add7faf2701c5363bf686e7caa87a5af2dfc6

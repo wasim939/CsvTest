@@ -1,40 +1,37 @@
 
-l	php:S1142ø"OReduce the number of returns of this function 8, down to the maximum allowed 3.(ŠûÑ8¬ğ”ï‹.
-h	php:S1192ı"FDefine a constant instead of duplicating this literal "error" 6 times.(Ô®Ãúÿÿÿÿ8¬ğ”ï‹.
-b	php:S1192’"LDefine a constant instead of duplicating this literal "@attributes" 5 times.(¾Ôå¼
-i	php:S1192ğ"LDefine a constant instead of duplicating this literal "hotelRefId" 10 times.(Î«›í8¬ğ”ï‹.
-`	php:S1192º"JDefine a constant instead of duplicating this literal "required" 12 times.(ŠŸÀÑ
-4php:S125Ÿ"Remove this commented out code.(ü¥‘³
 m	php:S2068"X'password' detected in this variable name, review this potentially hardcoded credential.(€¬¼ã
-;php:S125ó"Remove this commented out code.(º„•‹8¬ğ”ï‹.
-r	php:S1192Õ"UDefine a constant instead of duplicating this literal "Server Error Occured" 5 times.(é¨º8£ğáñ‹.
-h	php:S1192ä"FDefine a constant instead of duplicating this literal "refId" 6 times.(”‰½ôúÿÿÿÿ8´¨Òğ‹.
-z	php:S1488‡"_Immediately return this expression instead of assigning it to the temporary variable "$myData".(Â¼¥”ùÿÿÿÿ
-8php:S1255"Remove this commented out code.(ô±Ù½şÿÿÿÿ
-x	php:S1192†"VDefine a constant instead of duplicating this literal "Something went wrong." 5 times.(‹Û£àûÿÿÿÿ8ò˜«ñ‹.
-f	php:S1192û"IDefine a constant instead of duplicating this literal "_raw.dat" 5 times.(°¶Ğ¬8¬ğ”ï‹.
-k	php:S1142ì"OReduce the number of returns of this function 8, down to the maximum allowed 3.(«·]8Œ¹¤ñ‹.
-|	php:S1192à"`Define a constant instead of duplicating this literal "Error Occured in preparing data" 5 times.(¹Ó,8£ğáñ‹.
-;php:S125é"Remove this commented out code.(¼¯‰ƒ8ÃûşõŠ.
-j	php:S1192û"MDefine a constant instead of duplicating this literal "_parsed.dat" 10 times.(°¶Ğ¬8¬ğ”ï‹.
-l	php:S1142²"OReduce the number of returns of this function 8, down to the maximum allowed 3.(‚ò†Ú8¬ğ”ï‹.
 @php:S125Ô"Remove this commented out code.(¶«Ì¸üÿÿÿÿ8£ğáñ‹.
-@php:S125"Remove this commented out code.(¶«Ì¸üÿÿÿÿ8ğ®ñ‹.
-;php:S125¸"Remove this commented out code.(¼¯‰ƒ8Şè¡ö‹.
-@php:S125š"Remove this commented out code.(¶«Ì¸üÿÿÿÿ8Œš‹õ‹.
-]	php:S1192T"HDefine a constant instead of duplicating this literal "status" 53 times.(íÜˆ·
-s	php:S1192ş"VDefine a constant instead of duplicating this literal "Invalid Reference ID." 5 times.(ñ®±8¬ğ”ï‹.
-8php:S125G"Remove this commented out code.(½°™øÿÿÿÿ
 {	php:S1192û"^Define a constant instead of duplicating this literal "/cache/hotel/reference_data/" 15 times.(°¶Ğ¬8¬ğ”ï‹.
-@php:S125±"Remove this commented out code.(¶«Ì¸üÿÿÿÿ8Şêö‹.
-Q	php:S1481â"/Remove this unused "$hotelInfo" local variable.(¼òøğÿÿÿÿÿ8¬ğ”ï‹.
-@php:S125î"Remove this commented out code.(ÒÌâ–øÿÿÿÿ8ÃûşõŠ.
-l	php:S1142·"OReduce the number of returns of this function 5, down to the maximum allowed 3.(¦é„©8ĞÇ¥ï‹.
-l	php:S1142"OReduce the number of returns of this function 8, down to the maximum allowed 3.(ÊøñÂ8¬ğ”ï‹.
-w	php:S1192®"[Define a constant instead of duplicating this literal "Invalid Hotel Reference Id" 4 times.(äÚ¦+8Œš‹õ‹.
-4php:S125‹"Remove this commented out code.(³ÍŠÇ
 p	php:S1192¿"ZDefine a constant instead of duplicating this literal "numeric|between:1,9|min:1" 3 times.(“§¶
-l	php:S1142À"OReduce the number of returns of this function 5, down to the maximum allowed 3.(Ğº¨¡8¬ğ”ï‹.
-c	php:S1192W"IDefine a constant instead of duplicating this literal "message" 22 times.(×¥¬Óúÿÿÿÿ
-3php:S125q"Remove this commented out code.(äÅ¦ø
+f	php:S1192û"IDefine a constant instead of duplicating this literal "_raw.dat" 5 times.(°¶Ğ¬8¬ğ”ï‹.
+x	php:S1192†"VDefine a constant instead of duplicating this literal "Something went wrong." 5 times.(‹Û£àûÿÿÿÿ8ò˜«ñ‹.
+i	php:S1192ğ"LDefine a constant instead of duplicating this literal "hotelRefId" 10 times.(Î«›í8¬ğ”ï‹.
+l	php:S1142ø"OReduce the number of returns of this function 8, down to the maximum allowed 3.(ŠûÑ8¬ğ”ï‹.
+r	php:S1192Õ"UDefine a constant instead of duplicating this literal "Server Error Occured" 6 times.(é¨º8£ğáñ‹.
+k	php:S1142ì"OReduce the number of returns of this function 8, down to the maximum allowed 3.(«·]8Œ¹¤ñ‹.
+4php:S125‹"Remove this commented out code.(³ÍŠÇ
+j	php:S1192û"MDefine a constant instead of duplicating this literal "_parsed.dat" 10 times.(°¶Ğ¬8¬ğ”ï‹.
+@php:S125š"Remove this commented out code.(¶«Ì¸üÿÿÿÿ8Œš‹õ‹.
+l	php:S1142·"OReduce the number of returns of this function 5, down to the maximum allowed 3.(¦é„©8ĞÇ¥ï‹.
+`	php:S1192º"JDefine a constant instead of duplicating this literal "required" 12 times.(ŠŸÀÑ
+l	php:S1142‡"OReduce the number of returns of this function 8, down to the maximum allowed 3.(ÊøñÂ8¬ğ”ï‹.
+h	php:S1192ä"FDefine a constant instead of duplicating this literal "refId" 6 times.(”‰½ôúÿÿÿÿ8´¨Òğ‹.
+8php:S125G"Remove this commented out code.(½°™øÿÿÿÿ
+b	php:S1192’"LDefine a constant instead of duplicating this literal "@attributes" 5 times.(¾Ôå¼
+]	php:S1192T"HDefine a constant instead of duplicating this literal "status" 58 times.(íÜˆ·
+w	php:S1192®"[Define a constant instead of duplicating this literal "Invalid Hotel Reference Id" 5 times.(äÚ¦+8Œš‹õ‹.
+8php:S1255"Remove this commented out code.(ô±Ù½şÿÿÿÿ
+c	php:S1192W"IDefine a constant instead of duplicating this literal "message" 25 times.(×¥¬Óúÿÿÿÿ
+@php:S125"Remove this commented out code.(¶«Ì¸üÿÿÿÿ8ğ®ñ‹.
+z	php:S1488‡"_Immediately return this expression instead of assigning it to the temporary variable "$myData".(Â¼¥”ùÿÿÿÿ
+h	php:S1192ı"FDefine a constant instead of duplicating this literal "error" 5 times.(Ô®Ãúÿÿÿÿ8¬ğ”ï‹.
+l	php:S1142²"OReduce the number of returns of this function 8, down to the maximum allowed 3.(‚ò†Ú8¬ğ”ï‹.
+s	php:S1192ş"VDefine a constant instead of duplicating this literal "Invalid Reference ID." 5 times.(ñ®±8¬ğ”ï‹.
+l	php:S1142À"OReduce the number of returns of this function 8, down to the maximum allowed 3.(Ğº¨¡8¬ğ”ï‹.
 4php:S125ƒ"Remove this commented out code.(Ùı—¡
+@php:S125©"Remove this commented out code.(¶«Ì¸üÿÿÿÿ8¨àö–Œ.
+;php:S125°"Remove this commented out code.(¼¯‰ƒ8¸ì¦ŸŒ.
+4php:S125Ÿ"Remove this commented out code.(ü¥‘³
+3php:S125q"Remove this commented out code.(äÅ¦ø
+@php:S125â"Remove this commented out code.(¶«Ì¸üÿÿÿÿ8Í’µ›Œ.
+|	php:S1192à"`Define a constant instead of duplicating this literal "Error Occured in preparing data" 6 times.(¹Ó,8£ğáñ‹.
